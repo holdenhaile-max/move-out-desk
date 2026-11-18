@@ -1,10 +1,10 @@
 ---
 import { getCollection } from "astro:content";
 import BaseLayout from "../../components/BaseLayout.astro";
+import CheckedNote from "../../components/CheckedNote.astro";
 import StatusPill from "../../components/StatusPill.astro";
 import SourceCite from "../../components/SourceCite.astro";
 import { resolveCell } from "../../lib/facts";
-import { formatDate } from "../../lib/format";
 import { absoluteUrl, href } from "../../lib/paths";
 
 export async function getStaticPaths() {
@@ -43,7 +43,7 @@ const jsonLd = {
   <p class="eyebrow">Side by side</p>
   <h1>{comparison.data.title}</h1>
   <p class="lede">{comparison.data.description}</p>
-  <p class="small muted">Figures checked {formatDate(comparison.data.updated)}.</p>
+  <CheckedNote />
   {
     comparison.data.intro.map((paragraph) => (
       <p class="prose">{paragraph}</p>

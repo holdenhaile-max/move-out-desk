@@ -3,6 +3,7 @@ import { getCollection } from "astro:content";
 import { climateLabel, unitMonthly } from "../lib/facts";
 import { href } from "../lib/paths";
 import { climateSortValue, sizeSqft, textSortValue, unitPriceSort } from "../lib/sort-keys.mjs";
+import CheckedNote from "./CheckedNote.astro";
 import StatusPill from "./StatusPill.astro";
 import SourceCite from "./SourceCite.astro";
 
@@ -36,9 +37,10 @@ const rows = providers.flatMap((provider) =>
 
 {
   rows.length === 0 ? (
-    <p class="notice">No published units match this filter. That gap is marked not yet verified on the facility pages.</p>
+    <p class="notice">No rooms in this list match. Ask the place, or look at another size.</p>
   ) : (
     <div class="table-scroll">
+      <CheckedNote />
       <table data-sortable="true">
         <caption>{caption || "Published storage unit prices"}</caption>
         <thead>
@@ -120,9 +122,8 @@ const rows = providers.flatMap((provider) =>
         </tbody>
       </table>
       <p class="sort-note">
-        Buttons sort this table. Facility uses the street address, not miles from campus, because most
-        listings do not publish a distance. Not-yet-verified prices, sizes, climate labels, and
-        addresses stay at the bottom. Without JavaScript the table stays in the order above.
+        Sort by price, size, climate, or street address. Facility uses the address, not miles from
+        campus. Anything not listed stays at the bottom.
       </p>
     </div>
   )

@@ -27,7 +27,7 @@
       "right": { "type": "unit", "size": "5x10", "climate": true, "field": "onlineMonthly" }
     },
     {
-      "label": "Move-in fee we could verify",
+      "label": "Move-in fee on the page",
       "left": { "type": "fee", "feeId": "handling-tamu" },
       "right": { "type": "fee", "feeId": "admin-fee" }
     },
@@ -43,7 +43,7 @@
       },
       "right": {
         "type": "text",
-        "text": "You do. Dollies are not listed as a promise on the Manuel Drive amenity list we checked.",
+        "text": "You do. Dollies are not listed on the Manuel Drive amenity list.",
         "status": "unverified",
         "sourceUrl": "https://www.cubesmart.com/texas-self-storage/college-station-self-storage/4124.html",
         "sourceLabel": "CubeSmart Manuel Drive",

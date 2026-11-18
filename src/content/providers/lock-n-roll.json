@@ -3,7 +3,7 @@
   "kind": "self-storage",
   "schools": ["texas-am"],
   "cities": ["college-station"],
-  "summary": "Lock N Roll on Earl Rudder Freeway says it offers climate-controlled units, drive-up units, and vehicle parking, including student storage near Texas A&M. The public page tells renters to check the unit list for current rates. That list did not include dollar amounts in the page we could read, so prices are not yet verified.",
+  "summary": "Lock N Roll on Earl Rudder Freeway offers climate rooms, drive-up rooms, and vehicle parking near Texas A&M. Call for a price. The page tells you to use the unit list, and that list does not show dollar amounts.",
   "website": "https://www.premiumspaces.com/storage-locations/tx/college-station/1501-earl-rudder-fwy",
   "phone": "(979) 693-7655",
   "affiliateUrl": null,
@@ -15,7 +15,7 @@
       "amount": null,
       "per": "month",
       "status": "unverified",
-      "note": "The facility page says standard rates are listed online and that they vary by size and by climate control. No dollar amount was in the page content we could read. A company-wide pricing page says 5x5 units start at $39 a month somewhere in the chain. That is not a College Station rate, so it is not used here.",
+      "note": "The page says prices are listed online and that they vary by size and by climate control. No dollar amount is on the page. A company-wide page says 5x5 units start at $39 a month somewhere in the chain. Do not use that as a College Station price.",
       "sourceUrl": "https://www.premiumspaces.com/storage-locations/tx/college-station/1501-earl-rudder-fwy",
       "sourceLabel": "Lock N Roll Storage",
       "lastVerified": "2026-11-18"
@@ -76,7 +76,7 @@
     },
     {
       "label": "Office and access hours",
-      "value": "The page has headings for today's office hours and today's access hours. The times were not in the page content we could read.",
+      "value": "The page has headings for today's office hours and today's access hours. The times are not listed. Call before you plan to get in.",
       "status": "unverified",
       "sourceUrl": "https://www.premiumspaces.com/storage-locations/tx/college-station/1501-earl-rudder-fwy",
       "sourceLabel": "Lock N Roll Storage",

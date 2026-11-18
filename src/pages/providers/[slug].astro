@@ -1,6 +1,7 @@
 ---
 import { getCollection } from "astro:content";
 import BaseLayout from "../../components/BaseLayout.astro";
+import CheckedNote from "../../components/CheckedNote.astro";
 import FeeTable from "../../components/FeeTable.astro";
 import ProviderLink from "../../components/ProviderLink.astro";
 import StatusPill from "../../components/StatusPill.astro";
@@ -46,7 +47,7 @@ const jsonLd = {
   {data.address && <p>{data.address}</p>}
   {
     data.affiliateUrl === null && (
-      <p class="small muted">Paid-link field: empty. This link is not sponsored.</p>
+      <p class="small muted">This link is not a paid ad.</p>
     )
   }
 
@@ -121,10 +122,10 @@ const jsonLd = {
               })}
             </tbody>
           </table>
+          <CheckedNote />
           <p class="sort-note">
-            Every row is this same address, so there is no location sort. Price, size, and climate
-            control can be sorted. Not-yet-verified values stay at the bottom. Climate controlled
-            means the room is heated and cooled. Without JavaScript the table stays in the order above.
+            Sort by price, size, or climate. Climate controlled means the room is heated and cooled.
+            Anything not listed stays at the bottom.
           </p>
         </div>
       </>
@@ -136,10 +137,10 @@ const jsonLd = {
     initSortableTables();
   </script>
 
-  <h2>Other published facts</h2>
+  <h2>Other details</h2>
   <div class="table-scroll">
     <table>
-      <caption>Facts checked for {data.name}</caption>
+      <caption>Details for {data.name}</caption>
       <thead>
         <tr>
           <th scope="col">Fact</th>
@@ -170,7 +171,7 @@ const jsonLd = {
     </table>
   </div>
 
-  <h2>Not yet verified</h2>
+  <h2>Ask before you pay</h2>
   <ul class="clean">
     {data.gaps.map((gap) => <li>{gap}</li>)}
   </ul>

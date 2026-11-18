@@ -3,7 +3,7 @@
   "kind": "pickup",
   "schools": ["texas-am"],
   "cities": ["college-station"],
-  "summary": "Collegeboxes, a U-Haul company, publishes a Texas A&M College Station page with pickup and delivery dates, a $37 handling fee per package, and storage at U-Haul on Texas Ave. A handling fee is the charge for receiving a box. Its national price list puts a standard box at $56 for a 4-month term. The school page also says full-service moving (pickup from the room) is currently unavailable.",
+  "summary": "Collegeboxes, a U-Haul company, will pick up at Texas A&M and store boxes at U-Haul on Texas Ave. A standard box is $56 for 4 months on the national list, and the school page adds a $37 fee per package received. Call first: the school page says room pickup is currently unavailable.",
   "website": "https://www.collegeboxes.com/texas-am-university/",
   "phone": null,
   "affiliateUrl": null,
@@ -15,7 +15,7 @@
       "amount": 56,
       "per": "item, pickup and delivery included on the national price list",
       "status": "verified",
-      "note": "Listed on the national pricing page for a Collegebox, a box smaller than 24 x 16 x 18 inches, the supply-kit outer box, and U-Haul small, medium, and large moving boxes. The Texas A&M school page does not reprint this $56 figure, so whether a current TAMU order is billed this way is not confirmed on that page.",
+      "note": "This $56 is for a Collegebox, a box smaller than 24 x 16 x 18 inches, the supply-kit outer box, or a U-Haul small, medium, or large box. It is on the national list, not the Texas A&M page. Ask if your order uses it.",
       "sourceUrl": "https://www.collegeboxes.com/pricing/",
       "sourceLabel": "Collegeboxes pricing",
       "lastVerified": "2026-11-18"

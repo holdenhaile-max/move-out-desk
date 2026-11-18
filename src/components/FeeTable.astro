@@ -1,6 +1,7 @@
 ---
 import { getCollection } from "astro:content";
 import { formatFeeAmount } from "../lib/facts";
+import CheckedNote from "./CheckedNote.astro";
 import StatusPill from "./StatusPill.astro";
 import SourceCite from "./SourceCite.astro";
 
@@ -17,6 +18,7 @@ if (!provider) {
 ---
 
 <div class="table-scroll">
+  <CheckedNote />
   <table>
     <caption>
       {caption || `${provider.data.name} fees`}

@@ -3,7 +3,7 @@
   "kind": "self-storage",
   "schools": ["texas-am"],
   "cities": ["college-station"],
-  "summary": "This is the building Collegeboxes names as its Texas A&M storage location. U-Haul also rents rooms directly. Heated-and-cooled rooms are listed, the published temperature band is 65 to 85 degrees, the admin fee (a one-time move-in charge) is $0, and the monthly price is locked for the first 12 months.",
+  "summary": "This is the building Collegeboxes uses for Texas A&M storage. You can also rent a room here yourself. Heated-and-cooled rooms are 65 to 85 degrees, the move-in fee is $0, and the monthly price is locked for 12 months.",
   "website": "https://www.uhaul.com/Locations/Self-Storage-near-College-Station-TX-77845/755037/",
   "phone": "(979) 696-5111",
   "affiliateUrl": null,
@@ -190,6 +190,6 @@
   "gaps": [
     "Sales tax is not shown next to the room rates.",
     "Driving miles from a specific campus building are not on the U-Haul page. Collegeboxes says the building is just over 3 miles from Texas A&M.",
-    "The insurance price for SafeStor is not on the unit list we checked."
+    "The SafeStor insurance price is not on the unit list. Ask before you add it."
   ]
 }

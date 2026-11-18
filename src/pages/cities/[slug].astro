@@ -1,6 +1,7 @@
 ---
 import { getCollection } from "astro:content";
 import BaseLayout from "../../components/BaseLayout.astro";
+import CheckedNote from "../../components/CheckedNote.astro";
 import UnitTable from "../../components/UnitTable.astro";
 import StatusPill from "../../components/StatusPill.astro";
 import { kindLabel } from "../../lib/format";
@@ -31,7 +32,7 @@ const jsonLd = {
 
 <BaseLayout
   title={`${city.data.name} storage units compared`}
-  description={`Storage prices in ${city.data.name}, ${city.data.state}, copied from facility pages. A room is marked climate controlled only when the price itself says so.`}
+  description={`Compare storage prices in ${city.data.name}. Sort by price, size, climate, or address, then call before you pay.`}
   jsonLd={jsonLd}
 >
   <p class="crumbs">
@@ -44,7 +45,9 @@ const jsonLd = {
     <p>{city.data.regionNote}</p>
   </aside>
 
-  <h2>Places with a page we could open</h2>
+  <h2>Pick a place</h2>
+  <p>Call or open the company page before you drive over. Climate controlled means the room is heated and cooled.</p>
+  <CheckedNote />
   <div class="table-scroll">
     <table>
       <caption>{city.data.name} facilities in the comparison</caption>
@@ -65,8 +68,8 @@ const jsonLd = {
                 <div class="small muted">{kindLabel(facility.data.kind)}</div>
               </th>
               <td>{facility.data.address || "not yet verified"}</td>
-              <td>{facility.data.units.length === 0 ? "None. Rates not yet verified." : facility.data.units.length}</td>
-              <td>{facility.data.phone || "not yet verified"}</td>
+              <td>{facility.data.units.length === 0 ? "Call for a price" : facility.data.units.length}</td>
+              <td>{facility.data.phone || "Call the company page"}</td>
             </tr>
           ))
         }
@@ -74,16 +77,15 @@ const jsonLd = {
     </table>
   </div>
 
-  <h2>Prices, including rooms that are not heated and cooled</h2>
+  <h2>Compare the prices</h2>
   <p>
-    Climate controlled means the room is heated and cooled, not just a metal box outside. Drive-up
-    means you can park at the door. We copy that label from the price line. If a place says it has
-    climate control but the price does not say which room, the cell says not labeled. Lock N Roll
-    is missing here because its page did not show dollar amounts we could read.
+    Drive-up means you can park at the door. If a price does not say whether the room is heated and
+    cooled, it says Not labeled. Ask before you book that room. Lock N Roll is not in this table.
+    Their page does not list a dollar price, so call (979) 693-7655.
   </p>
   <UnitTable cityId={city.id} caption={`All published unit rates for ${city.data.name}`} />
 
-  <h2>What each place still has not published</h2>
+  <h2>What to ask each place</h2>
   {
     facilities.map((facility) => (
       <article>
