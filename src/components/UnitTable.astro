@@ -2,6 +2,7 @@
 import { getCollection } from "astro:content";
 import { climateLabel, unitMonthly } from "../lib/facts";
 import { href } from "../lib/paths";
+import { climateSortValue, sizeSqft, textSortValue, unitPriceSort } from "../lib/sort-keys.mjs";
 import StatusPill from "./StatusPill.astro";
 import SourceCite from "./SourceCite.astro";
 
@@ -35,56 +36,99 @@ const rows = providers.flatMap((provider) =>
 
 {
   rows.length === 0 ? (
-    <p class="notice">No published units match this filter. That absence is noted as not yet verified on the facility pages.</p>
+    <p class="notice">No published units match this filter. That gap is marked not yet verified on the facility pages.</p>
   ) : (
     <div class="table-scroll">
-      <table>
-        <caption>
-          {caption || "Published storage unit rates"}
-        </caption>
+      <table data-sortable="true">
+        <caption>{caption || "Published storage unit prices"}</caption>
         <thead>
           <tr>
-            <th scope="col">Facility</th>
-            <th scope="col">Size</th>
-            <th scope="col">Climate</th>
-            <th scope="col">Rate shown</th>
+            <th scope="col" aria-sort="none">
+              <button type="button" class="sort-button" data-sort="location" data-sort-name="street address">
+                Facility
+              </button>
+            </th>
+            <th scope="col" aria-sort="none">
+              <button type="button" class="sort-button" data-sort="size" data-sort-name="unit size">
+                Size
+              </button>
+            </th>
+            <th scope="col" aria-sort="none">
+              <button type="button" class="sort-button" data-sort="climate" data-sort-name="climate control">
+                Climate
+              </button>
+            </th>
+            <th scope="col" aria-sort="none">
+              <button type="button" class="sort-button" data-sort="price" data-sort-name="price">
+                Price
+              </button>
+            </th>
             <th scope="col">Status</th>
             <th scope="col">Source</th>
           </tr>
         </thead>
         <tbody>
-          {rows.map(({ provider, unit }) => (
-            <tr>
-              <th scope="row">
-                <a href={href(`/providers/${provider.id}`)}>{provider.data.name}</a>
-                <div class="small muted">{provider.data.address}</div>
-              </th>
-              <td>
-                {unit.size}
-                <div class="small muted">{unit.access}</div>
-                {unit.availability && <div class="small">{unit.availability}</div>}
-              </td>
-              <td>{climateLabel(unit.climate)}</td>
-              <td>
-                {unitMonthly(unit)}
-                {unit.onlineMonthly != null && unit.inStoreMonthly != null && (
-                  <div class="small muted">
-                    Online {unitMonthly(unit, "onlineMonthly")}. In store {unitMonthly(unit, "inStoreMonthly")}.
-                  </div>
-                )}
-                {unit.promo && <div class="small">{unit.promo}</div>}
-                {unit.note && <div class="small">{unit.note}</div>}
-              </td>
-              <td>
-                <StatusPill status={unit.status} />
-              </td>
-              <td>
-                <SourceCite href={unit.sourceUrl} label={unit.sourceLabel} lastVerified={unit.lastVerified} />
-              </td>
-            </tr>
-          ))}
+          {rows.map(({ provider, unit }, index) => {
+            const price = unitPriceSort(unit);
+            const area = sizeSqft(unit.size);
+            const climateSort = climateSortValue(unit.climate);
+            const location = textSortValue(provider.data.address);
+            return (
+              <tr
+                data-original={index}
+                data-price={price.missing ? undefined : String(price.value)}
+                data-price-missing={String(price.missing)}
+                data-price-type="number"
+                data-size={area == null ? undefined : String(area)}
+                data-size-missing={String(area == null)}
+                data-size-type="number"
+                data-climate={climateSort.missing ? undefined : String(climateSort.value)}
+                data-climate-missing={String(climateSort.missing)}
+                data-climate-type="number"
+                data-location={location.missing ? undefined : location.value}
+                data-location-missing={String(location.missing)}
+              >
+                <th scope="row">
+                  <a href={href(`/providers/${provider.id}`)}>{provider.data.name}</a>
+                  <div class="small muted">{provider.data.address || "Address not yet verified"}</div>
+                </th>
+                <td>
+                  {unit.size}
+                  <div class="small muted">{unit.access}</div>
+                  {unit.availability && <div class="small">{unit.availability}</div>}
+                </td>
+                <td>{climateLabel(unit.climate)}</td>
+                <td>
+                  {unitMonthly(unit)}
+                  {unit.onlineMonthly != null && unit.inStoreMonthly != null && (
+                    <div class="small muted">
+                      Online {unitMonthly(unit, "onlineMonthly")}. In store {unitMonthly(unit, "inStoreMonthly")}.
+                    </div>
+                  )}
+                  {unit.promo && <div class="small">{unit.promo}</div>}
+                  {unit.note && <div class="small">{unit.note}</div>}
+                </td>
+                <td>
+                  <StatusPill status={unit.status} />
+                </td>
+                <td>
+                  <SourceCite href={unit.sourceUrl} label={unit.sourceLabel} lastVerified={unit.lastVerified} />
+                </td>
+              </tr>
+            );
+          })}
         </tbody>
       </table>
+      <p class="sort-note">
+        Buttons sort this table. Facility uses the street address, not miles from campus, because most
+        listings do not publish a distance. Not-yet-verified prices, sizes, climate labels, and
+        addresses stay at the bottom. Without JavaScript the table stays in the order above.
+      </p>
     </div>
   )
 }
+
+<script>
+  import { initSortableTables } from "../scripts/sort-table.mjs";
+  initSortableTables();
+</script>

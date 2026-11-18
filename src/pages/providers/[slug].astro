@@ -6,6 +6,7 @@ import ProviderLink from "../../components/ProviderLink.astro";
 import StatusPill from "../../components/StatusPill.astro";
 import SourceCite from "../../components/SourceCite.astro";
 import { climateLabel, unitMonthly } from "../../lib/facts";
+import { climateSortValue, sizeSqft, unitPriceSort } from "../../lib/sort-keys.mjs";
 import { kindLabel } from "../../lib/format";
 import { href } from "../../lib/paths";
 
@@ -45,7 +46,7 @@ const jsonLd = {
   {data.address && <p>{data.address}</p>}
   {
     data.affiliateUrl === null && (
-      <p class="small muted">Affiliate URL: empty. This link is not sponsored.</p>
+      <p class="small muted">Paid-link field: empty. This link is not sponsored.</p>
     )
   }
 
@@ -57,45 +58,83 @@ const jsonLd = {
       <>
         <h2>Units</h2>
         <div class="table-scroll">
-          <table>
-            <caption>{data.name} unit rates</caption>
+          <table data-sortable="true">
+            <caption>{data.name} unit prices</caption>
             <thead>
               <tr>
-                <th scope="col">Size</th>
-                <th scope="col">Climate</th>
-                <th scope="col">Rate</th>
+                <th scope="col" aria-sort="none">
+                  <button type="button" class="sort-button" data-sort="size" data-sort-name="unit size">
+                    Size
+                  </button>
+                </th>
+                <th scope="col" aria-sort="none">
+                  <button type="button" class="sort-button" data-sort="climate" data-sort-name="climate control">
+                    Climate
+                  </button>
+                </th>
+                <th scope="col" aria-sort="none">
+                  <button type="button" class="sort-button" data-sort="price" data-sort-name="price">
+                    Price
+                  </button>
+                </th>
                 <th scope="col">Status</th>
                 <th scope="col">Source</th>
               </tr>
             </thead>
             <tbody>
-              {data.units.map((unit) => (
-                <tr>
-                  <th scope="row">
-                    {unit.size}
-                    <div class="small muted">{unit.access}</div>
-                    {unit.availability && <div class="small">{unit.availability}</div>}
-                  </th>
-                  <td>{climateLabel(unit.climate)}</td>
-                  <td>
-                    {unitMonthly(unit)}
-                    {unit.promo && <div class="small">{unit.promo}</div>}
-                    {unit.note && <div class="small">{unit.note}</div>}
-                  </td>
-                  <td>
-                    <StatusPill status={unit.status} />
-                  </td>
-                  <td>
-                    <SourceCite href={unit.sourceUrl} label={unit.sourceLabel} lastVerified={unit.lastVerified} />
-                  </td>
-                </tr>
-              ))}
+              {data.units.map((unit, index) => {
+                const price = unitPriceSort(unit);
+                const area = sizeSqft(unit.size);
+                const climateSort = climateSortValue(unit.climate);
+                return (
+                  <tr
+                    data-original={index}
+                    data-price={price.missing ? undefined : String(price.value)}
+                    data-price-missing={String(price.missing)}
+                    data-price-type="number"
+                    data-size={area == null ? undefined : String(area)}
+                    data-size-missing={String(area == null)}
+                    data-size-type="number"
+                    data-climate={climateSort.missing ? undefined : String(climateSort.value)}
+                    data-climate-missing={String(climateSort.missing)}
+                    data-climate-type="number"
+                  >
+                    <th scope="row">
+                      {unit.size}
+                      <div class="small muted">{unit.access}</div>
+                      {unit.availability && <div class="small">{unit.availability}</div>}
+                    </th>
+                    <td>{climateLabel(unit.climate)}</td>
+                    <td>
+                      {unitMonthly(unit)}
+                      {unit.promo && <div class="small">{unit.promo}</div>}
+                      {unit.note && <div class="small">{unit.note}</div>}
+                    </td>
+                    <td>
+                      <StatusPill status={unit.status} />
+                    </td>
+                    <td>
+                      <SourceCite href={unit.sourceUrl} label={unit.sourceLabel} lastVerified={unit.lastVerified} />
+                    </td>
+                  </tr>
+                );
+              })}
             </tbody>
           </table>
+          <p class="sort-note">
+            Every row is this same address, so there is no location sort. Price, size, and climate
+            control can be sorted. Not-yet-verified values stay at the bottom. Climate controlled
+            means the room is heated and cooled. Without JavaScript the table stays in the order above.
+          </p>
         </div>
       </>
     )
   }
+
+  <script>
+    import { initSortableTables } from "../../scripts/sort-table.mjs";
+    initSortableTables();
+  </script>
 
   <h2>Other published facts</h2>
   <div class="table-scroll">

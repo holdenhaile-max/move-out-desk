@@ -1,6 +1,8 @@
+import { pageHref } from "./src/lib/trailing-slash.mjs";
+
 /**
- * Prefix root-relative href/src in Markdown and MDX with Astro's `base`.
- * External, protocol-relative, hash, and already-prefixed links are left alone.
+ * Prefix root-relative href/src in Markdown and MDX with Astro's `base`,
+ * and give page links a trailing slash. Files, external links, and hashes stay put.
  */
 export function rehypeBaseLinks(options = {}) {
   const prefix = normalize(options.base);
@@ -22,9 +24,11 @@ export function rehypeBaseLinks(options = {}) {
 
   function apply(value) {
     if (!value.startsWith("/") || value.startsWith("//")) return value;
-    if (!prefix) return value;
-    if (value === prefix || value.startsWith(`${prefix}/`)) return value;
-    return `${prefix}${value}`;
+    if (prefix && (value === prefix || value.startsWith(`${prefix}/`))) {
+      const rest = value.slice(prefix.length) || "/";
+      return pageHref(rest, prefix);
+    }
+    return pageHref(value, prefix);
   }
 }
 

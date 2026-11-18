@@ -37,6 +37,6 @@ export function statusLabel(status: Status): string {
 
 export function kindLabel(kind: string): string {
   if (kind === "pickup") return "Pickup service";
-  if (kind === "self-storage") return "Self storage";
+  if (kind === "self-storage") return "Storage unit";
   return kind;
 }

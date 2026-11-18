@@ -31,7 +31,7 @@ const jsonLd = {
 
 <BaseLayout
   title={`${city.data.name} storage units compared`}
-  description={`Self-storage rates in ${city.data.name}, ${city.data.state}, copied from facility pages. Climate control is marked only when the rate itself says so.`}
+  description={`Storage prices in ${city.data.name}, ${city.data.state}, copied from facility pages. A room is marked climate controlled only when the price itself says so.`}
   jsonLd={jsonLd}
 >
   <p class="crumbs">
@@ -44,7 +44,7 @@ const jsonLd = {
     <p>{city.data.regionNote}</p>
   </aside>
 
-  <h2>Facilities with a page we could open</h2>
+  <h2>Places with a page we could open</h2>
   <div class="table-scroll">
     <table>
       <caption>{city.data.name} facilities in the comparison</caption>
@@ -74,15 +74,16 @@ const jsonLd = {
     </table>
   </div>
 
-  <h2>Rates, including rooms that are not climate controlled</h2>
+  <h2>Prices, including rooms that are not heated and cooled</h2>
   <p>
-    A climate flag is copied from the unit listing. If the facility advertises climate control but
-    the rate line does not say which rooms have it, the climate cell says the label is missing.
-    Lock N Roll has no prices in this table because none were readable on its page.
+    Climate controlled means the room is heated and cooled, not just a metal box outside. Drive-up
+    means you can park at the door. We copy that label from the price line. If a place says it has
+    climate control but the price does not say which room, the cell says not labeled. Lock N Roll
+    is missing here because its page did not show dollar amounts we could read.
   </p>
   <UnitTable cityId={city.id} caption={`All published unit rates for ${city.data.name}`} />
 
-  <h2>What each facility still has not published</h2>
+  <h2>What each place still has not published</h2>
   {
     facilities.map((facility) => (
       <article>
@@ -101,7 +102,7 @@ const jsonLd = {
   }
 
   <p>
-    The narrower climate comparison is the
-    <a href={href("/guides/college-station-climate-controlled")}>climate-controlled guide</a>.
+    The shorter climate comparison is the
+    <a href={href("/guides/college-station-climate-controlled")}>heated-and-cooled unit guide</a>.
   </p>
 </BaseLayout>

@@ -1,3 +1,5 @@
+import { pageHref } from "./trailing-slash.mjs";
+
 /** Base path without a trailing slash. Empty when the site is served at `/`. */
 function basePrefix(): string {
   const raw = import.meta.env.BASE_URL || "/";
@@ -5,22 +7,9 @@ function basePrefix(): string {
   return raw.endsWith("/") ? raw.slice(0, -1) : raw;
 }
 
-/** Root-relative path with the configured Astro base prefix. */
+/** Root-relative path with the configured Astro base prefix and a trailing slash on pages. */
 export function href(path = "/"): string {
-  if (!path) return href("/");
-  if (
-    /^[a-z][a-z0-9+.-]*:/i.test(path) ||
-    path.startsWith("//") ||
-    path.startsWith("#") ||
-    path.startsWith("mailto:")
-  ) {
-    return path;
-  }
-
-  const prefix = basePrefix();
-  if (path === "/") return prefix === "" ? "/" : prefix;
-  const clean = path.startsWith("/") ? path : `/${path}`;
-  return `${prefix}${clean}`;
+  return pageHref(path || "/", basePrefix());
 }
 
 /** Absolute URL for canonical tags, Open Graph, and JSON-LD. */

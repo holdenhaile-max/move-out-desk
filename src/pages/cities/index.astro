@@ -8,11 +8,11 @@ const cities = await getCollection("cities");
 
 <BaseLayout
   title="Cities"
-  description="Cities with a Move-Out Desk storage comparison. College Station is the first city, with Bryan facilities included when students ask about them."
+  description="Cities with a Move-Out Desk storage comparison. College Station is the first, and Bryan is included when students ask about a place there."
 >
   <p class="eyebrow">Directory</p>
   <h1>Cities</h1>
-  <p class="lede">A city page lists self-storage facilities from the provider files. Rates stay in those files, so a price change is one edit.</p>
+  <p class="lede">A city page lists storage places we could open a public page for. The prices live with each place, so a change is one edit.</p>
   <div class="card-grid two">
     {
       cities.map((city) => (

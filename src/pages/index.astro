@@ -23,7 +23,7 @@ const jsonLd = {
   name: "Move-Out Desk",
   url: absoluteUrl("/"),
   description:
-    "Independent comparison of Texas A&M summer storage: pickup services, local units, and shipping home.",
+    "Independent comparison of Texas A&M summer storage: pickup, a local unit, or shipping home.",
   publisher: {
     "@type": "Organization",
     name: "Move-Out Desk",
@@ -34,17 +34,17 @@ const jsonLd = {
 
 <BaseLayout
   title="Texas A&M summer storage, compared independently"
-  description="Pickup services, College Station storage units, and shipping home, with every price linked to the page it came from. No ratings invented, no trackers."
+  description="Pickup, a College Station storage unit, or shipping home. Every price links to the page it came from. No made-up ratings, no trackers."
   jsonLd={jsonLd}
 >
   <section class="hero">
     <div>
       <p class="eyebrow">College Station, first campus</p>
-      <h1>Summer storage for Texas A&M, with the receipts attached.</h1>
+      <h1>Summer storage for Texas A&M, with the source on every price.</h1>
       <p class="lede">
-        Move-Out Desk compares the ways to leave a College Station room: a company that picks the
-        boxes up, a storage unit you rent yourself, or a shipment home. We print a number only when
-        a public page states it, and we date the day we checked.
+        Three ways to leave a College Station room: a company picks the boxes up, you rent a unit,
+        or you ship it home. We print a number only when a public page says it, and we date the day
+        we checked.
       </p>
     </div>
     <aside class="notice">
@@ -59,7 +59,7 @@ const jsonLd = {
     </aside>
   </section>
 
-  <h2>Start with the three guides that are written through</h2>
+  <h2>Start here</h2>
   <div class="card-grid three">
     {
       featured.map((guide) => (
@@ -75,15 +75,15 @@ const jsonLd = {
     }
   </div>
 
-  <h2>A few prices we could actually verify</h2>
+  <h2>A few prices we could check</h2>
   <p class="prose">
     These are starting points, not a quote. Open the source on the row. The
     <a href={href("/guides/texas-am-summer-storage")}>summer storage guide</a> has a calculator that uses
-    the same figures.
+    the same numbers.
   </p>
   <div class="table-scroll">
     <table>
-      <caption>Verified starting prices for Texas A&M move-out</caption>
+      <caption>Checked starting prices for Texas A&M move-out</caption>
       <thead>
         <tr>
           <th scope="col">Item</th>
@@ -116,39 +116,40 @@ const jsonLd = {
     <article class="card">
       <h3>Books and winter clothes for the summer</h3>
       <p>
-        One long-running question in r/aggies is where to keep a lot of books and winter clothes
-        over the summer, with climate control if the price is reasonable, instead of driving it all
-        home. The climate comparison is the practical answer we can document.
+        People on r/aggies keep asking where to leave books and winter clothes for the summer, in a
+        heated and cooled room if the price is fair, instead of driving it all home. The climate
+        guide is the answer we can document.
       </p>
-      <a href={href("/guides/college-station-climate-controlled")}>Climate-controlled units</a>
+      <a href={href("/guides/college-station-climate-controlled")}>Heated and cooled units</a>
     </article>
     <article class="card">
       <h3>A short gap, not a whole summer</h3>
       <p>
         Another thread asks for the cheapest month or so for a TV, a mini fridge, and a dresser
-        between leases, in College Station or Bryan. Month-to-month units fit that better than a
-        4-month pickup contract. The gap is the unpublished move-in fee.
+        between leases, in College Station or Bryan. A month-to-month unit fits that better than a
+        4-month pickup contract. The missing piece is the move-in fee, which several places do not
+        publish.
       </p>
       <a href={href("/cities/college-station")}>College Station unit table</a>
     </article>
   </div>
   <p class="small muted prose">
-    Those threads are context for the questions, not reviews. We do not quote usernames or treat
-    comments as prices.
+    Those threads show which questions people ask. They are not reviews. We do not quote usernames
+    or treat comments as prices.
     <a href="https://www.reddit.com/r/aggies/comments/uil2rx/best_storage_units_in_cstat/">Summer storage thread</a>.
     <a href="https://www.reddit.com/r/aggies/comments/6meysf/wheres_can_i_find_the_cheapest_shortterm_storage/">Short-term storage thread</a>.
   </p>
 
   <h2>How a row gets on the site</h2>
   <ul class="clean prose">
-    <li>A provider page, a facility page, or a university page states the fact.</li>
-    <li>The row links that URL and shows the day we opened it.</li>
+    <li>A company page, a storage page, or a university page states the fact.</li>
+    <li>The row links that page and shows the day we opened it.</li>
     <li>If two official pages disagree, the status says sources disagree.</li>
-    <li>If the dollar amount is missing, the amount says not yet verified. We do not fill it in.</li>
+    <li>If the dollar amount is missing, the cell says not yet verified. We do not guess.</li>
   </ul>
   <p class="prose">
     <a href={href("/schools/texas-am")}>Texas A&M guide</a> ·
     <a href={href("/compare")}>Head-to-head comparisons</a> ·
-    <a href={href("/about")}>Who pays for this, which is nobody yet</a>
+    <a href={href("/about")}>Who pays for this (nobody yet)</a>
   </p>
 </BaseLayout>

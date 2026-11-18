@@ -40,7 +40,7 @@ export function formatFeeAmount(fee: Fee): string {
 export function climateLabel(value: boolean | null): string {
   if (value === true) return "Climate controlled";
   if (value === false) return "Not climate controlled";
-  return "Climate label not on the rate";
+  return "Not labeled";
 }
 
 export function unitMonthly(unit: Unit, field: CellInput["field"] = "monthly"): string {

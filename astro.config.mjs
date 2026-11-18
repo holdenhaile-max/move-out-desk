@@ -55,7 +55,7 @@ const base =
 export default defineConfig({
   site,
   base,
-  trailingSlash: "never",
+  trailingSlash: "always",
   markdown: {
     processor: unified({
       rehypePlugins: [[rehypeBaseLinks, { base }]],

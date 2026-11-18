@@ -15,59 +15,56 @@ const jsonLd = {
 
 <BaseLayout
   title="About this comparison and the affiliate disclosure"
-  description="Move-Out Desk is independent of Texas A&M and of the storage companies it lists. No affiliate programs are joined. Sponsored links, when they exist, will be marked."
+  description="Move-Out Desk is independent of Texas A&M and of the storage companies it lists. No affiliate programs are joined. If a link is ever paid, it will be marked."
   jsonLd={jsonLd}
 >
   <p class="crumbs"><a href={href("/")}>Home</a> / About</p>
   <p class="eyebrow">Disclosure</p>
-  <h1>Independent on purpose, and not paid yet.</h1>
+  <h1>Independent, and not paid yet.</h1>
   <div class="prose stack">
     <p>
       Move-Out Desk compares college move-out and summer storage. The first campus is Texas A&M in
-      College Station. The pages are a template: a school file, a city file, and one file per
-      provider. Later directories can reuse that shape. This version is only storage.
+      College Station. This version is only storage.
     </p>
     <p>
-      We are not Texas A&M University, not the residence halls, and not affiliated with Collegeboxes,
-      Dorm Room Movers, U-Haul, CubeSmart, SpareBox, Anytime Storage, or Lock N Roll. Collegeboxes
-      prints its own line that it has no active partnership with Texas A&M University, College
-      Station. That matches how you should read every link here. A company page is a source, not an
-      endorsement.
+      We are not Texas A&M, not the dorms, and not tied to Collegeboxes, Dorm Room Movers, U-Haul,
+      CubeSmart, SpareBox, Anytime Storage, or Lock N Roll. Collegeboxes prints its own line: no
+      active partnership with Texas A&M University, College Station. A company page is a source, not
+      a recommendation.
     </p>
-    <h2>What we will publish</h2>
+    <h2>What gets a number</h2>
     <p>
-      A price, a date, a fee, or an hour goes on the site when we can open a public page that states
-      it. The row keeps that URL and a last-verified date. If the pages disagree, we show both and
-      mark the row as a conflict. If we cannot find the number, the cell says not yet verified.
+      A price, date, fee, or hour goes on the site only when we can open a public page that states
+      it. The row keeps that link and the day we checked. If two pages disagree, we show both and
+      mark the row sources disagree. If we cannot find the number, the cell says not yet verified.
     </p>
     <p>
       We do not publish star ratings, review scores, or quotes from named students. Forum threads
-      are used only to see which questions people ask and which facility names come up.
+      only tell us which questions people ask and which place names come up.
     </p>
-    <h2>Affiliate links</h2>
+    <h2>Paid links</h2>
     <p>
-      None of the outbound links are affiliate links. The programs have not been joined, and nothing
-      on this site is written to earn a commission. Each provider file has an <code>affiliateUrl</code>
-      field, and today every one of those fields is null.
+      None of the outbound links are paid. No affiliate program has been joined, and nothing here is
+      written to earn a commission. Each company file has an <code>affiliateUrl</code> field, and
+      today every one of those fields is empty.
     </p>
     <p>
-      When a program is joined later, that field gets the tracking URL. The template will point the
-      outbound link at it and set <code>rel="sponsored nofollow"</code>. The visible link will also
-      carry a Sponsored marker. A link with an empty affiliate field stays a normal link to the
-      company's own page. Editorial pages will keep saying when a figure was checked, whether or not
-      a link pays.
+      If a program is joined later, that field gets the tracking link. The site will point the
+      button there, set <code>rel="sponsored nofollow"</code>, and show a Sponsored marker. An empty
+      field stays a normal link to the company's own page. Pages will still say when a figure was
+      checked, whether or not a link pays.
     </p>
-    <h2>Corrections</h2>
+    <h2>When a price goes stale</h2>
     <p>
       Storage prices move. A row that was right on November 18, 2026 can be wrong next week. There
-      is no contact form on this version. The reliable check is the source link on the row. If you
-      are about to pay, use the company's page, not our table, as the invoice.
+      is no contact form on this version. The check that matters is the source link on the row. If
+      you are about to pay, use the company's page, not our table, as the bill.
     </p>
     <h2>What this site does not do</h2>
     <ul class="clean">
       <li>No accounts, no booking, and no payment.</li>
-      <li>No analytics, advertising pixels, or other trackers.</li>
-      <li>No invented "most students choose" claims.</li>
+      <li>No analytics, ad pixels, or other trackers.</li>
+      <li>No made-up "most students choose" claims.</li>
     </ul>
   </div>
 </BaseLayout>

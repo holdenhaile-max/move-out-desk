@@ -25,7 +25,7 @@ const unitChoices = providers
           note: string;
         }> = [];
         const climate =
-          unit.climate === true ? "climate" : unit.climate === false ? "not climate" : "climate unlabeled";
+          unit.climate === true ? "climate controlled" : unit.climate === false ? "not climate controlled" : "climate not listed";
         if (unit.monthly != null) {
           options.push({
             id: `${provider.id}-${unit.size}-${String(unit.climate)}-monthly`,
@@ -39,7 +39,7 @@ const unitChoices = providers
             id: `${provider.id}-${unit.size}-${String(unit.climate)}-instore`,
             label: `${provider.data.name}, ${unit.size} ${climate}, ${money(unit.inStoreMonthly)} in store`,
             monthly: unit.inStoreMonthly,
-            note: "In-store price. Use this when the promo length is unpublished.",
+            note: "In-store price. Use this when the page does not say how long the discount lasts.",
           });
         }
         if (unit.onlineMonthly != null) {
@@ -47,7 +47,7 @@ const unitChoices = providers
             id: `${provider.id}-${unit.size}-${String(unit.climate)}-online`,
             label: `${provider.data.name}, ${unit.size} ${climate}, ${money(unit.onlineMonthly)} online`,
             monthly: unit.onlineMonthly,
-            note: unit.promo || "Online price. The page may not lock this rate.",
+            note: unit.promo || "Online price. The page may not promise this rate for later months.",
           });
         }
         return options;
@@ -67,8 +67,9 @@ const payload = {
 <section class="calc" aria-labelledby="calc-heading">
   <h2 id="calc-heading">Cost calculator</h2>
   <p class="muted">
-    This adds the published point prices. It does not add tax, and it does not guess a promo length.
-    The handling fee is optional because Collegeboxes has not said it stacks on the $56 storage rate.
+    This adds the published prices. It does not add tax, and it does not guess how long a discount
+    lasts. The handling fee is optional because Collegeboxes has not said the $37 is added on top of
+    the $56 box rate. A handling fee is the charge for receiving a box.
   </p>
   <form id="cost-form">
     <div class="calc-grid">

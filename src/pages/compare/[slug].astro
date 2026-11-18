@@ -40,7 +40,7 @@ const jsonLd = {
   <p class="crumbs">
     <a href={href("/")}>Home</a> / <a href={href("/compare")}>Compare</a> / {comparison.data.title}
   </p>
-  <p class="eyebrow">Head to head</p>
+  <p class="eyebrow">Side by side</p>
   <h1>{comparison.data.title}</h1>
   <p class="lede">{comparison.data.description}</p>
   <p class="small muted">Figures checked {formatDate(comparison.data.updated)}.</p>
@@ -112,7 +112,7 @@ const jsonLd = {
     ))
   }
   <p>
-    Full files: <a href={href(`/providers/${left.id}`)}>{left.data.name}</a> and
+    Full pages: <a href={href(`/providers/${left.id}`)}>{left.data.name}</a> and
     <a href={href(`/providers/${right.id}`)}>{right.data.name}</a>.
   </p>
 </BaseLayout>
