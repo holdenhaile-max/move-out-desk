@@ -105,11 +105,17 @@ img {
 
 .brand-name {
   font-family: var(--sans);
-  font-size: 1.25rem;
+  font-size: 1.05rem;
   letter-spacing: -0.02em;
   display: block;
   line-height: 1.1;
   color: #111111;
+}
+
+@media (min-width: 720px) {
+  .brand-name {
+    font-size: 1.2rem;
+  }
 }
 
 .brand-kicker {

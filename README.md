@@ -1,4 +1,4 @@
-# Move-Out Desk
+# Storage Price Check
 
 An independent, static comparison of college move-out and summer storage. Version 1 covers Texas A&M and College Station. The pages are templates. Schools, cities, providers, comparisons, and guides live in data files, so the same shape can back a later directory (local porta potty rentals, Texas septic pumping) without a new layout for every city.
 

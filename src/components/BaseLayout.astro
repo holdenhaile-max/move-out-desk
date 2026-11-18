@@ -13,7 +13,7 @@ interface Props {
 const { title, description, jsonLd } = Astro.props;
 const canonical = absoluteUrl(sitePath(Astro.url.pathname));
 const blocks = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [];
-const fullTitle = title.includes("Move-Out Desk") ? title : `${title} | Move-Out Desk`;
+const fullTitle = title.includes("Storage Price Check") ? title : `${title} | Storage Price Check`;
 ---
 
 <!doctype html>
@@ -36,11 +36,11 @@ const fullTitle = title.includes("Move-Out Desk") ? title : `${title} | Move-Out
     <meta property="og:url" content={canonical} />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="en_US" />
-    <meta property="og:site_name" content="Move-Out Desk" />
+    <meta property="og:site_name" content="Storage Price Check" />
     <meta property="og:image" content={absoluteUrl("/og-image.png")} />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="Move-Out Desk" />
+    <meta property="og:image:alt" content="Storage Price Check" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:image" content={absoluteUrl("/og-image.png")} />
     <meta name="twitter:title" content={fullTitle} />
