@@ -171,8 +171,15 @@ const jsonLd = {
     </table>
   </div>
 
-  <h2>Ask before you pay</h2>
-  <ul class="clean">
-    {data.gaps.map((gap) => <li>{gap}</li>)}
-  </ul>
+  <section class="faq" aria-label="Ask before you pay">
+    <h2>Ask before you pay</h2>
+    <details class="faq-item">
+      <summary>What is still missing</summary>
+      <div class="faq-body">
+        <ul class="clean">
+          {data.gaps.map((gap) => <li>{gap}</li>)}
+        </ul>
+      </div>
+    </details>
+  </section>
 </BaseLayout>

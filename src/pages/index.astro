@@ -2,6 +2,7 @@
 import { getCollection } from "astro:content";
 import BaseLayout from "../components/BaseLayout.astro";
 import CheckedNote from "../components/CheckedNote.astro";
+import FaqList from "../components/FaqList.astro";
 import { formatDate } from "../lib/format";
 import { formatFeeAmount } from "../lib/facts";
 import { absoluteUrl, href } from "../lib/paths";
@@ -18,19 +19,55 @@ const snapshot = [
   dorm?.data.fees.find((fee) => fee.id === "registration"),
 ].filter((fee) => fee != null);
 
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  name: "Move-Out Desk",
-  url: absoluteUrl("/"),
-  description:
-    "Independent comparison of Texas A&M summer storage: pickup, a local unit, or shipping home.",
-  publisher: {
-    "@type": "Organization",
+const homeFaqs = [
+  {
+    question: "I have books and winter clothes for the summer.",
+    answer:
+      "If you can drive, rent a heated and cooled room instead of hauling everything home. Compare the prices before you reserve.",
+    href: href("/guides/college-station-climate-controlled"),
+    linkLabel: "Heated and cooled units",
+  },
+  {
+    question: "I only need a few weeks between leases.",
+    answer:
+      "A TV, a mini fridge, and a dresser between leases in College Station or Bryan fit a month-to-month unit. A 4-month pickup is the wrong product. Ask about the move-in fee. Several places do not list it.",
+    href: href("/cities/college-station"),
+    linkLabel: "College Station prices",
+  },
+  {
+    question: "Where did these questions come from?",
+    answer:
+      "Students asked about both of these. The threads are questions, not prices. Summer storage thread: https://www.reddit.com/r/aggies/comments/uil2rx/best_storage_units_in_cstat/ Short-term storage thread: https://www.reddit.com/r/aggies/comments/6meysf/wheres_can_i_find_the_cheapest_shortterm_storage/",
+  },
+];
+
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
     name: "Move-Out Desk",
     url: absoluteUrl("/"),
+    description:
+      "Independent comparison of Texas A&M summer storage: pickup, a local unit, or shipping home.",
+    publisher: {
+      "@type": "Organization",
+      name: "Move-Out Desk",
+      url: absoluteUrl("/"),
+    },
   },
-};
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: homeFaqs.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.href ? `${item.answer} ${item.href}` : item.answer,
+      },
+    })),
+  },
+];
 ---
 
 <BaseLayout
@@ -111,31 +148,7 @@ const jsonLd = {
     </table>
   </div>
 
-  <h2>Two common situations</h2>
-  <div class="card-grid two">
-    <article class="card">
-      <h3>Books and winter clothes for the summer</h3>
-      <p>
-        If you can drive, rent a heated and cooled room instead of hauling everything home. Compare
-        the prices before you reserve.
-      </p>
-      <a href={href("/guides/college-station-climate-controlled")}>Heated and cooled units</a>
-    </article>
-    <article class="card">
-      <h3>Only a few weeks between leases</h3>
-      <p>
-        A TV, a mini fridge, and a dresser between leases in College Station or Bryan fit a
-        month-to-month unit. A 4-month pickup is the wrong product. Ask about the move-in fee. Several
-        places do not list it.
-      </p>
-      <a href={href("/cities/college-station")}>College Station prices</a>
-    </article>
-  </div>
-  <p class="small muted prose">
-    Students asked about both of these. The threads are questions, not prices.
-    <a href="https://www.reddit.com/r/aggies/comments/uil2rx/best_storage_units_in_cstat/">Summer storage thread</a>.
-    <a href="https://www.reddit.com/r/aggies/comments/6meysf/wheres_can_i_find_the_cheapest_shortterm_storage/">Short-term storage thread</a>.
-  </p>
+  <FaqList title="Common questions" items={homeFaqs} />
 
   <p class="prose">
     <a href={href("/schools/texas-am")}>Texas A&M</a> ·

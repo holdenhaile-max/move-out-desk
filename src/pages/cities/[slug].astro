@@ -1,10 +1,8 @@
 ---
 import { getCollection } from "astro:content";
 import BaseLayout from "../../components/BaseLayout.astro";
-import CheckedNote from "../../components/CheckedNote.astro";
+import FaqList, { type FaqItem } from "../../components/FaqList.astro";
 import UnitTable from "../../components/UnitTable.astro";
-import StatusPill from "../../components/StatusPill.astro";
-import { kindLabel } from "../../lib/format";
 import { absoluteUrl, href } from "../../lib/paths";
 
 export async function getStaticPaths() {
@@ -17,94 +15,99 @@ const facilities = (await getCollection("providers"))
   .filter((provider) => provider.data.cities.includes(city.id) && provider.data.kind === "self-storage")
   .sort((a, b) => a.data.name.localeCompare(b.data.name));
 
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": "ItemList",
-  name: `${city.data.name} self storage compared`,
-  itemListElement: facilities.map((facility, index) => ({
-    "@type": "ListItem",
-    position: index + 1,
-    name: facility.data.name,
-    url: absoluteUrl(`/providers/${facility.id}`),
-  })),
-};
+const lockPhone =
+  facilities.find((facility) => facility.id === "lock-n-roll")?.data.phone || "(979) 693-7655";
+
+const phoneAnswer = facilities
+  .map((facility) => `${facility.data.name}: ${facility.data.phone || "not listed on the page"}`)
+  .join(". ");
+
+const askAnswer = facilities
+  .map((facility) => `${facility.data.name}: ${facility.data.gaps.join(" ")}`)
+  .join(" ");
+
+const faqs: FaqItem[] = [
+  {
+    question: "What is climate controlled, and what is drive-up?",
+    answer:
+      `Climate controlled means the room is heated and cooled. Drive-up means you can park at the door. If a price says Not labeled, the listing does not say which kind of room it is. Ask before you book it. Lock N Roll is not in the table. Their page does not list a dollar price, so call ${lockPhone}.`,
+  },
+  {
+    question: "Can I trust a promo price for the whole summer?",
+    answer:
+      "Use the in-store or single monthly price unless the place locks the cheaper price in writing. CubeSmart on Manuel Drive shows a lower online price and a higher in-store price under first month free and 40% off, and does not say how many months that lasts. SpareBox prices are promotional, for new rentals, may not apply to every size, and rent can change with 30 days' notice. U-Haul at Texas Ave locks the monthly price for 12 months. Dowling Road offers 50% off the first month and does not print a price lock.",
+  },
+  {
+    question: "What does Not yet verified mean?",
+    answer:
+      "Not yet verified means that number is not on the company page. It is left blank on purpose. A listed price was checked November 18, 2026. Tap the source before you pay, because a price can change.",
+  },
+  {
+    question: "What dates matter for a Texas A&M summer?",
+    answer:
+      "Collegeboxes lists pickups on December 11, 2026 and May 10, 2027. The same page says room pickup is currently unavailable. Call before you count on a date. A few weeks between leases, such as a TV and a dresser from July 31 to August 15, fits a month-to-month unit, not a 4-month pickup.",
+  },
+  {
+    question: "How do roommates split a unit?",
+    answer:
+      "One person signs the lease. On November 18, 2026 a heated-and-cooled 5x10 at U-Haul Texas Ave was $99.95 a month, locked for 12 months, with a $0 move-in fee. Four months is $399.80, or $199.90 each for two people and $133.27 each for three, before tax. Put any unlisted move-in fee in the shared pot.",
+    href: href("/guides/sharing-a-unit"),
+    linkLabel: "Roommate split",
+  },
+  {
+    question: "What if I was told Downing Road or All Seasons?",
+    answer: city.data.regionNote,
+  },
+  {
+    question: "What should I ask before I pay?",
+    answer: askAnswer,
+  },
+  {
+    question: "How do I call each place?",
+    answer: `${phoneAnswer}.`,
+  },
+];
+
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: `${city.data.name} storage prices`,
+    itemListElement: facilities.map((facility, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: facility.data.name,
+      url: absoluteUrl(`/providers/${facility.id}`),
+    })),
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.href ? `${item.answer} ${absoluteUrl("/guides/sharing-a-unit")}` : item.answer,
+      },
+    })),
+  },
+];
 ---
 
 <BaseLayout
-  title={`${city.data.name} storage units compared`}
-  description={`Compare storage prices in ${city.data.name}. Sort by price, size, climate, or address, then call before you pay.`}
+  title={`${city.data.name} storage prices`}
+  description={`Sort ${city.data.name} storage by price, size, climate, or address. Prices checked November 18, 2026.`}
   jsonLd={jsonLd}
 >
   <p class="crumbs">
     <a href={href("/")}>Home</a> / <a href={href("/cities")}>Cities</a> / {city.data.name}
   </p>
-  <p class="eyebrow">{city.data.state}</p>
-  <h1>{city.data.name} storage units</h1>
-  <p class="lede">{city.data.summary}</p>
-  <aside class="notice">
-    <p>{city.data.regionNote}</p>
-  </aside>
-
-  <h2>Pick a place</h2>
-  <p>Call or open the company page before you drive over. Climate controlled means the room is heated and cooled.</p>
-  <CheckedNote />
-  <div class="table-scroll">
-    <table>
-      <caption>{city.data.name} facilities in the comparison</caption>
-      <thead>
-        <tr>
-          <th scope="col">Facility</th>
-          <th scope="col">Address</th>
-          <th scope="col">Published unit rows</th>
-          <th scope="col">Phone</th>
-        </tr>
-      </thead>
-      <tbody>
-        {
-          facilities.map((facility) => (
-            <tr>
-              <th scope="row">
-                <a href={href(`/providers/${facility.id}`)}>{facility.data.name}</a>
-                <div class="small muted">{kindLabel(facility.data.kind)}</div>
-              </th>
-              <td>{facility.data.address || "not yet verified"}</td>
-              <td>{facility.data.units.length === 0 ? "Call for a price" : facility.data.units.length}</td>
-              <td>{facility.data.phone || "Call the company page"}</td>
-            </tr>
-          ))
-        }
-      </tbody>
-    </table>
-  </div>
-
-  <h2>Compare the prices</h2>
-  <p>
-    Drive-up means you can park at the door. If a price does not say whether the room is heated and
-    cooled, it says Not labeled. Ask before you book that room. Lock N Roll is not in this table.
-    Their page does not list a dollar price, so call (979) 693-7655.
-  </p>
-  <UnitTable cityId={city.id} caption={`All published unit rates for ${city.data.name}`} />
-
-  <h2>What to ask each place</h2>
-  {
-    facilities.map((facility) => (
-      <article>
-        <h3>
-          <a href={href(`/providers/${facility.id}`)}>{facility.data.name}</a>
-        </h3>
-        <ul class="clean">
-          {facility.data.gaps.map((gap) => (
-            <li>
-              <StatusPill status="unverified" /> {gap}
-            </li>
-          ))}
-        </ul>
-      </article>
-    ))
-  }
-
-  <p>
-    The shorter climate comparison is the
-    <a href={href("/guides/college-station-climate-controlled")}>heated-and-cooled unit guide</a>.
+  <h1>{city.data.name} storage prices</h1>
+  <p class="lede">{city.data.summary} Sort by price, size, climate, or address.</p>
+  <UnitTable cityId={city.id} caption={`${city.data.name} unit prices`} />
+  <FaqList items={faqs} />
+  <p class="prose">
+    <a href={href("/guides/college-station-climate-controlled")}>Heated and cooled rooms, compared</a>
   </p>
 </BaseLayout>
