@@ -96,15 +96,11 @@ img {
   color: inherit;
 }
 
-.brand-mark {
-  width: 2.2rem;
-  height: 2.2rem;
-  border: 2px solid var(--ink);
-  border-radius: 0.45rem;
-  background:
-    linear-gradient(var(--ink), var(--ink)) center 62% / 62% 2px no-repeat,
-    linear-gradient(var(--ink), var(--ink)) center 38% / 40% 2px no-repeat,
-    #fff;
+.brand-logo {
+  width: 36px;
+  height: 36px;
+  display: block;
+  flex: none;
 }
 
 .brand-name {
@@ -113,6 +109,7 @@ img {
   letter-spacing: -0.02em;
   display: block;
   line-height: 1.1;
+  color: #111111;
 }
 
 .brand-kicker {
