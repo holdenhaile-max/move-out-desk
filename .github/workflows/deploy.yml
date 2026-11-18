@@ -37,8 +37,8 @@ jobs:
       - name: Build
         run: npm run build
         env:
-          # Project sites: "/<repo>". User sites and a later custom domain: empty or "/".
-          PUBLIC_BASE_PATH: ${{ steps.pages.outputs.base_path }}
+          # Apex custom domain. Leave the base unset so pages are served from /.
+          PUBLIC_SITE_URL: https://storagepricecheck.com
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
