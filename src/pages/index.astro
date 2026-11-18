@@ -1,0 +1,154 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../components/BaseLayout.astro";
+import { formatDate } from "../lib/format";
+import { formatFeeAmount } from "../lib/facts";
+import { absoluteUrl, href } from "../lib/paths";
+
+const guides = (await getCollection("guides")).sort((a, b) => a.data.order - b.data.order);
+const featured = guides.filter((guide) => guide.data.featured);
+const providers = await getCollection("providers");
+const college = providers.find((item) => item.id === "collegeboxes");
+const dorm = providers.find((item) => item.id === "dorm-room-movers");
+const snapshot = [
+  college?.data.fees.find((fee) => fee.id === "standard-box"),
+  college?.data.fees.find((fee) => fee.id === "handling-tamu"),
+  dorm?.data.fees.find((fee) => fee.id === "tier-box"),
+  dorm?.data.fees.find((fee) => fee.id === "registration"),
+].filter((fee) => fee != null);
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "Move-Out Desk",
+  url: absoluteUrl("/"),
+  description:
+    "Independent comparison of Texas A&M summer storage: pickup services, local units, and shipping home.",
+  publisher: {
+    "@type": "Organization",
+    name: "Move-Out Desk",
+    url: absoluteUrl("/"),
+  },
+};
+---
+
+<BaseLayout
+  title="Texas A&M summer storage, compared independently"
+  description="Pickup services, College Station storage units, and shipping home, with every price linked to the page it came from. No ratings invented, no trackers."
+  jsonLd={jsonLd}
+>
+  <section class="hero">
+    <div>
+      <p class="eyebrow">College Station, first campus</p>
+      <h1>Summer storage for Texas A&M, with the receipts attached.</h1>
+      <p class="lede">
+        Move-Out Desk compares the ways to leave a College Station room: a company that picks the
+        boxes up, a storage unit you rent yourself, or a shipment home. We print a number only when
+        a public page states it, and we date the day we checked.
+      </p>
+    </div>
+    <aside class="notice">
+      <p><strong>Checked {formatDate("2026-11-18")}.</strong></p>
+      <p>
+        Collegeboxes lists pickups on December 11, 2026 and May 10, 2027. Its school page also says
+        full-service moving is currently unavailable. Both sentences are on the page.
+      </p>
+      <p class="small">
+        We are not Texas A&M. Collegeboxes says it has no active partnership with the university.
+      </p>
+    </aside>
+  </section>
+
+  <h2>Start with the three guides that are written through</h2>
+  <div class="card-grid three">
+    {
+      featured.map((guide) => (
+        <article class="card">
+          <p class="eyebrow">{guide.data.eyebrow}</p>
+          <h3>{guide.data.title}</h3>
+          <p>{guide.data.description}</p>
+          <a class="more" href={href(`/guides/${guide.id}`)}>
+            Read the guide
+          </a>
+        </article>
+      ))
+    }
+  </div>
+
+  <h2>A few prices we could actually verify</h2>
+  <p class="prose">
+    These are starting points, not a quote. Open the source on the row. The
+    <a href={href("/guides/texas-am-summer-storage")}>summer storage guide</a> has a calculator that uses
+    the same figures.
+  </p>
+  <div class="table-scroll">
+    <table>
+      <caption>Verified starting prices for Texas A&M move-out</caption>
+      <thead>
+        <tr>
+          <th scope="col">Item</th>
+          <th scope="col">Published amount</th>
+          <th scope="col">Checked</th>
+          <th scope="col">Source</th>
+        </tr>
+      </thead>
+      <tbody>
+        {
+          snapshot.map((fee) => (
+            <tr>
+              <th scope="row">{fee.label}</th>
+              <td>{formatFeeAmount(fee)}</td>
+              <td>
+                <time datetime={fee.lastVerified}>{formatDate(fee.lastVerified)}</time>
+              </td>
+              <td>
+                <a href={fee.sourceUrl}>{fee.sourceLabel}</a>
+              </td>
+            </tr>
+          ))
+        }
+      </tbody>
+    </table>
+  </div>
+
+  <h2>What students are trying to solve</h2>
+  <div class="card-grid two">
+    <article class="card">
+      <h3>Books and winter clothes for the summer</h3>
+      <p>
+        One long-running question in r/aggies is where to keep a lot of books and winter clothes
+        over the summer, with climate control if the price is reasonable, instead of driving it all
+        home. The climate comparison is the practical answer we can document.
+      </p>
+      <a href={href("/guides/college-station-climate-controlled")}>Climate-controlled units</a>
+    </article>
+    <article class="card">
+      <h3>A short gap, not a whole summer</h3>
+      <p>
+        Another thread asks for the cheapest month or so for a TV, a mini fridge, and a dresser
+        between leases, in College Station or Bryan. Month-to-month units fit that better than a
+        4-month pickup contract. The gap is the unpublished move-in fee.
+      </p>
+      <a href={href("/cities/college-station")}>College Station unit table</a>
+    </article>
+  </div>
+  <p class="small muted prose">
+    Those threads are context for the questions, not reviews. We do not quote usernames or treat
+    comments as prices.
+    <a href="https://www.reddit.com/r/aggies/comments/uil2rx/best_storage_units_in_cstat/">Summer storage thread</a>.
+    <a href="https://www.reddit.com/r/aggies/comments/6meysf/wheres_can_i_find_the_cheapest_shortterm_storage/">Short-term storage thread</a>.
+  </p>
+
+  <h2>How a row gets on the site</h2>
+  <ul class="clean prose">
+    <li>A provider page, a facility page, or a university page states the fact.</li>
+    <li>The row links that URL and shows the day we opened it.</li>
+    <li>If two official pages disagree, the status says sources disagree.</li>
+    <li>If the dollar amount is missing, the amount says not yet verified. We do not fill it in.</li>
+  </ul>
+  <p class="prose">
+    <a href={href("/schools/texas-am")}>Texas A&M guide</a> ·
+    <a href={href("/compare")}>Head-to-head comparisons</a> ·
+    <a href={href("/about")}>Who pays for this, which is nobody yet</a>
+  </p>
+</BaseLayout>

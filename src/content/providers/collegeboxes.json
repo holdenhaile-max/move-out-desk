@@ -1,0 +1,256 @@
+{
+  "name": "Collegeboxes",
+  "kind": "pickup",
+  "schools": ["texas-am"],
+  "cities": ["college-station"],
+  "summary": "Collegeboxes, a U-Haul company, publishes a Texas A&M College Station page with pickup and delivery dates, a $37 per-package handling fee, and storage at U-Haul on Texas Ave. Its national price list puts a standard box at $56 for a 4-month term. The school page also says full-service moving is currently unavailable.",
+  "website": "https://www.collegeboxes.com/texas-am-university/",
+  "phone": null,
+  "affiliateUrl": null,
+  "address": "Stored at U-Haul Moving & Storage at Texas Ave, 2813 Texas Ave, College Station, TX 77845",
+  "fees": [
+    {
+      "id": "standard-box",
+      "label": "Collegebox or standard moving box, 4-month storage term",
+      "amount": 56,
+      "per": "item, pickup and delivery included on the national price list",
+      "status": "verified",
+      "note": "Listed on the national pricing page for a Collegebox, a box smaller than 24 x 16 x 18 inches, the supply-kit outer box, and U-Haul small, medium, and large moving boxes. The Texas A&M school page does not reprint this $56 figure, so whether a current TAMU order is billed this way is not confirmed on that page.",
+      "sourceUrl": "https://www.collegeboxes.com/pricing/",
+      "sourceLabel": "Collegeboxes pricing",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "id": "small-item",
+      "label": "Small item (lamp, fan, microwave, and similar)",
+      "amount": 50,
+      "per": "item for a 4-month term",
+      "status": "verified",
+      "note": "National storage price list. Pickup and delivery included. No registration fee on that list.",
+      "sourceUrl": "https://www.collegeboxes.com/pricing/",
+      "sourceLabel": "Collegeboxes pricing",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "id": "medium-item",
+      "label": "Medium item (suitcase, bin, nightstand, and similar)",
+      "amount": 76,
+      "per": "item for a 4-month term",
+      "status": "verified",
+      "sourceUrl": "https://www.collegeboxes.com/pricing/",
+      "sourceLabel": "Collegeboxes pricing",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "id": "large-item",
+      "label": "Large item (mini fridge, larger box up to 8 cubic feet)",
+      "amount": 82,
+      "per": "item for a 4-month term",
+      "status": "verified",
+      "sourceUrl": "https://www.collegeboxes.com/pricing/",
+      "sourceLabel": "Collegeboxes pricing",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "id": "xl-item",
+      "label": "Extra-large item (bicycle, desk, chair, twin mattress)",
+      "amount": 88,
+      "per": "item for a 4-month term",
+      "status": "verified",
+      "sourceUrl": "https://www.collegeboxes.com/pricing/",
+      "sourceLabel": "Collegeboxes pricing",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "id": "xxl-item",
+      "label": "XX-large item (futon, couch, unboxed television)",
+      "amount": 130,
+      "per": "item for a 4-month term",
+      "status": "verified",
+      "sourceUrl": "https://www.collegeboxes.com/pricing/",
+      "sourceLabel": "Collegeboxes pricing",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "id": "handling-tamu",
+      "label": "Handling fee on the Texas A&M page",
+      "amount": 37,
+      "per": "package received by Collegeboxes",
+      "status": "conflict",
+      "note": "The Texas A&M page says a $37 handling fee applies for each box received on the student's behalf. The national pricing page lists a $30 per-box handling fee for Ship to School, covering receipt, up to one month of storage, and room delivery. These are different published numbers.",
+      "sourceUrl": "https://www.collegeboxes.com/texas-am-university/",
+      "sourceLabel": "Collegeboxes Texas A&M page",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "id": "handling-national",
+      "label": "Ship to School handling fee on the national price list",
+      "amount": 30,
+      "per": "box",
+      "status": "conflict",
+      "note": "Described as shipment acceptance, up to one month of storage near school, and delivery to the room. The Texas A&M page prints $37 instead.",
+      "sourceUrl": "https://www.collegeboxes.com/pricing/",
+      "sourceLabel": "Collegeboxes pricing",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "id": "supply-kit",
+      "label": "Signature supply kit",
+      "amount": 39.99,
+      "per": "kit, plus tax",
+      "status": "verified",
+      "note": "5 reusable boxes (24 x 16 x 18 inches), 1 roll of U-Haul tape, 5 zip ties, 1 bonus box (36 x 24 x 7 inches), 1 marker, and 10 FedEx label pouches. The page says kits ship immediately after purchase.",
+      "sourceUrl": "https://www.collegeboxes.com/texas-am-university/",
+      "sourceLabel": "Collegeboxes Texas A&M page",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "id": "ship-home-instate",
+      "label": "Ship Home, in-state estimate",
+      "amount": null,
+      "amountMin": 45,
+      "amountMax": 60,
+      "per": "box, estimate",
+      "status": "verified",
+      "note": "National estimate. The same section says FedEx pickup and delivery, live tracking, and no handling fees. Exact price depends on destination, size, and weight. This is not a quote to a specific hometown.",
+      "sourceUrl": "https://www.collegeboxes.com/pricing/",
+      "sourceLabel": "Collegeboxes pricing",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "id": "ship-home-regional",
+      "label": "Ship Home, regional estimate",
+      "amount": null,
+      "amountMin": 60,
+      "amountMax": 90,
+      "per": "box, estimate",
+      "status": "verified",
+      "sourceUrl": "https://www.collegeboxes.com/pricing/",
+      "sourceLabel": "Collegeboxes pricing",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "id": "ship-home-coast",
+      "label": "Ship Home, coast-to-coast estimate",
+      "amount": null,
+      "amountMin": 75,
+      "amountMax": 100,
+      "per": "box, estimate",
+      "status": "verified",
+      "sourceUrl": "https://www.collegeboxes.com/pricing/",
+      "sourceLabel": "Collegeboxes pricing",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "id": "special-date",
+      "label": "Pickup or delivery off the scheduled dates",
+      "amount": 500,
+      "per": "request",
+      "status": "verified",
+      "note": "National fee schedule. The Texas A&M page says to contact them for a different date, without restating this dollar amount.",
+      "sourceUrl": "https://www.collegeboxes.com/pricing/",
+      "sourceLabel": "Collegeboxes pricing",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "id": "self-service",
+      "label": "Self-service pickup or drop-off at the storage location",
+      "amount": 25,
+      "per": "service",
+      "status": "verified",
+      "sourceUrl": "https://www.collegeboxes.com/pricing/",
+      "sourceLabel": "Collegeboxes pricing",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "id": "heavy-box",
+      "label": "Heavy box, 50 pounds or more",
+      "amount": null,
+      "amountMin": 25,
+      "amountMax": 50,
+      "per": "box, if charged",
+      "status": "verified",
+      "sourceUrl": "https://www.collegeboxes.com/pricing/",
+      "sourceLabel": "Collegeboxes pricing",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "id": "valuation",
+      "label": "Declared value included, with optional extra coverage",
+      "amount": 100,
+      "per": "item included, then $3 per extra $100",
+      "status": "verified",
+      "note": "The national storage section says every order includes shipping protection up to $100 per box, and extra coverage starts at $3 per $100. A separate block on the Texas A&M page mentions $1,000 coverage in a U-Box style list. Which coverage applies to a given TAMU order is not spelled out in one place.",
+      "sourceUrl": "https://www.collegeboxes.com/pricing/",
+      "sourceLabel": "Collegeboxes pricing",
+      "lastVerified": "2026-11-18"
+    }
+  ],
+  "units": [],
+  "facts": [
+    {
+      "label": "Published pickup",
+      "value": "Friday, December 11, 2026, 10:00 a.m. to 2:00 p.m.",
+      "status": "verified",
+      "sourceUrl": "https://www.collegeboxes.com/texas-am-university/",
+      "sourceLabel": "Collegeboxes Texas A&M page",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "label": "Published pickup",
+      "value": "Monday, May 10, 2027, 10:00 a.m. to 4:00 p.m.",
+      "status": "verified",
+      "sourceUrl": "https://www.collegeboxes.com/texas-am-university/",
+      "sourceLabel": "Collegeboxes Texas A&M page",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "label": "Published room delivery",
+      "value": "Tuesday, January 19, 2027, 10:00 a.m. to 2:00 p.m. Ship to School sign-up by Thursday, January 7, 2027.",
+      "status": "verified",
+      "sourceUrl": "https://www.collegeboxes.com/texas-am-university/",
+      "sourceLabel": "Collegeboxes Texas A&M page",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "label": "Service status on the school page",
+      "value": "The page says full-service moving is currently unavailable, and it also lists dorm pickup dates and a dorm-pickup FAQ.",
+      "status": "conflict",
+      "note": "Both statements are on the Texas A&M page. Confirm which service can actually be booked before paying.",
+      "sourceUrl": "https://www.collegeboxes.com/texas-am-university/",
+      "sourceLabel": "Collegeboxes Texas A&M page",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "label": "University relationship",
+      "value": "No Active Partnership with Texas A&M University, College Station.",
+      "status": "verified",
+      "sourceUrl": "https://www.collegeboxes.com/texas-am-university/",
+      "sourceLabel": "Collegeboxes Texas A&M page",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "label": "Storage building",
+      "value": "U-Haul Moving & Storage at Texas Ave, 2813 Texas Ave, College Station, TX 77845. Collegeboxes says this is just over 3 miles from campus, at Texas Ave and Harvey Mitchell Parkway S.",
+      "status": "verified",
+      "sourceUrl": "https://www.collegeboxes.com/texas-am-university/",
+      "sourceLabel": "Collegeboxes Texas A&M page",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "label": "Access while stored",
+      "value": "Collegeboxes says students can access belongings during business hours with three business days' notice.",
+      "status": "verified",
+      "sourceUrl": "https://www.collegeboxes.com/texas-am-university/",
+      "sourceLabel": "Collegeboxes Texas A&M page",
+      "lastVerified": "2026-11-18"
+    }
+  ],
+  "gaps": [
+    "The Texas A&M page does not print the $56 box rate. That number lives on the national price list.",
+    "Whether the $37 handling fee is added on top of the $56 storage rate is not stated.",
+    "A spring 2027 university finals calendar was not checked, so May 10, 2027 is a Collegeboxes date, not a confirmed university move-out date.",
+    "Off-campus pickup pricing is not published. The page says to contact them.",
+    "The school page still contains a sentence about a facility near Northeastern University in Boston. Treat stray sentences as a reason to confirm your order, not as a College Station fact."
+  ]
+}

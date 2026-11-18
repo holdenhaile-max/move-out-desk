@@ -1,0 +1,109 @@
+{
+  "name": "CubeSmart on Holleman Drive",
+  "kind": "self-storage",
+  "schools": ["texas-am"],
+  "cities": ["college-station"],
+  "summary": "CubeSmart at 104 Holleman Drive says it is less than three miles from the Texas A&M campus. On the day we checked, the public unit list showed two large drive-up sizes and no climate-controlled units.",
+  "website": "https://www.cubesmart.com/texas-self-storage/college-station-self-storage/64.html",
+  "phone": "(979) 696-1000",
+  "affiliateUrl": null,
+  "address": "104 Holleman Dr, College Station, TX 77840",
+  "fees": [
+    {
+      "id": "admin-fee",
+      "label": "One-time administrative fee",
+      "amount": null,
+      "per": "at move-in",
+      "status": "unverified",
+      "note": "The shared CubeSmart rental FAQ on the page says a one-time administrative fee is due. The amount is not printed.",
+      "sourceUrl": "https://www.cubesmart.com/texas-self-storage/college-station-self-storage/64.html",
+      "sourceLabel": "CubeSmart Holleman Drive",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "id": "insurance",
+      "label": "Required insurance or protection plan",
+      "amount": null,
+      "per": "month, if you buy theirs",
+      "status": "unverified",
+      "sourceUrl": "https://www.cubesmart.com/texas-self-storage/college-station-self-storage/64.html",
+      "sourceLabel": "CubeSmart Holleman Drive",
+      "lastVerified": "2026-11-18"
+    }
+  ],
+  "units": [
+    {
+      "size": "10x20",
+      "climate": false,
+      "access": "outside drive-up",
+      "monthly": null,
+      "onlineMonthly": 99.6,
+      "inStoreMonthly": 166,
+      "promo": "First month free and 40% off",
+      "status": "verified",
+      "sourceUrl": "https://www.cubesmart.com/texas-self-storage/college-station-self-storage/64.html",
+      "sourceLabel": "CubeSmart Holleman Drive",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "size": "20x20",
+      "climate": false,
+      "access": "outside drive-up",
+      "monthly": null,
+      "onlineMonthly": 205.8,
+      "inStoreMonthly": 343,
+      "promo": "First month free and 40% off",
+      "status": "verified",
+      "sourceUrl": "https://www.cubesmart.com/texas-self-storage/college-station-self-storage/64.html",
+      "sourceLabel": "CubeSmart Holleman Drive",
+      "lastVerified": "2026-11-18"
+    }
+  ],
+  "facts": [
+    {
+      "label": "Office hours",
+      "value": "Monday to Friday 9:30 a.m. to 6:00 p.m., Saturday 8:30 a.m. to 5:00 p.m., Sunday closed.",
+      "status": "verified",
+      "sourceUrl": "https://www.cubesmart.com/texas-self-storage/college-station-self-storage/64.html",
+      "sourceLabel": "CubeSmart Holleman Drive",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "label": "Access hours",
+      "value": "Daily, 6:00 a.m. to 10:00 p.m.",
+      "status": "verified",
+      "sourceUrl": "https://www.cubesmart.com/texas-self-storage/college-station-self-storage/64.html",
+      "sourceLabel": "CubeSmart Holleman Drive",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "label": "Distance claim",
+      "value": "CubeSmart says these units are less than three miles from the Texas A&M University campus.",
+      "status": "verified",
+      "sourceUrl": "https://www.cubesmart.com/texas-self-storage/college-station-self-storage/64.html",
+      "sourceLabel": "CubeSmart Holleman Drive",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "label": "Climate-controlled units",
+      "value": "None were listed in the public unit grid on the day we checked. Small and medium headings were empty.",
+      "status": "verified",
+      "sourceUrl": "https://www.cubesmart.com/texas-self-storage/college-station-self-storage/64.html",
+      "sourceLabel": "CubeSmart Holleman Drive",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "label": "Deliveries",
+      "value": "The page says deliveries are accepted.",
+      "status": "verified",
+      "sourceUrl": "https://www.cubesmart.com/texas-self-storage/college-station-self-storage/64.html",
+      "sourceLabel": "CubeSmart Holleman Drive",
+      "lastVerified": "2026-11-18"
+    }
+  ],
+  "gaps": [
+    "Administrative fee amount.",
+    "Protection-plan price.",
+    "Whether smaller or climate-controlled units exist but were simply sold out. The page did not say."
+  ]
+}

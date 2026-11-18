@@ -1,0 +1,53 @@
+---
+import { getCollection } from "astro:content";
+import { formatFeeAmount } from "../lib/facts";
+import StatusPill from "./StatusPill.astro";
+import SourceCite from "./SourceCite.astro";
+
+interface Props {
+  id: string;
+  caption?: string;
+}
+const { id, caption } = Astro.props;
+const providers = await getCollection("providers");
+const provider = providers.find((item) => item.id === id);
+if (!provider) {
+  throw new Error(`Unknown provider ${id}`);
+}
+---
+
+<div class="table-scroll">
+  <table>
+    <caption>
+      {caption || `${provider.data.name} fees`}
+    </caption>
+    <thead>
+      <tr>
+        <th scope="col">Charge</th>
+        <th scope="col">Amount</th>
+        <th scope="col">Status</th>
+        <th scope="col">Source</th>
+      </tr>
+    </thead>
+    <tbody>
+      {
+        provider.data.fees.map((fee) => (
+          <tr>
+            <th scope="row">
+              {fee.label}
+              <div class="small muted">{fee.per}</div>
+              {fee.note && <div class="small">{fee.note}</div>}
+            </th>
+            <td>{formatFeeAmount(fee)}</td>
+            <td>
+              <StatusPill status={fee.status} />
+            </td>
+            <td>
+              <SourceCite href={fee.sourceUrl} label={fee.sourceLabel} lastVerified={fee.lastVerified} />
+            </td>
+          </tr>
+        ))
+      }
+    </tbody>
+  </table>
+</div>

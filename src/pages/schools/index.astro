@@ -1,0 +1,36 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../components/BaseLayout.astro";
+import { href } from "../../lib/paths";
+
+const schools = await getCollection("schools");
+const cities = await getCollection("cities");
+---
+
+<BaseLayout
+  title="Schools"
+  description="Campuses with a Move-Out Desk storage guide. Texas A&M in College Station is the first one."
+>
+  <p class="eyebrow">Directory</p>
+  <h1>Schools</h1>
+  <p class="lede">Each school page is built from a data file. Adding a campus means adding that file, not a new template.</p>
+  <div class="card-grid two">
+    {
+      schools.map((school) => {
+        const city = cities.find((item) => item.id === school.data.cityId);
+        return (
+          <article class="card">
+            <h2>
+              <a href={href(`/schools/${school.id}`)}>{school.data.name}</a>
+            </h2>
+            <p>
+              {school.data.place}
+              {city ? `. City comparison: ${city.data.name}.` : ""}
+            </p>
+            <p>{school.data.summary}</p>
+          </article>
+        );
+      })
+    }
+  </div>
+</BaseLayout>

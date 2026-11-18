@@ -1,0 +1,90 @@
+---
+import { getCollection } from "astro:content";
+import { climateLabel, unitMonthly } from "../lib/facts";
+import { href } from "../lib/paths";
+import StatusPill from "./StatusPill.astro";
+import SourceCite from "./SourceCite.astro";
+
+interface Props {
+  climate?: "yes" | "no" | "unknown" | "any";
+  sizes?: string;
+  caption?: string;
+  cityId?: string;
+}
+const { climate = "any", sizes = "", caption, cityId = "college-station" } = Astro.props;
+const wanted = sizes
+  .split(",")
+  .map((size) => size.trim())
+  .filter(Boolean);
+const providers = (await getCollection("providers")).filter(
+  (provider) => provider.data.kind === "self-storage" && provider.data.cities.includes(cityId),
+);
+
+const rows = providers.flatMap((provider) =>
+  provider.data.units
+    .filter((unit) => {
+      if (wanted.length && !wanted.includes(unit.size)) return false;
+      if (climate === "yes") return unit.climate === true;
+      if (climate === "no") return unit.climate === false;
+      if (climate === "unknown") return unit.climate === null;
+      return true;
+    })
+    .map((unit) => ({ provider, unit })),
+);
+---
+
+{
+  rows.length === 0 ? (
+    <p class="notice">No published units match this filter. That absence is noted as not yet verified on the facility pages.</p>
+  ) : (
+    <div class="table-scroll">
+      <table>
+        <caption>
+          {caption || "Published storage unit rates"}
+        </caption>
+        <thead>
+          <tr>
+            <th scope="col">Facility</th>
+            <th scope="col">Size</th>
+            <th scope="col">Climate</th>
+            <th scope="col">Rate shown</th>
+            <th scope="col">Status</th>
+            <th scope="col">Source</th>
+          </tr>
+        </thead>
+        <tbody>
+          {rows.map(({ provider, unit }) => (
+            <tr>
+              <th scope="row">
+                <a href={href(`/providers/${provider.id}`)}>{provider.data.name}</a>
+                <div class="small muted">{provider.data.address}</div>
+              </th>
+              <td>
+                {unit.size}
+                <div class="small muted">{unit.access}</div>
+                {unit.availability && <div class="small">{unit.availability}</div>}
+              </td>
+              <td>{climateLabel(unit.climate)}</td>
+              <td>
+                {unitMonthly(unit)}
+                {unit.onlineMonthly != null && unit.inStoreMonthly != null && (
+                  <div class="small muted">
+                    Online {unitMonthly(unit, "onlineMonthly")}. In store {unitMonthly(unit, "inStoreMonthly")}.
+                  </div>
+                )}
+                {unit.promo && <div class="small">{unit.promo}</div>}
+                {unit.note && <div class="small">{unit.note}</div>}
+              </td>
+              <td>
+                <StatusPill status={unit.status} />
+              </td>
+              <td>
+                <SourceCite href={unit.sourceUrl} label={unit.sourceLabel} lastVerified={unit.lastVerified} />
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  )
+}

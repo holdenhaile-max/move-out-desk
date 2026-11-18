@@ -1,0 +1,213 @@
+---
+import { getCollection } from "astro:content";
+import { money } from "../lib/format";
+
+const providers = await getCollection("providers");
+const byId = Object.fromEntries(providers.map((provider) => [provider.id, provider.data]));
+
+const college = byId["collegeboxes"];
+const dorm = byId["dorm-room-movers"];
+const box = college.fees.find((fee) => fee.id === "standard-box");
+const handling = college.fees.find((fee) => fee.id === "handling-tamu");
+const drmBox = dorm.fees.find((fee) => fee.id === "tier-box");
+const registration = dorm.fees.find((fee) => fee.id === "registration");
+
+const unitChoices = providers
+  .filter((provider) => provider.data.kind === "self-storage")
+  .flatMap((provider) =>
+    provider.data.units
+      .filter((unit) => ["5x5", "5x10", "10x10"].includes(unit.size))
+      .flatMap((unit) => {
+        const options: Array<{
+          id: string;
+          label: string;
+          monthly: number;
+          note: string;
+        }> = [];
+        const climate =
+          unit.climate === true ? "climate" : unit.climate === false ? "not climate" : "climate unlabeled";
+        if (unit.monthly != null) {
+          options.push({
+            id: `${provider.id}-${unit.size}-${String(unit.climate)}-monthly`,
+            label: `${provider.data.name}, ${unit.size} ${climate}, ${money(unit.monthly)} per month`,
+            monthly: unit.monthly,
+            note: unit.promo || "Published monthly rate",
+          });
+        }
+        if (unit.inStoreMonthly != null) {
+          options.push({
+            id: `${provider.id}-${unit.size}-${String(unit.climate)}-instore`,
+            label: `${provider.data.name}, ${unit.size} ${climate}, ${money(unit.inStoreMonthly)} in store`,
+            monthly: unit.inStoreMonthly,
+            note: "In-store price. Use this when the promo length is unpublished.",
+          });
+        }
+        if (unit.onlineMonthly != null) {
+          options.push({
+            id: `${provider.id}-${unit.size}-${String(unit.climate)}-online`,
+            label: `${provider.data.name}, ${unit.size} ${climate}, ${money(unit.onlineMonthly)} online`,
+            monthly: unit.onlineMonthly,
+            note: unit.promo || "Online price. The page may not lock this rate.",
+          });
+        }
+        return options;
+      }),
+  );
+
+const payload = {
+  collegeBox: box?.amount ?? null,
+  handling: handling?.amount ?? null,
+  drmList: drmBox?.amount ?? null,
+  drmPrepaid: drmBox?.promoAmount ?? null,
+  registration: registration?.amount ?? null,
+  units: unitChoices,
+};
+---
+
+<section class="calc" aria-labelledby="calc-heading">
+  <h2 id="calc-heading">Cost calculator</h2>
+  <p class="muted">
+    This adds the published point prices. It does not add tax, and it does not guess a promo length.
+    The handling fee is optional because Collegeboxes has not said it stacks on the $56 storage rate.
+  </p>
+  <form id="cost-form">
+    <div class="calc-grid">
+      <label>
+        Standard boxes
+        <input id="boxes" type="number" min="0" max="40" value="5" />
+      </label>
+      <label>
+        Months
+        <input id="months" type="number" min="1" max="12" value="4" />
+      </label>
+      <label>
+        Roommates splitting a unit
+        <input id="roommates" type="number" min="1" max="8" value="2" />
+      </label>
+    </div>
+    <fieldset>
+      <legend>Pickup price to use</legend>
+      <label class="choice">
+        <input type="radio" name="pickup" value="college" checked />
+        <span>Collegeboxes national box rate only ({money(payload.collegeBox)} each for the 4-month term, not multiplied by months)</span>
+      </label>
+      <label class="choice">
+        <input type="radio" name="pickup" value="college-handling" />
+        <span>That box rate plus the Texas A&M {money(payload.handling)} handling fee on every box</span>
+      </label>
+      <label class="choice">
+        <input type="radio" name="pickup" value="drm-list" />
+        <span>Dorm Room Movers list price ({money(payload.drmList)} per box) plus {money(payload.registration)} registration</span>
+      </label>
+      <label class="choice">
+        <input type="radio" name="pickup" value="drm-prepaid" />
+        <span>Dorm Room Movers prepaid price ({money(payload.drmPrepaid)} per box) plus registration</span>
+      </label>
+    </fieldset>
+    <label>
+      Unit rate
+      <select id="unit-rate">
+        {
+          unitChoices.map((choice, index) => (
+            <option value={choice.id} selected={index === 0}>
+              {choice.label}
+            </option>
+          ))
+        }
+      </select>
+    </label>
+    <label class="choice">
+      <input id="free-month" type="checkbox" />
+      <span>Count one month free. Only check this if the facility confirmed it for your whole stay.</span>
+    </label>
+    <div class="results" aria-live="polite">
+      <div class="result">
+        <span class="small muted" id="pickup-label">Pickup total</span>
+        <strong id="pickup-total">$0</strong>
+        <p class="small" id="pickup-detail"></p>
+      </div>
+      <div class="result">
+        <span class="small muted">Unit total, then your share</span>
+        <strong id="unit-total">$0</strong>
+        <p class="small" id="unit-detail"></p>
+      </div>
+    </div>
+  </form>
+  <script type="application/json" id="calc-data" set:html={JSON.stringify(payload)} />
+</section>
+
+<script>
+  type Payload = {
+    collegeBox: number | null;
+    handling: number | null;
+    drmList: number | null;
+    drmPrepaid: number | null;
+    registration: number | null;
+    units: Array<{ id: string; label: string; monthly: number; note: string }>;
+  };
+
+  function money(amount: number) {
+    const cents = Math.round(amount * 100) % 100;
+    return amount.toLocaleString("en-US", {
+      style: "currency",
+      currency: "USD",
+      minimumFractionDigits: cents === 0 ? 0 : 2,
+      maximumFractionDigits: 2,
+    });
+  }
+
+  function readNumber(id: string, fallback: number) {
+    const value = Number((document.getElementById(id) as HTMLInputElement | null)?.value);
+    return Number.isFinite(value) ? value : fallback;
+  }
+
+  function render() {
+    const dataEl = document.getElementById("calc-data");
+    if (!dataEl) return;
+    const data = JSON.parse(dataEl.textContent || "{}") as Payload;
+    const boxes = Math.max(0, readNumber("boxes", 5));
+    const months = Math.max(1, readNumber("months", 4));
+    const roommates = Math.max(1, readNumber("roommates", 1));
+    const mode = (document.querySelector('input[name="pickup"]:checked') as HTMLInputElement | null)?.value;
+    const unitId = (document.getElementById("unit-rate") as HTMLSelectElement | null)?.value;
+    const freeMonth = (document.getElementById("free-month") as HTMLInputElement | null)?.checked;
+    const unit = data.units.find((item) => item.id === unitId) || data.units[0];
+
+    let pickup = 0;
+    let pickupDetail = "";
+    if (mode === "college" && data.collegeBox != null) {
+      pickup = boxes * data.collegeBox;
+      pickupDetail = `${boxes} boxes x ${money(data.collegeBox)} for the published 4-month term. Months are not applied again.`;
+    } else if (mode === "college-handling" && data.collegeBox != null && data.handling != null) {
+      pickup = boxes * data.collegeBox + boxes * data.handling;
+      pickupDetail = `${boxes} x ${money(data.collegeBox)} plus ${boxes} x ${money(data.handling)} handling. Collegeboxes has not confirmed that these add.`;
+    } else if (mode === "drm-list" && data.drmList != null && data.registration != null) {
+      pickup = boxes * data.drmList + data.registration;
+      pickupDetail = `${boxes} boxes x ${money(data.drmList)} list, plus ${money(data.registration)} registration. The term is 4 months.`;
+    } else if (mode === "drm-prepaid" && data.drmPrepaid != null && data.registration != null) {
+      pickup = boxes * data.drmPrepaid + data.registration;
+      pickupDetail = `${boxes} boxes x ${money(data.drmPrepaid)} prepaid, plus ${money(data.registration)} registration.`;
+    } else {
+      pickupDetail = "A published price for that choice is missing.";
+    }
+
+    const billedMonths = freeMonth ? Math.max(months - 1, 0) : months;
+    const unitTotal = unit ? unit.monthly * billedMonths : 0;
+    const share = unitTotal / roommates;
+
+    const pickupTotal = document.getElementById("pickup-total");
+    const pickupText = document.getElementById("pickup-detail");
+    const unitTotalEl = document.getElementById("unit-total");
+    const unitText = document.getElementById("unit-detail");
+    if (pickupTotal) pickupTotal.textContent = money(pickup);
+    if (pickupText) pickupText.textContent = pickupDetail;
+    if (unitTotalEl) unitTotalEl.textContent = money(unitTotal);
+    if (unitText && unit) {
+      unitText.textContent = `${unit.label}. ${billedMonths} billed month${billedMonths === 1 ? "" : "s"}. ${money(unitTotal)} total, ${money(share)} each for ${roommates}. ${unit.note}`;
+    }
+  }
+
+  const form = document.getElementById("cost-form");
+  form?.addEventListener("input", render);
+  render();
+</script>

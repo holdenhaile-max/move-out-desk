@@ -1,0 +1,88 @@
+{
+  "title": "U-Haul Texas Ave vs CubeSmart Manuel Drive",
+  "description": "Two climate-controlled buildings near College Station with public rate cards, compared on the price you can actually hold them to.",
+  "updated": "2026-11-18",
+  "left": "uhaul-texas-ave",
+  "right": "cubesmart-manuel",
+  "intro": [
+    "U-Haul's Texas Ave building is the one Collegeboxes uses. You can also rent a room there yourself. CubeSmart on Manuel Drive posts a lower online price and a higher in-store price.",
+    "The useful difference is what each page promises after the first month."
+  ],
+  "rows": [
+    {
+      "label": "5x5 climate, monthly",
+      "left": { "type": "unit", "size": "5x5", "climate": true, "field": "monthly" },
+      "right": { "type": "unit", "size": "5x5", "climate": true, "field": "inStoreMonthly" }
+    },
+    {
+      "label": "5x10 climate, monthly",
+      "left": { "type": "unit", "size": "5x10", "climate": true, "field": "monthly" },
+      "right": { "type": "unit", "size": "5x10", "climate": true, "field": "inStoreMonthly" }
+    },
+    {
+      "label": "5x10 climate, promo price",
+      "left": {
+        "type": "text",
+        "text": "No lower promo rate on the 5x10 climate room. One month free is tied to a one-way truck or trailer reservation, and you have to ask.",
+        "status": "verified",
+        "sourceUrl": "https://www.uhaul.com/Locations/Self-Storage-near-College-Station-TX-77845/755037/",
+        "sourceLabel": "U-Haul Texas Ave",
+        "lastVerified": "2026-11-18"
+      },
+      "right": { "type": "unit", "size": "5x10", "climate": true, "field": "onlineMonthly" }
+    },
+    {
+      "label": "10x10 climate, monthly",
+      "left": { "type": "unit", "size": "10x10", "climate": true, "field": "monthly" },
+      "right": { "type": "unit", "size": "10x10", "climate": true, "field": "inStoreMonthly" }
+    },
+    {
+      "label": "Admin fee",
+      "left": { "type": "fee", "feeId": "admin-fee" },
+      "right": { "type": "fee", "feeId": "admin-fee" }
+    },
+    {
+      "label": "How long the rate lasts",
+      "left": {
+        "type": "text",
+        "text": "Price lock for the first 12 months.",
+        "status": "verified",
+        "sourceUrl": "https://www.uhaul.com/Locations/Self-Storage-near-College-Station-TX-77845/755037/",
+        "sourceLabel": "U-Haul Texas Ave",
+        "lastVerified": "2026-11-18"
+      },
+      "right": {
+        "type": "text",
+        "text": "Not stated. Month-to-month lease. Promo length not published.",
+        "status": "unverified",
+        "sourceUrl": "https://www.cubesmart.com/texas-self-storage/college-station-self-storage/4124.html",
+        "sourceLabel": "CubeSmart Manuel Drive",
+        "lastVerified": "2026-11-18"
+      }
+    },
+    {
+      "label": "Temperature",
+      "left": {
+        "type": "text",
+        "text": "65 to 85 degrees, humidity controlled, as published by U-Haul.",
+        "status": "verified",
+        "sourceUrl": "https://www.uhaul.com/Locations/Self-Storage-near-College-Station-TX-77845/755037/",
+        "sourceLabel": "U-Haul Texas Ave",
+        "lastVerified": "2026-11-18"
+      },
+      "right": {
+        "type": "text",
+        "text": "Called climate controlled. No degree range on the page.",
+        "status": "unverified",
+        "sourceUrl": "https://www.cubesmart.com/texas-self-storage/college-station-self-storage/4124.html",
+        "sourceLabel": "CubeSmart Manuel Drive",
+        "lastVerified": "2026-11-18"
+      }
+    }
+  ],
+  "takeaway": [
+    "CubeSmart's in-store 5x10 climate price, $100, is almost the same as U-Haul's locked $99.95. CubeSmart's $60 online price is lower only for as long as that promo actually bills.",
+    "U-Haul is the one that prints a 12-month price lock, a $0 admin fee, and a temperature band. CubeSmart is the one with the lower advertised starting price and an unpublished admin fee.",
+    "If you are storing books or a laptop over a College Station summer, the missing degree range at CubeSmart is a real gap. Ask them what the unit is set to before you move wood furniture or electronics in."
+  ]
+}

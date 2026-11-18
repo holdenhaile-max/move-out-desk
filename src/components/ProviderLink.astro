@@ -1,0 +1,18 @@
+---
+import { outboundHref, outboundRel } from "../lib/links";
+
+interface Props {
+  name: string;
+  website: string;
+  affiliateUrl: string | null;
+  label?: string;
+}
+const { name, website, affiliateUrl, label } = Astro.props;
+const href = outboundHref(website, affiliateUrl);
+const sponsored = Boolean(affiliateUrl);
+---
+
+<a href={href} rel={outboundRel(affiliateUrl)} target="_blank">
+  {label || name}
+</a>
+{sponsored && <span class="pill conflict">Sponsored</span>}

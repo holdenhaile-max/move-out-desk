@@ -1,0 +1,171 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../components/BaseLayout.astro";
+import ProviderLink from "../../components/ProviderLink.astro";
+import StatusPill from "../../components/StatusPill.astro";
+import SourceCite from "../../components/SourceCite.astro";
+import { kindLabel } from "../../lib/format";
+import { absoluteUrl, href } from "../../lib/paths";
+
+export async function getStaticPaths() {
+  const schools = await getCollection("schools");
+  return schools.map((school) => ({ params: { slug: school.id }, props: { school } }));
+}
+
+const { school } = Astro.props;
+const cities = await getCollection("cities");
+const city = cities.find((item) => item.id === school.data.cityId);
+const providers = (await getCollection("providers"))
+  .filter((provider) => provider.data.schools.includes(school.id))
+  .sort((a, b) => a.data.name.localeCompare(b.data.name));
+const guides = (await getCollection("guides"))
+  .filter((guide) => guide.data.schoolId === school.id)
+  .sort((a, b) => a.data.order - b.data.order);
+
+const pageUrl = absoluteUrl(`/schools/${school.id}`);
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: absoluteUrl("/") },
+      { "@type": "ListItem", position: 2, name: "Schools", item: absoluteUrl("/schools") },
+      { "@type": "ListItem", position: 3, name: school.data.name, item: pageUrl },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: `${school.data.shortName} storage providers`,
+    itemListElement: providers.map((provider, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: provider.data.name,
+      url: absoluteUrl(`/providers/${provider.id}`),
+    })),
+  },
+];
+---
+
+<BaseLayout
+  title={`${school.data.shortName} move-out storage guide`}
+  description={`Pickup services and local storage for ${school.data.name}. Every fee links to the public page it came from.`}
+  jsonLd={jsonLd}
+>
+  <p class="crumbs">
+    <a href={href("/")}>Home</a> / <a href={href("/schools")}>Schools</a> / {school.data.shortName}
+  </p>
+  <p class="eyebrow">{school.data.place}</p>
+  <h1>{school.data.shortName} summer and move-out storage</h1>
+  <p class="lede">{school.data.summary}</p>
+  <aside class="notice">
+    <p>{school.data.independenceNote}</p>
+  </aside>
+
+  <h2>Guides</h2>
+  <div class="card-grid two">
+    {
+      guides.map((guide) => (
+        <article class="card">
+          <h3>
+            <a href={href(`/guides/${guide.id}`)}>{guide.data.title}</a>
+          </h3>
+          <p>{guide.data.description}</p>
+        </article>
+      ))
+    }
+  </div>
+
+  <h2>Companies and facilities that name this campus</h2>
+  <div class="table-scroll">
+    <table>
+      <caption>Providers linked to {school.data.shortName}</caption>
+      <thead>
+        <tr>
+          <th scope="col">Name</th>
+          <th scope="col">Type</th>
+          <th scope="col">What is still missing</th>
+          <th scope="col">Official page</th>
+        </tr>
+      </thead>
+      <tbody>
+        {
+          providers.map((provider) => (
+            <tr>
+              <th scope="row">
+                <a href={href(`/providers/${provider.id}`)}>{provider.data.name}</a>
+                <div class="small">{provider.data.summary}</div>
+              </th>
+              <td>{kindLabel(provider.data.kind)}</td>
+              <td>
+                {provider.data.gaps.length ? (
+                  <ul class="clean small">
+                    {provider.data.gaps.slice(0, 3).map((gap) => (
+                      <li>{gap}</li>
+                    ))}
+                  </ul>
+                ) : (
+                  "None listed"
+                )}
+              </td>
+              <td>
+                <ProviderLink
+                  name={provider.data.name}
+                  website={provider.data.website}
+                  affiliateUrl={provider.data.affiliateUrl}
+                  label="Official page"
+                />
+              </td>
+            </tr>
+          ))
+        }
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Dates a company has published</h2>
+  <div class="table-scroll">
+    <table>
+      <caption>Published dates, with the source on each row</caption>
+      <thead>
+        <tr>
+          <th scope="col">Provider</th>
+          <th scope="col">Fact</th>
+          <th scope="col">Status</th>
+          <th scope="col">Source</th>
+        </tr>
+      </thead>
+      <tbody>
+        {
+          providers.flatMap((provider) =>
+            provider.data.facts
+              .filter((fact) => /date|pickup|delivery|last day/i.test(`${fact.label} ${fact.value}`))
+              .map((fact) => (
+                <tr>
+                  <th scope="row">{provider.data.name}</th>
+                  <td>
+                    <strong>{fact.label}.</strong> {fact.value}
+                    {fact.note && <div class="small">{fact.note}</div>}
+                  </td>
+                  <td>
+                    <StatusPill status={fact.status} />
+                  </td>
+                  <td>
+                    <SourceCite href={fact.sourceUrl} label={fact.sourceLabel} lastVerified={fact.lastVerified} />
+                  </td>
+                </tr>
+              )),
+          )
+        }
+      </tbody>
+    </table>
+  </div>
+
+  {
+    city && (
+      <p>
+        Local rooms are compared on the <a href={href(`/cities/${city.id}`)}>{city.data.name} storage page</a>.
+      </p>
+    )
+  }
+</BaseLayout>

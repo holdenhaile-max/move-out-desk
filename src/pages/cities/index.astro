@@ -1,0 +1,30 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../components/BaseLayout.astro";
+import { href } from "../../lib/paths";
+
+const cities = await getCollection("cities");
+---
+
+<BaseLayout
+  title="Cities"
+  description="Cities with a Move-Out Desk storage comparison. College Station is the first city, with Bryan facilities included when students ask about them."
+>
+  <p class="eyebrow">Directory</p>
+  <h1>Cities</h1>
+  <p class="lede">A city page lists self-storage facilities from the provider files. Rates stay in those files, so a price change is one edit.</p>
+  <div class="card-grid two">
+    {
+      cities.map((city) => (
+        <article class="card">
+          <h2>
+            <a href={href(`/cities/${city.id}`)}>
+              {city.data.name}, {city.data.state}
+            </a>
+          </h2>
+          <p>{city.data.summary}</p>
+        </article>
+      ))
+    }
+  </div>
+</BaseLayout>

@@ -1,0 +1,22 @@
+---
+import { formatDate } from "../lib/format";
+
+interface Props {
+  href: string;
+  label: string;
+  lastVerified?: string;
+}
+const { href, label, lastVerified } = Astro.props;
+---
+
+<div class="small muted">
+  <a class="source" href={href} rel="noopener noreferrer">{label}</a>
+  {
+    lastVerified && (
+      <>
+        {" "}
+        · checked <time datetime={lastVerified}>{formatDate(lastVerified)}</time>
+      </>
+    )
+  }
+</div>

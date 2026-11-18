@@ -1,0 +1,78 @@
+{
+  "title": "Pickup service vs a shared storage unit",
+  "description": "What changes when Texas A&M roommates split a climate-controlled room instead of paying a pickup company per box.",
+  "updated": "2026-11-18",
+  "left": "collegeboxes",
+  "right": "cubesmart-manuel",
+  "intro": [
+    "A pickup service prices each box and brings it back to the room. A storage unit prices the room, and you do the hauling. The room gets cheaper per person when roommates share a lock.",
+    "The unit side of this comparison uses CubeSmart's in-store price on Manuel Drive, because the page does not say how long the cheaper online price lasts."
+  ],
+  "rows": [
+    {
+      "label": "How the price is built",
+      "left": { "type": "fee", "feeId": "standard-box" },
+      "right": { "type": "unit", "size": "5x10", "climate": true, "field": "inStoreMonthly" }
+    },
+    {
+      "label": "Online or promo price",
+      "left": {
+        "type": "text",
+        "text": "No separate online box discount is published for the $56 rate.",
+        "status": "verified",
+        "sourceUrl": "https://www.collegeboxes.com/pricing/",
+        "sourceLabel": "Collegeboxes pricing",
+        "lastVerified": "2026-11-18"
+      },
+      "right": { "type": "unit", "size": "5x10", "climate": true, "field": "onlineMonthly" }
+    },
+    {
+      "label": "Move-in fee we could verify",
+      "left": { "type": "fee", "feeId": "handling-tamu" },
+      "right": { "type": "fee", "feeId": "admin-fee" }
+    },
+    {
+      "label": "Who carries the boxes",
+      "left": {
+        "type": "text",
+        "text": "Collegeboxes, on a scheduled date, if full-service pickup is actually open.",
+        "status": "conflict",
+        "sourceUrl": "https://www.collegeboxes.com/texas-am-university/",
+        "sourceLabel": "Collegeboxes Texas A&M page",
+        "lastVerified": "2026-11-18"
+      },
+      "right": {
+        "type": "text",
+        "text": "You do. Dollies are not listed as a promise on the Manuel Drive amenity list we checked.",
+        "status": "unverified",
+        "sourceUrl": "https://www.cubesmart.com/texas-self-storage/college-station-self-storage/4124.html",
+        "sourceLabel": "CubeSmart Manuel Drive",
+        "lastVerified": "2026-11-18"
+      }
+    },
+    {
+      "label": "Getting it back to the room",
+      "left": {
+        "type": "text",
+        "text": "A published room delivery is January 19, 2027. A later or earlier date is a contact-us question, and the national off-date fee is $500.",
+        "status": "verified",
+        "sourceUrl": "https://www.collegeboxes.com/texas-am-university/",
+        "sourceLabel": "Collegeboxes Texas A&M page",
+        "lastVerified": "2026-11-18"
+      },
+      "right": {
+        "type": "text",
+        "text": "You pick it up during access hours, daily 6:00 a.m. to 10:00 p.m.",
+        "status": "verified",
+        "sourceUrl": "https://www.cubesmart.com/texas-self-storage/college-station-self-storage/4124.html",
+        "sourceLabel": "CubeSmart Manuel Drive",
+        "lastVerified": "2026-11-18"
+      }
+    }
+  ],
+  "takeaway": [
+    "Five boxes at the $56 national rate are $280 for four months. A 5x10 climate room at the $100 in-store rate is $400 for four months before tax and before the unpublished admin fee. Split by two roommates, the room is $200 each, and it can hold more than five boxes.",
+    "The room wins on published dollars when more than one person shares it and someone has a car. The pickup wins when nobody can haul, or when the boxes have to reappear in the room on a scheduled day.",
+    "Do not treat CubeSmart's $60 online price as a four-month quote. The page never says the discount survives past the promotion."
+  ]
+}

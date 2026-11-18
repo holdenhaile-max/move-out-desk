@@ -1,0 +1,38 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../components/BaseLayout.astro";
+import { formatDate } from "../../lib/format";
+import { href } from "../../lib/paths";
+
+const comparisons = await getCollection("comparisons");
+const providers = await getCollection("providers");
+const nameOf = (id: string) => providers.find((item) => item.id === id)?.data.name ?? id;
+---
+
+<BaseLayout
+  title="Head-to-head storage comparisons"
+  description="Side-by-side comparisons of Texas A&M pickup services and College Station storage units. Each cell links to the page the number came from."
+>
+  <p class="eyebrow">Templates</p>
+  <h1>Head-to-head comparisons</h1>
+  <p class="lede">
+    Each comparison is a data file: two provider ids and a list of rows. The page template looks up
+    the fees and unit rates. A new matchup does not need a new layout.
+  </p>
+  <div class="card-grid two">
+    {
+      comparisons.map((comparison) => (
+        <article class="card">
+          <p class="eyebrow">
+            {nameOf(comparison.data.left)} and {nameOf(comparison.data.right)}
+          </p>
+          <h2>
+            <a href={href(`/compare/${comparison.id}`)}>{comparison.data.title}</a>
+          </h2>
+          <p>{comparison.data.description}</p>
+          <p class="small muted">Updated {formatDate(comparison.data.updated)}</p>
+        </article>
+      ))
+    }
+  </div>
+</BaseLayout>

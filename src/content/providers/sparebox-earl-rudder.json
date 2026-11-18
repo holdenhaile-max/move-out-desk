@@ -1,0 +1,179 @@
+{
+  "name": "SpareBox on Earl Rudder",
+  "kind": "self-storage",
+  "schools": ["texas-am"],
+  "cities": ["college-station"],
+  "summary": "SpareBox publishes climate-controlled and drive-up rates at 3201 Earl Rudder Freeway S. That is the address older directories give for All Seasons Storage Centers. All Seasons' own directions URL returned a 404 on the day we checked, so the SpareBox page is the rate card we can cite.",
+  "website": "https://www.spareboxstorage.com/storage-units/tx/college-station/3201-earl-rudder-freeway-s",
+  "phone": "(979) 274-0001",
+  "affiliateUrl": null,
+  "address": "3201 Earl Rudder Freeway S, College Station, TX 77845",
+  "fees": [
+    {
+      "id": "admin-fee",
+      "label": "Administrative fee",
+      "amount": null,
+      "per": "at move-in",
+      "status": "unverified",
+      "note": "The price footnote says other restrictions, taxes, and fees, including an administrative fee, apply. The amount is not printed.",
+      "sourceUrl": "https://www.spareboxstorage.com/storage-units/tx/college-station/3201-earl-rudder-freeway-s",
+      "sourceLabel": "SpareBox Earl Rudder",
+      "lastVerified": "2026-11-18"
+    }
+  ],
+  "units": [
+    {
+      "size": "5x5",
+      "climate": true,
+      "access": "interior, ground floor",
+      "monthly": 17,
+      "promo": "Promotional rate for new rentals. Marked with an asterisk.",
+      "status": "verified",
+      "note": "The footnote says promotional rates may not apply to every size, have no cash value, and rent can change with 30 days' notice.",
+      "sourceUrl": "https://www.spareboxstorage.com/storage-units/tx/college-station/3201-earl-rudder-freeway-s",
+      "sourceLabel": "SpareBox Earl Rudder",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "size": "5x10",
+      "climate": true,
+      "access": "interior, ground floor",
+      "monthly": 32,
+      "promo": "Promotional rate for new rentals",
+      "status": "verified",
+      "sourceUrl": "https://www.spareboxstorage.com/storage-units/tx/college-station/3201-earl-rudder-freeway-s",
+      "sourceLabel": "SpareBox Earl Rudder",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "size": "5x15",
+      "climate": true,
+      "access": "interior, ground floor",
+      "monthly": 58,
+      "promo": "Promotional rate for new rentals",
+      "status": "verified",
+      "sourceUrl": "https://www.spareboxstorage.com/storage-units/tx/college-station/3201-earl-rudder-freeway-s",
+      "sourceLabel": "SpareBox Earl Rudder",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "size": "10x10",
+      "climate": true,
+      "access": "interior, ground floor",
+      "monthly": 56,
+      "promo": "Promotional rate for new rentals",
+      "status": "verified",
+      "sourceUrl": "https://www.spareboxstorage.com/storage-units/tx/college-station/3201-earl-rudder-freeway-s",
+      "sourceLabel": "SpareBox Earl Rudder",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "size": "10x15",
+      "climate": true,
+      "access": "interior, ground floor",
+      "monthly": 88,
+      "promo": "Promotional rate for new rentals",
+      "status": "verified",
+      "sourceUrl": "https://www.spareboxstorage.com/storage-units/tx/college-station/3201-earl-rudder-freeway-s",
+      "sourceLabel": "SpareBox Earl Rudder",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "size": "10x20",
+      "climate": true,
+      "access": "interior, ground floor",
+      "monthly": 113,
+      "promo": "Promotional rate for new rentals",
+      "availability": "1 unit left on the day checked",
+      "status": "verified",
+      "sourceUrl": "https://www.spareboxstorage.com/storage-units/tx/college-station/3201-earl-rudder-freeway-s",
+      "sourceLabel": "SpareBox Earl Rudder",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "size": "5x5",
+      "climate": false,
+      "access": "traditional drive-up",
+      "monthly": 15,
+      "promo": "Promotional rate for new rentals",
+      "status": "verified",
+      "sourceUrl": "https://www.spareboxstorage.com/storage-units/tx/college-station/3201-earl-rudder-freeway-s",
+      "sourceLabel": "SpareBox Earl Rudder",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "size": "5x10",
+      "climate": false,
+      "access": "traditional drive-up",
+      "monthly": 24,
+      "promo": "Promotional rate for new rentals",
+      "status": "verified",
+      "sourceUrl": "https://www.spareboxstorage.com/storage-units/tx/college-station/3201-earl-rudder-freeway-s",
+      "sourceLabel": "SpareBox Earl Rudder",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "size": "10x10",
+      "climate": false,
+      "access": "traditional drive-up",
+      "monthly": 38,
+      "promo": "Promotional rate for new rentals",
+      "status": "verified",
+      "sourceUrl": "https://www.spareboxstorage.com/storage-units/tx/college-station/3201-earl-rudder-freeway-s",
+      "sourceLabel": "SpareBox Earl Rudder",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "size": "10x20",
+      "climate": false,
+      "access": "traditional drive-up",
+      "monthly": 79,
+      "promo": "Promotional rate for new rentals",
+      "status": "verified",
+      "sourceUrl": "https://www.spareboxstorage.com/storage-units/tx/college-station/3201-earl-rudder-freeway-s",
+      "sourceLabel": "SpareBox Earl Rudder",
+      "lastVerified": "2026-11-18"
+    }
+  ],
+  "facts": [
+    {
+      "label": "Access hours",
+      "value": "7 days a week, 6:00 a.m. to 9:00 p.m.",
+      "status": "verified",
+      "sourceUrl": "https://www.spareboxstorage.com/storage-units/tx/college-station/3201-earl-rudder-freeway-s",
+      "sourceLabel": "SpareBox Earl Rudder",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "label": "Customer service hours",
+      "value": "Monday to Saturday 7:00 a.m. to 7:00 p.m., Sunday 8:00 a.m. to 5:30 p.m.",
+      "status": "verified",
+      "sourceUrl": "https://www.spareboxstorage.com/storage-units/tx/college-station/3201-earl-rudder-freeway-s",
+      "sourceLabel": "SpareBox Earl Rudder",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "label": "All Seasons name",
+      "value": "We could not reopen an All Seasons directions page at allseasonsstorage.us. SpareBox is the operator publishing rates at the address students have called All Seasons.",
+      "status": "verified",
+      "sourceUrl": "https://www.allseasonsstorage.us/self-storage/tx/college-station/hours-directions",
+      "sourceLabel": "All Seasons directions URL, 404 on check",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "label": "Rate changes",
+      "value": "Rent charges are subject to change with 30 days' notice.",
+      "status": "verified",
+      "sourceUrl": "https://www.spareboxstorage.com/storage-units/tx/college-station/3201-earl-rudder-freeway-s",
+      "sourceLabel": "SpareBox Earl Rudder",
+      "lastVerified": "2026-11-18"
+    }
+  ],
+  "gaps": [
+    "The non-promotional monthly rate is not published.",
+    "Administrative fee amount and tax.",
+    "A temperature range for climate-controlled units.",
+    "Driving distance from campus.",
+    "Confirmation from All Seasons itself that it has closed or been renamed."
+  ]
+}

@@ -1,0 +1,10 @@
+---
+import { statusLabel, type Status } from "../lib/format";
+
+interface Props {
+  status: Status;
+}
+const { status } = Astro.props;
+---
+
+<span class:list={["pill", status]}>{statusLabel(status)}</span>

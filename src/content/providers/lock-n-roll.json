@@ -1,0 +1,93 @@
+{
+  "name": "Lock N Roll Storage",
+  "kind": "self-storage",
+  "schools": ["texas-am"],
+  "cities": ["college-station"],
+  "summary": "Lock N Roll on Earl Rudder Freeway says it offers climate-controlled units, drive-up units, and vehicle parking, including student storage near Texas A&M. The public page tells renters to check the unit list for current rates. That list did not include dollar amounts in the page we could read, so prices are not yet verified.",
+  "website": "https://www.premiumspaces.com/storage-locations/tx/college-station/1501-earl-rudder-fwy",
+  "phone": "(979) 693-7655",
+  "affiliateUrl": null,
+  "address": "1501 Earl Rudder FWY, College Station, TX 77845",
+  "fees": [
+    {
+      "id": "unit-rates",
+      "label": "Unit rates",
+      "amount": null,
+      "per": "month",
+      "status": "unverified",
+      "note": "The facility page says standard rates are listed online and that they vary by size and by climate control. No dollar amount was in the page content we could read. A company-wide pricing page says 5x5 units start at $39 a month somewhere in the chain. That is not a College Station rate, so it is not used here.",
+      "sourceUrl": "https://www.premiumspaces.com/storage-locations/tx/college-station/1501-earl-rudder-fwy",
+      "sourceLabel": "Lock N Roll Storage",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "id": "lock-fee",
+      "label": "Lock fee",
+      "amount": null,
+      "per": "one time, company statement",
+      "status": "unverified",
+      "note": "Premium Spaces says its month-to-month rentals have no setup or admin fees beyond the first month and a small lock fee. The lock fee amount is not published, and the sentence is not repeated as a College Station price.",
+      "sourceUrl": "https://www.premiumspaces.com/pricing",
+      "sourceLabel": "Premium Spaces pricing",
+      "lastVerified": "2026-11-18"
+    }
+  ],
+  "units": [],
+  "facts": [
+    {
+      "label": "Climate control",
+      "value": "The facility page lists both climate-controlled and non-climate storage, plus drive-up units.",
+      "status": "verified",
+      "sourceUrl": "https://www.premiumspaces.com/storage-locations/tx/college-station/1501-earl-rudder-fwy",
+      "sourceLabel": "Lock N Roll Storage",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "label": "Sizes",
+      "value": "Unit sizes from 5x5 to 10x30.",
+      "status": "verified",
+      "sourceUrl": "https://www.premiumspaces.com/storage-locations/tx/college-station/1501-earl-rudder-fwy",
+      "sourceLabel": "Lock N Roll Storage",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "label": "Students",
+      "value": "The page mentions student storage near Texas A&M and summer storage so students do not have to haul belongings home.",
+      "status": "verified",
+      "sourceUrl": "https://www.premiumspaces.com/storage-locations/tx/college-station/1501-earl-rudder-fwy",
+      "sourceLabel": "Lock N Roll Storage",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "label": "Lease and reservation",
+      "value": "Month-to-month leases. The page says you can reserve online for free with no credit card.",
+      "status": "verified",
+      "sourceUrl": "https://www.premiumspaces.com/storage-locations/tx/college-station/1501-earl-rudder-fwy",
+      "sourceLabel": "Lock N Roll Storage",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "label": "Other features",
+      "value": "Deliveries accepted, dollies, moving supplies, boat and RV storage, covered parking, a gate, and U-Haul trucks on site.",
+      "status": "verified",
+      "sourceUrl": "https://www.premiumspaces.com/storage-locations/tx/college-station/1501-earl-rudder-fwy",
+      "sourceLabel": "Lock N Roll Storage",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "label": "Office and access hours",
+      "value": "The page has headings for today's office hours and today's access hours. The times were not in the page content we could read.",
+      "status": "unverified",
+      "sourceUrl": "https://www.premiumspaces.com/storage-locations/tx/college-station/1501-earl-rudder-fwy",
+      "sourceLabel": "Lock N Roll Storage",
+      "lastVerified": "2026-11-18"
+    }
+  ],
+  "gaps": [
+    "Every unit price.",
+    "Office hours and access hours.",
+    "Temperature range.",
+    "Lock fee amount.",
+    "Driving distance from campus."
+  ]
+}

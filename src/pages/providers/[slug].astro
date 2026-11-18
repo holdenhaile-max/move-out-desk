@@ -1,0 +1,138 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../components/BaseLayout.astro";
+import FeeTable from "../../components/FeeTable.astro";
+import ProviderLink from "../../components/ProviderLink.astro";
+import StatusPill from "../../components/StatusPill.astro";
+import SourceCite from "../../components/SourceCite.astro";
+import { climateLabel, unitMonthly } from "../../lib/facts";
+import { kindLabel } from "../../lib/format";
+import { href } from "../../lib/paths";
+
+export async function getStaticPaths() {
+  const providers = await getCollection("providers");
+  return providers.map((provider) => ({ params: { slug: provider.id }, props: { provider } }));
+}
+
+const { provider } = Astro.props;
+const data = provider.data;
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": data.kind === "self-storage" ? "SelfStorage" : "Service",
+  name: data.name,
+  url: data.website,
+  description: data.summary,
+  telephone: data.phone || undefined,
+  address: data.address || undefined,
+};
+---
+
+<BaseLayout
+  title={`${data.name} rates and gaps`}
+  description={data.summary}
+  jsonLd={jsonLd}
+>
+  <p class="crumbs">
+    <a href={href("/")}>Home</a> / {data.name}
+  </p>
+  <p class="eyebrow">{kindLabel(data.kind)}</p>
+  <h1>{data.name}</h1>
+  <p class="lede">{data.summary}</p>
+  <p>
+    <ProviderLink name={data.name} website={data.website} affiliateUrl={data.affiliateUrl} label="Official page" />
+    {data.phone && <span> · {data.phone}</span>}
+  </p>
+  {data.address && <p>{data.address}</p>}
+  {
+    data.affiliateUrl === null && (
+      <p class="small muted">Affiliate URL: empty. This link is not sponsored.</p>
+    )
+  }
+
+  <h2>Fees</h2>
+  <FeeTable id={provider.id} />
+
+  {
+    data.units.length > 0 && (
+      <>
+        <h2>Units</h2>
+        <div class="table-scroll">
+          <table>
+            <caption>{data.name} unit rates</caption>
+            <thead>
+              <tr>
+                <th scope="col">Size</th>
+                <th scope="col">Climate</th>
+                <th scope="col">Rate</th>
+                <th scope="col">Status</th>
+                <th scope="col">Source</th>
+              </tr>
+            </thead>
+            <tbody>
+              {data.units.map((unit) => (
+                <tr>
+                  <th scope="row">
+                    {unit.size}
+                    <div class="small muted">{unit.access}</div>
+                    {unit.availability && <div class="small">{unit.availability}</div>}
+                  </th>
+                  <td>{climateLabel(unit.climate)}</td>
+                  <td>
+                    {unitMonthly(unit)}
+                    {unit.promo && <div class="small">{unit.promo}</div>}
+                    {unit.note && <div class="small">{unit.note}</div>}
+                  </td>
+                  <td>
+                    <StatusPill status={unit.status} />
+                  </td>
+                  <td>
+                    <SourceCite href={unit.sourceUrl} label={unit.sourceLabel} lastVerified={unit.lastVerified} />
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </>
+    )
+  }
+
+  <h2>Other published facts</h2>
+  <div class="table-scroll">
+    <table>
+      <caption>Facts checked for {data.name}</caption>
+      <thead>
+        <tr>
+          <th scope="col">Fact</th>
+          <th scope="col">Detail</th>
+          <th scope="col">Status</th>
+          <th scope="col">Source</th>
+        </tr>
+      </thead>
+      <tbody>
+        {
+          data.facts.map((fact) => (
+            <tr>
+              <th scope="row">{fact.label}</th>
+              <td>
+                {fact.value}
+                {fact.note && <div class="small">{fact.note}</div>}
+              </td>
+              <td>
+                <StatusPill status={fact.status} />
+              </td>
+              <td>
+                <SourceCite href={fact.sourceUrl} label={fact.sourceLabel} lastVerified={fact.lastVerified} />
+              </td>
+            </tr>
+          ))
+        }
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Not yet verified</h2>
+  <ul class="clean">
+    {data.gaps.map((gap) => <li>{gap}</li>)}
+  </ul>
+</BaseLayout>

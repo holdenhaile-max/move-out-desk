@@ -1,0 +1,107 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../components/BaseLayout.astro";
+import UnitTable from "../../components/UnitTable.astro";
+import StatusPill from "../../components/StatusPill.astro";
+import { kindLabel } from "../../lib/format";
+import { absoluteUrl, href } from "../../lib/paths";
+
+export async function getStaticPaths() {
+  const cities = await getCollection("cities");
+  return cities.map((city) => ({ params: { slug: city.id }, props: { city } }));
+}
+
+const { city } = Astro.props;
+const facilities = (await getCollection("providers"))
+  .filter((provider) => provider.data.cities.includes(city.id) && provider.data.kind === "self-storage")
+  .sort((a, b) => a.data.name.localeCompare(b.data.name));
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: `${city.data.name} self storage compared`,
+  itemListElement: facilities.map((facility, index) => ({
+    "@type": "ListItem",
+    position: index + 1,
+    name: facility.data.name,
+    url: absoluteUrl(`/providers/${facility.id}`),
+  })),
+};
+---
+
+<BaseLayout
+  title={`${city.data.name} storage units compared`}
+  description={`Self-storage rates in ${city.data.name}, ${city.data.state}, copied from facility pages. Climate control is marked only when the rate itself says so.`}
+  jsonLd={jsonLd}
+>
+  <p class="crumbs">
+    <a href={href("/")}>Home</a> / <a href={href("/cities")}>Cities</a> / {city.data.name}
+  </p>
+  <p class="eyebrow">{city.data.state}</p>
+  <h1>{city.data.name} storage units</h1>
+  <p class="lede">{city.data.summary}</p>
+  <aside class="notice">
+    <p>{city.data.regionNote}</p>
+  </aside>
+
+  <h2>Facilities with a page we could open</h2>
+  <div class="table-scroll">
+    <table>
+      <caption>{city.data.name} facilities in the comparison</caption>
+      <thead>
+        <tr>
+          <th scope="col">Facility</th>
+          <th scope="col">Address</th>
+          <th scope="col">Published unit rows</th>
+          <th scope="col">Phone</th>
+        </tr>
+      </thead>
+      <tbody>
+        {
+          facilities.map((facility) => (
+            <tr>
+              <th scope="row">
+                <a href={href(`/providers/${facility.id}`)}>{facility.data.name}</a>
+                <div class="small muted">{kindLabel(facility.data.kind)}</div>
+              </th>
+              <td>{facility.data.address || "not yet verified"}</td>
+              <td>{facility.data.units.length === 0 ? "None. Rates not yet verified." : facility.data.units.length}</td>
+              <td>{facility.data.phone || "not yet verified"}</td>
+            </tr>
+          ))
+        }
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Rates, including rooms that are not climate controlled</h2>
+  <p>
+    A climate flag is copied from the unit listing. If the facility advertises climate control but
+    the rate line does not say which rooms have it, the climate cell says the label is missing.
+    Lock N Roll has no prices in this table because none were readable on its page.
+  </p>
+  <UnitTable cityId={city.id} caption={`All published unit rates for ${city.data.name}`} />
+
+  <h2>What each facility still has not published</h2>
+  {
+    facilities.map((facility) => (
+      <article>
+        <h3>
+          <a href={href(`/providers/${facility.id}`)}>{facility.data.name}</a>
+        </h3>
+        <ul class="clean">
+          {facility.data.gaps.map((gap) => (
+            <li>
+              <StatusPill status="unverified" /> {gap}
+            </li>
+          ))}
+        </ul>
+      </article>
+    ))
+  }
+
+  <p>
+    The narrower climate comparison is the
+    <a href={href("/guides/college-station-climate-controlled")}>climate-controlled guide</a>.
+  </p>
+</BaseLayout>

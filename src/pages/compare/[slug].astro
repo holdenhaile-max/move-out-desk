@@ -1,0 +1,118 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../components/BaseLayout.astro";
+import StatusPill from "../../components/StatusPill.astro";
+import SourceCite from "../../components/SourceCite.astro";
+import { resolveCell } from "../../lib/facts";
+import { formatDate } from "../../lib/format";
+import { absoluteUrl, href } from "../../lib/paths";
+
+export async function getStaticPaths() {
+  const comparisons = await getCollection("comparisons");
+  return comparisons.map((comparison) => ({
+    params: { slug: comparison.id },
+    props: { comparison },
+  }));
+}
+
+const { comparison } = Astro.props;
+const providers = await getCollection("providers");
+const left = providers.find((item) => item.id === comparison.data.left);
+const right = providers.find((item) => item.id === comparison.data.right);
+if (!left || !right) {
+  throw new Error(`Comparison ${comparison.id} is missing a provider`);
+}
+
+const pageUrl = absoluteUrl(`/compare/${comparison.id}`);
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: comparison.data.title,
+  description: comparison.data.description,
+  dateModified: comparison.data.updated,
+  mainEntityOfPage: pageUrl,
+  author: { "@type": "Organization", name: "Move-Out Desk" },
+  publisher: { "@type": "Organization", name: "Move-Out Desk" },
+};
+---
+
+<BaseLayout title={comparison.data.title} description={comparison.data.description} jsonLd={jsonLd}>
+  <p class="crumbs">
+    <a href={href("/")}>Home</a> / <a href={href("/compare")}>Compare</a> / {comparison.data.title}
+  </p>
+  <p class="eyebrow">Head to head</p>
+  <h1>{comparison.data.title}</h1>
+  <p class="lede">{comparison.data.description}</p>
+  <p class="small muted">Figures checked {formatDate(comparison.data.updated)}.</p>
+  {
+    comparison.data.intro.map((paragraph) => (
+      <p class="prose">{paragraph}</p>
+    ))
+  }
+
+  <div class="table-scroll">
+    <table>
+      <caption>
+        {left.data.name} compared with {right.data.name}
+      </caption>
+      <thead>
+        <tr>
+          <th scope="col">Question</th>
+          <th scope="col">{left.data.name}</th>
+          <th scope="col">{right.data.name}</th>
+        </tr>
+      </thead>
+      <tbody>
+        {
+          comparison.data.rows.map((row) => {
+            const leftCell = resolveCell(left.data, row.left);
+            const rightCell = resolveCell(right.data, row.right);
+            return (
+              <tr>
+                <th scope="row">
+                  {row.label}
+                  {row.note && <div class="small muted">{row.note}</div>}
+                </th>
+                <td>
+                  <div>{leftCell.primary}</div>
+                  <StatusPill status={leftCell.status} />
+                  {leftCell.detail && <div class="small">{leftCell.detail}</div>}
+                  {leftCell.lastVerified && (
+                    <SourceCite
+                      href={leftCell.sourceUrl}
+                      label={leftCell.sourceLabel}
+                      lastVerified={leftCell.lastVerified}
+                    />
+                  )}
+                </td>
+                <td>
+                  <div>{rightCell.primary}</div>
+                  <StatusPill status={rightCell.status} />
+                  {rightCell.detail && <div class="small">{rightCell.detail}</div>}
+                  {rightCell.lastVerified && (
+                    <SourceCite
+                      href={rightCell.sourceUrl}
+                      label={rightCell.sourceLabel}
+                      lastVerified={rightCell.lastVerified}
+                    />
+                  )}
+                </td>
+              </tr>
+            );
+          })
+        }
+      </tbody>
+    </table>
+  </div>
+
+  <h2>What the published numbers support</h2>
+  {
+    comparison.data.takeaway.map((paragraph) => (
+      <p class="prose">{paragraph}</p>
+    ))
+  }
+  <p>
+    Full files: <a href={href(`/providers/${left.id}`)}>{left.data.name}</a> and
+    <a href={href(`/providers/${right.id}`)}>{right.data.name}</a>.
+  </p>
+</BaseLayout>

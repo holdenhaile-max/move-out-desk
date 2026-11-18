@@ -1,0 +1,89 @@
+{
+  "title": "Collegeboxes vs Dorm Room Movers at Texas A&M",
+  "description": "A head-to-head of the two pickup services that publish a Texas A&M College Station page, using only rates and dates on their public pages.",
+  "updated": "2026-11-18",
+  "left": "collegeboxes",
+  "right": "dorm-room-movers",
+  "intro": [
+    "Both companies will talk about picking up a dorm room and bringing it back. The published math is different, and Collegeboxes' own school page disagrees with itself about whether full-service moving is available.",
+    "Use this page to see the line items. Then open the source before you pay. Neither company is an official Texas A&M service."
+  ],
+  "rows": [
+    {
+      "label": "Standard box, 4 months",
+      "note": "Collegeboxes' $56 is on the national price list. Dorm Room Movers' box is the Medium tier on the Texas A&M pricing feed.",
+      "left": { "type": "fee", "feeId": "standard-box" },
+      "right": { "type": "fee", "feeId": "tier-box" }
+    },
+    {
+      "label": "Fee charged before any box is picked up",
+      "left": {
+        "type": "text",
+        "text": "National list says no registration fee. Supply kit is $39.99 plus tax if you buy it.",
+        "status": "verified",
+        "sourceUrl": "https://www.collegeboxes.com/pricing/",
+        "sourceLabel": "Collegeboxes pricing",
+        "lastVerified": "2026-11-18"
+      },
+      "right": { "type": "fee", "feeId": "registration" }
+    },
+    {
+      "label": "Handling fee",
+      "left": { "type": "fee", "feeId": "handling-tamu" },
+      "right": { "type": "fee", "feeId": "shipping-handling" }
+    },
+    {
+      "label": "Mini fridge, 4 months",
+      "left": { "type": "fee", "feeId": "large-item" },
+      "right": { "type": "fee", "feeId": "tier-large" }
+    },
+    {
+      "label": "Bicycle, 4 months",
+      "left": { "type": "fee", "feeId": "xl-item" },
+      "right": { "type": "fee", "feeId": "tier-xl" }
+    },
+    {
+      "label": "Next published pickup dates",
+      "left": {
+        "type": "text",
+        "text": "December 11, 2026, and May 10, 2027.",
+        "status": "verified",
+        "sourceUrl": "https://www.collegeboxes.com/texas-am-university/",
+        "sourceLabel": "Collegeboxes Texas A&M page",
+        "lastVerified": "2026-11-18"
+      },
+      "right": {
+        "type": "text",
+        "text": "Not on the public page. Featured dates require a sign-in.",
+        "status": "unverified",
+        "sourceUrl": "https://www.dormroommovers.com/storage-shipping-services-at-Texas-A-and-M-University-College-Station-TX/pricing",
+        "sourceLabel": "Dorm Room Movers Texas A&M pricing",
+        "lastVerified": "2026-11-18"
+      }
+    },
+    {
+      "label": "Where it is stored",
+      "left": {
+        "type": "text",
+        "text": "U-Haul at 2813 Texas Ave, College Station.",
+        "status": "verified",
+        "sourceUrl": "https://www.collegeboxes.com/texas-am-university/",
+        "sourceLabel": "Collegeboxes Texas A&M page",
+        "lastVerified": "2026-11-18"
+      },
+      "right": {
+        "type": "text",
+        "text": "A climate-protected warehouse. Street address not published.",
+        "status": "unverified",
+        "sourceUrl": "https://www.dormroommovers.com/storage-Texas-A-and-M-University-College-Station-TX",
+        "sourceLabel": "Dorm Room Movers Texas A&M page",
+        "lastVerified": "2026-11-18"
+      }
+    }
+  ],
+  "takeaway": [
+    "On the published lists, five standard boxes for four months are $280 at Collegeboxes' national box rate, before any handling fee. The same five DRM boxes are $455 list, or $409.50 if you prepay, and then the $49.99 registration fee sits on top.",
+    "That comparison only holds if Collegeboxes will actually pick the boxes up. The Texas A&M page says full-service moving is currently unavailable and, on the same page, lists pickup dates. Ask them which sentence is the booking rule.",
+    "Dorm Room Movers is the clearer per-item menu. Collegeboxes is the one that names the building."
+  ]
+}

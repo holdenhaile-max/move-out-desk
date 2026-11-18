@@ -1,0 +1,195 @@
+{
+  "name": "U-Haul Moving & Storage at Texas Ave",
+  "kind": "self-storage",
+  "schools": ["texas-am"],
+  "cities": ["college-station"],
+  "summary": "This is the building Collegeboxes names as its Texas A&M storage location. U-Haul also rents rooms directly. Climate-controlled rooms are listed, the published temperature band is 65 to 85 degrees, the admin fee is $0, and the monthly price is locked for the first 12 months.",
+  "website": "https://www.uhaul.com/Locations/Self-Storage-near-College-Station-TX-77845/755037/",
+  "phone": "(979) 696-5111",
+  "affiliateUrl": null,
+  "address": "2813 Texas Ave S, College Station, TX 77845",
+  "fees": [
+    {
+      "id": "admin-fee",
+      "label": "Administrative fee and deposit",
+      "amount": 0,
+      "per": "at move-in",
+      "status": "verified",
+      "note": "The page says no deposit is required and the admin fee is $0.00.",
+      "sourceUrl": "https://www.uhaul.com/Locations/Self-Storage-near-College-Station-TX-77845/755037/",
+      "sourceLabel": "U-Haul Texas Ave",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "id": "lock",
+      "label": "Lock with online move-in",
+      "amount": 0,
+      "per": "included, listed value $11.95",
+      "status": "verified",
+      "note": "Rent Now includes a free lock valued at $11.95. A reservation instead says to purchase the lock at the counter. The counter price is not listed separately.",
+      "sourceUrl": "https://www.uhaul.com/Locations/Self-Storage-near-College-Station-TX-77845/755037/",
+      "sourceLabel": "U-Haul Texas Ave",
+      "lastVerified": "2026-11-18"
+    }
+  ],
+  "units": [
+    {
+      "size": "5x5",
+      "climate": true,
+      "access": "interior, 2nd floor, elevator",
+      "monthly": 94.95,
+      "promo": "1-year price lock. Free lock with Rent Now.",
+      "status": "verified",
+      "sourceUrl": "https://www.uhaul.com/Locations/Self-Storage-near-College-Station-TX-77845/755037/",
+      "sourceLabel": "U-Haul Texas Ave",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "size": "5x10",
+      "climate": true,
+      "access": "interior, 2nd floor, elevator",
+      "monthly": 99.95,
+      "promo": "1-year price lock. Free lock with Rent Now.",
+      "status": "verified",
+      "sourceUrl": "https://www.uhaul.com/Locations/Self-Storage-near-College-Station-TX-77845/755037/",
+      "sourceLabel": "U-Haul Texas Ave",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "size": "10x10",
+      "climate": true,
+      "access": "interior, 2nd floor",
+      "monthly": 179.95,
+      "promo": "1-year price lock. Free lock with Rent Now.",
+      "status": "verified",
+      "sourceUrl": "https://www.uhaul.com/Locations/Self-Storage-near-College-Station-TX-77845/755037/",
+      "sourceLabel": "U-Haul Texas Ave",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "size": "10x15",
+      "climate": true,
+      "access": "interior, 2nd floor, elevator",
+      "monthly": 259.95,
+      "promo": "1-year price lock",
+      "availability": "1 unit left on the day checked",
+      "status": "verified",
+      "sourceUrl": "https://www.uhaul.com/Locations/Self-Storage-near-College-Station-TX-77845/755037/",
+      "sourceLabel": "U-Haul Texas Ave",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "size": "10x20",
+      "climate": true,
+      "access": "interior, 2nd floor, elevator",
+      "monthly": 339.95,
+      "promo": "1-year price lock",
+      "availability": "1 unit left on the day checked",
+      "status": "verified",
+      "sourceUrl": "https://www.uhaul.com/Locations/Self-Storage-near-College-Station-TX-77845/755037/",
+      "sourceLabel": "U-Haul Texas Ave",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "size": "5x5",
+      "climate": false,
+      "access": "interior, 1st floor, street level",
+      "monthly": 84.95,
+      "promo": "1-year price lock",
+      "status": "verified",
+      "sourceUrl": "https://www.uhaul.com/Locations/Self-Storage-near-College-Station-TX-77845/755037/",
+      "sourceLabel": "U-Haul Texas Ave",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "size": "5x10",
+      "climate": false,
+      "access": "interior, 1st floor, street level",
+      "monthly": 94.95,
+      "promo": "1-year price lock",
+      "status": "verified",
+      "sourceUrl": "https://www.uhaul.com/Locations/Self-Storage-near-College-Station-TX-77845/755037/",
+      "sourceLabel": "U-Haul Texas Ave",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "size": "10x10",
+      "climate": false,
+      "access": "interior, 1st floor, street level",
+      "monthly": 169.95,
+      "promo": "1-year price lock",
+      "status": "verified",
+      "sourceUrl": "https://www.uhaul.com/Locations/Self-Storage-near-College-Station-TX-77845/755037/",
+      "sourceLabel": "U-Haul Texas Ave",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "size": "10x20",
+      "climate": false,
+      "access": "interior, 1st floor, street level",
+      "monthly": 309.95,
+      "promo": "1-year price lock",
+      "availability": "1 unit left on the day checked",
+      "status": "verified",
+      "sourceUrl": "https://www.uhaul.com/Locations/Self-Storage-near-College-Station-TX-77845/755037/",
+      "sourceLabel": "U-Haul Texas Ave",
+      "lastVerified": "2026-11-18"
+    }
+  ],
+  "facts": [
+    {
+      "label": "Climate band",
+      "value": "U-Haul says this facility keeps temperatures between 65 and 85 degrees year-round, depending on the system, and that it is humidity controlled.",
+      "status": "verified",
+      "sourceUrl": "https://www.uhaul.com/Locations/Self-Storage-near-College-Station-TX-77845/755037/",
+      "sourceLabel": "U-Haul Texas Ave",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "label": "Price lock",
+      "value": "Monthly price remains the same for the first 12 months.",
+      "status": "verified",
+      "sourceUrl": "https://www.uhaul.com/Locations/Self-Storage-near-College-Station-TX-77845/755037/",
+      "sourceLabel": "U-Haul Texas Ave",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "label": "Office hours",
+      "value": "Monday to Thursday 7 a.m. to 7 p.m., Friday 7 a.m. to 8 p.m., Saturday 7 a.m. to 7 p.m., Sunday 9 a.m. to 5 p.m.",
+      "status": "verified",
+      "note": "Collegeboxes' FAQ says this building is open Monday through Saturday 7 a.m. to 7 p.m. U-Haul's own page extends Friday to 8 p.m. Use U-Haul's page for the building hours.",
+      "sourceUrl": "https://www.uhaul.com/Locations/Self-Storage-near-College-Station-TX-77845/755037/",
+      "sourceLabel": "U-Haul Texas Ave",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "label": "Access hours",
+      "value": "Daily, 5 a.m. to 10 p.m.",
+      "status": "verified",
+      "sourceUrl": "https://www.uhaul.com/Locations/Self-Storage-near-College-Station-TX-77845/755037/",
+      "sourceLabel": "U-Haul Texas Ave",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "label": "Rooms",
+      "value": "Indoor storage, individually alarmed rooms, elevator, and covered loading are listed.",
+      "status": "verified",
+      "sourceUrl": "https://www.uhaul.com/Locations/Self-Storage-near-College-Station-TX-77845/755037/",
+      "sourceLabel": "U-Haul Texas Ave",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "label": "One month free",
+      "value": "U-Haul says to ask about one month free with a one-way truck or trailer reservation. It is not shown as an automatic storage discount.",
+      "status": "verified",
+      "sourceUrl": "https://www.uhaul.com/Locations/Self-Storage-near-College-Station-TX-77845/755037/",
+      "sourceLabel": "U-Haul Texas Ave",
+      "lastVerified": "2026-11-18"
+    }
+  ],
+  "gaps": [
+    "Sales tax is not shown next to the room rates.",
+    "Driving miles from a specific campus building are not on the U-Haul page. Collegeboxes says the building is just over 3 miles from Texas A&M.",
+    "The insurance price for SafeStor is not on the unit list we checked."
+  ]
+}

@@ -1,0 +1,51 @@
+---
+import { href, sitePath } from "../lib/paths";
+
+const path = sitePath(Astro.url.pathname);
+const links = [
+  { href: "/guides", label: "Guides" },
+  { href: "/schools/texas-am", label: "Texas A&M" },
+  { href: "/cities/college-station", label: "College Station" },
+  { href: "/compare", label: "Compare" },
+  { href: "/about", label: "About" },
+];
+
+function current(href: string) {
+  if (href === "/guides") return path === "/guides" || path.startsWith("/guides/");
+  if (href === "/compare") return path === "/compare" || path.startsWith("/compare/");
+  return path === href;
+}
+---
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href={href("/")}>
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span>
+        <span class="brand-name">Move-Out Desk</span>
+        <span class="brand-kicker">College Station storage, checked</span>
+      </span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu">
+      Menu
+    </button>
+    <nav id="site-menu" class="site-menu" aria-label="Primary">
+    {
+      links.map((link) => (
+        <a href={href(link.href)} aria-current={current(link.href) ? "page" : undefined}>
+          {link.label}
+        </a>
+      ))
+    }
+    </nav>
+  </div>
+</header>
+
+<script>
+  const button = document.querySelector(".nav-toggle");
+  const menu = document.getElementById("site-menu");
+  button?.addEventListener("click", () => {
+    const open = menu?.classList.toggle("is-open");
+    button.setAttribute("aria-expanded", open ? "true" : "false");
+  });
+</script>
