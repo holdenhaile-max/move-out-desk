@@ -1,8 +1,12 @@
 {
   "name": "Lock N Roll Storage",
   "kind": "self-storage",
-  "schools": ["texas-am"],
-  "cities": ["college-station"],
+  "schools": [
+    "texas-am"
+  ],
+  "cities": [
+    "college-station"
+  ],
   "summary": "Lock N Roll on Earl Rudder Freeway offers climate rooms, drive-up rooms, and vehicle parking near Texas A&M. Call for a price. The page tells you to use the unit list, and that list does not show dollar amounts.",
   "website": "https://www.premiumspaces.com/storage-locations/tx/college-station/1501-earl-rudder-fwy",
   "phone": "(979) 693-7655",
@@ -40,7 +44,7 @@
       "status": "verified",
       "sourceUrl": "https://www.premiumspaces.com/storage-locations/tx/college-station/1501-earl-rudder-fwy",
       "sourceLabel": "Lock N Roll Storage",
-      "lastVerified": "2026-11-18"
+      "lastVerified": "2026-11-19"
     },
     {
       "label": "Sizes",
@@ -48,7 +52,7 @@
       "status": "verified",
       "sourceUrl": "https://www.premiumspaces.com/storage-locations/tx/college-station/1501-earl-rudder-fwy",
       "sourceLabel": "Lock N Roll Storage",
-      "lastVerified": "2026-11-18"
+      "lastVerified": "2026-11-19"
     },
     {
       "label": "Students",
@@ -56,7 +60,7 @@
       "status": "verified",
       "sourceUrl": "https://www.premiumspaces.com/storage-locations/tx/college-station/1501-earl-rudder-fwy",
       "sourceLabel": "Lock N Roll Storage",
-      "lastVerified": "2026-11-18"
+      "lastVerified": "2026-11-19"
     },
     {
       "label": "Lease and reservation",
@@ -80,7 +84,7 @@
       "status": "unverified",
       "sourceUrl": "https://www.premiumspaces.com/storage-locations/tx/college-station/1501-earl-rudder-fwy",
       "sourceLabel": "Lock N Roll Storage",
-      "lastVerified": "2026-11-18"
+      "lastVerified": "2026-11-19"
     }
   ],
   "gaps": [

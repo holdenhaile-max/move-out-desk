@@ -38,19 +38,19 @@ const faqs: FaqItem[] = [
       "Use the in-store or single monthly price unless the place locks the cheaper price in writing. CubeSmart on Manuel Drive shows a lower online price and a higher in-store price under first month free and 40% off, and does not say how many months that lasts. SpareBox prices are promotional, for new rentals, may not apply to every size, and rent can change with 30 days' notice. U-Haul at Texas Ave locks the monthly price for 12 months. Dowling Road offers 50% off the first month and does not print a price lock.",
   },
   {
-    question: "What does Not yet verified mean?",
+    question: "What does Unverified mean?",
     answer:
-      "Not yet verified means that number is not on the company page. It is left blank on purpose. A listed price was checked November 18, 2026. Tap the source before you pay, because a price can change.",
+      "Unverified means that number is not on the company page. It is left blank on purpose. Each listed price shows the day it was checked. Tap the source before you pay, because a price can change.",
   },
   {
     question: "What dates matter for a Texas A&M summer?",
     answer:
-      "Collegeboxes lists pickups on December 11, 2026 and May 10, 2027. The same page says room pickup is currently unavailable. Call before you count on a date. A few weeks between leases, such as a TV and a dresser from July 31 to August 15, fits a month-to-month unit, not a 4-month pickup.",
+      "Collegeboxes lists pickups on December 11, 2026 and May 10, 2027. The same page says room pickup is currently unavailable. Checked Nov 18, 2026. Call before you count on a date. A few weeks between leases, such as a TV and a dresser from July 31 to August 15, fits a month-to-month unit, not a 4-month pickup.",
   },
   {
     question: "How do roommates split a unit?",
     answer:
-      "One person signs the lease. On November 18, 2026 a heated-and-cooled 5x10 at U-Haul Texas Ave was $99.95 a month, locked for 12 months, with a $0 move-in fee. Four months is $399.80, or $199.90 each for two people and $133.27 each for three, before tax. Put any unlisted move-in fee in the shared pot.",
+      "One person signs the lease. Checked Nov 19, 2026, a heated-and-cooled 5x10 at U-Haul Texas Ave was $99.95 a month, locked for 12 months, with a $0 move-in fee. Four months is $399.80, or $199.90 each for two people and $133.27 each for three, before tax. Put any unlisted move-in fee in the shared pot.",
     href: href("/guides/sharing-a-unit"),
     linkLabel: "Roommate split",
   },
@@ -97,7 +97,7 @@ const jsonLd = [
 
 <BaseLayout
   title={`${city.data.name} storage prices`}
-  description={`Sort ${city.data.name} storage by price, size, climate, or address. Prices checked November 18, 2026.`}
+  description={`Sort ${city.data.name} storage by price, size, climate, or address. Each price shows the day it was checked.`}
   jsonLd={jsonLd}
 >
   <p class="crumbs">
@@ -108,6 +108,8 @@ const jsonLd = [
   <UnitTable cityId={city.id} caption={`${city.data.name} unit prices`} />
   <FaqList items={faqs} />
   <p class="prose">
+    <a href={href("/guides/cheapest-storage-near-texas-am")}>Cheapest 5x5 and 5x10 prices</a>
+    {" · "}
     <a href={href("/guides/college-station-climate-controlled")}>Heated and cooled rooms, compared</a>
   </p>
 </BaseLayout>

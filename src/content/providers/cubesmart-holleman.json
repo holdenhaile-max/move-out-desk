@@ -1,9 +1,13 @@
 {
   "name": "CubeSmart on Holleman Drive",
   "kind": "self-storage",
-  "schools": ["texas-am"],
-  "cities": ["college-station"],
-  "summary": "CubeSmart at 104 Holleman Drive says it is less than three miles from Texas A&M. On November 18, 2026 the list showed two large drive-up rooms (you can park at the door) and no heated-and-cooled rooms. Ask if a climate room is available before you count on one.",
+  "schools": [
+    "texas-am"
+  ],
+  "cities": [
+    "college-station"
+  ],
+  "summary": "CubeSmart at 104 Holleman Drive says it is less than three miles from Texas A&M. Checked Nov 19, 2026, the list showed two large drive-up rooms (you can park at the door) and no heated-and-cooled rooms. Ask if a climate room is available before you count on one.",
   "website": "https://www.cubesmart.com/texas-self-storage/college-station-self-storage/64.html",
   "phone": "(979) 696-1000",
   "affiliateUrl": null,
@@ -43,7 +47,7 @@
       "status": "verified",
       "sourceUrl": "https://www.cubesmart.com/texas-self-storage/college-station-self-storage/64.html",
       "sourceLabel": "CubeSmart Holleman Drive",
-      "lastVerified": "2026-11-18"
+      "lastVerified": "2026-11-19"
     },
     {
       "size": "20x20",
@@ -56,7 +60,7 @@
       "status": "verified",
       "sourceUrl": "https://www.cubesmart.com/texas-self-storage/college-station-self-storage/64.html",
       "sourceLabel": "CubeSmart Holleman Drive",
-      "lastVerified": "2026-11-18"
+      "lastVerified": "2026-11-19"
     }
   ],
   "facts": [
@@ -66,7 +70,7 @@
       "status": "verified",
       "sourceUrl": "https://www.cubesmart.com/texas-self-storage/college-station-self-storage/64.html",
       "sourceLabel": "CubeSmart Holleman Drive",
-      "lastVerified": "2026-11-18"
+      "lastVerified": "2026-11-19"
     },
     {
       "label": "Access hours",
@@ -74,7 +78,7 @@
       "status": "verified",
       "sourceUrl": "https://www.cubesmart.com/texas-self-storage/college-station-self-storage/64.html",
       "sourceLabel": "CubeSmart Holleman Drive",
-      "lastVerified": "2026-11-18"
+      "lastVerified": "2026-11-19"
     },
     {
       "label": "Distance claim",
@@ -82,15 +86,15 @@
       "status": "verified",
       "sourceUrl": "https://www.cubesmart.com/texas-self-storage/college-station-self-storage/64.html",
       "sourceLabel": "CubeSmart Holleman Drive",
-      "lastVerified": "2026-11-18"
+      "lastVerified": "2026-11-19"
     },
     {
       "label": "Climate-controlled units",
-      "value": "None were listed on November 18, 2026. Small and medium headings were empty. Ask if one is available.",
+      "value": "None were listed. Checked Nov 19, 2026. Small and medium headings were empty. Ask if one is available.",
       "status": "verified",
       "sourceUrl": "https://www.cubesmart.com/texas-self-storage/college-station-self-storage/64.html",
       "sourceLabel": "CubeSmart Holleman Drive",
-      "lastVerified": "2026-11-18"
+      "lastVerified": "2026-11-19"
     },
     {
       "label": "Deliveries",
@@ -98,7 +102,7 @@
       "status": "verified",
       "sourceUrl": "https://www.cubesmart.com/texas-self-storage/college-station-self-storage/64.html",
       "sourceLabel": "CubeSmart Holleman Drive",
-      "lastVerified": "2026-11-18"
+      "lastVerified": "2026-11-19"
     }
   ],
   "gaps": [

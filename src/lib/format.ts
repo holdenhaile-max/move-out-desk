@@ -3,11 +3,15 @@ export type Status = "verified" | "unverified" | "conflict";
 export function formatDate(iso: string): string {
   const [year, month, day] = iso.split("-").map(Number);
   return new Date(Date.UTC(year, month - 1, day)).toLocaleDateString("en-US", {
-    month: "long",
+    month: "short",
     day: "numeric",
     year: "numeric",
     timeZone: "UTC",
   });
+}
+
+export function checkedPhrase(iso: string): string {
+  return `Checked ${formatDate(iso)}`;
 }
 
 export function money(amount: number | null | undefined): string {
@@ -32,7 +36,7 @@ export function moneyRange(
 export function statusLabel(status: Status): string {
   if (status === "verified") return "Verified";
   if (status === "conflict") return "Sources disagree";
-  return "Not yet verified";
+  return "Unverified";
 }
 
 export function kindLabel(kind: string): string {

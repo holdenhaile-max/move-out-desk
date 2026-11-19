@@ -1,8 +1,12 @@
 {
   "name": "CubeSmart on Manuel Drive",
   "kind": "self-storage",
-  "schools": ["texas-am"],
-  "cities": ["college-station"],
+  "schools": [
+    "texas-am"
+  ],
+  "cities": [
+    "college-station"
+  ],
   "summary": "CubeSmart at 219 Manuel Drive lists heated-and-cooled and drive-up rooms. Drive-up means you can park at the door. You will see a lower online price and a higher in-store price, plus first month free and 40% off. Ask how many months that discount lasts before you budget it.",
   "website": "https://www.cubesmart.com/texas-self-storage/college-station-self-storage/4124.html",
   "phone": "(979) 693-0551",
@@ -39,7 +43,7 @@
       "status": "verified",
       "sourceUrl": "https://www.cubesmart.com/texas-self-storage/college-station-self-storage/4124.html",
       "sourceLabel": "CubeSmart Manuel Drive",
-      "lastVerified": "2026-11-18"
+      "lastVerified": "2026-11-19"
     }
   ],
   "units": [
@@ -55,7 +59,7 @@
       "note": "The page shows both prices under that promo. It does not say the online price is locked for a summer.",
       "sourceUrl": "https://www.cubesmart.com/texas-self-storage/college-station-self-storage/4124.html",
       "sourceLabel": "CubeSmart Manuel Drive",
-      "lastVerified": "2026-11-18"
+      "lastVerified": "2026-11-19"
     },
     {
       "size": "5x10",
@@ -68,7 +72,7 @@
       "status": "verified",
       "sourceUrl": "https://www.cubesmart.com/texas-self-storage/college-station-self-storage/4124.html",
       "sourceLabel": "CubeSmart Manuel Drive",
-      "lastVerified": "2026-11-18"
+      "lastVerified": "2026-11-19"
     },
     {
       "size": "10x10",
@@ -81,7 +85,7 @@
       "status": "verified",
       "sourceUrl": "https://www.cubesmart.com/texas-self-storage/college-station-self-storage/4124.html",
       "sourceLabel": "CubeSmart Manuel Drive",
-      "lastVerified": "2026-11-18"
+      "lastVerified": "2026-11-19"
     },
     {
       "size": "10x15",
@@ -94,7 +98,7 @@
       "status": "verified",
       "sourceUrl": "https://www.cubesmart.com/texas-self-storage/college-station-self-storage/4124.html",
       "sourceLabel": "CubeSmart Manuel Drive",
-      "lastVerified": "2026-11-18"
+      "lastVerified": "2026-11-19"
     },
     {
       "size": "10x20",
@@ -107,7 +111,7 @@
       "status": "verified",
       "sourceUrl": "https://www.cubesmart.com/texas-self-storage/college-station-self-storage/4124.html",
       "sourceLabel": "CubeSmart Manuel Drive",
-      "lastVerified": "2026-11-18"
+      "lastVerified": "2026-11-19"
     },
     {
       "size": "15x15",
@@ -120,7 +124,7 @@
       "status": "verified",
       "sourceUrl": "https://www.cubesmart.com/texas-self-storage/college-station-self-storage/4124.html",
       "sourceLabel": "CubeSmart Manuel Drive",
-      "lastVerified": "2026-11-18"
+      "lastVerified": "2026-11-19"
     },
     {
       "size": "5x5",
@@ -133,7 +137,7 @@
       "status": "verified",
       "sourceUrl": "https://www.cubesmart.com/texas-self-storage/college-station-self-storage/4124.html",
       "sourceLabel": "CubeSmart Manuel Drive",
-      "lastVerified": "2026-11-18"
+      "lastVerified": "2026-11-19"
     },
     {
       "size": "5x10",
@@ -146,7 +150,7 @@
       "status": "verified",
       "sourceUrl": "https://www.cubesmart.com/texas-self-storage/college-station-self-storage/4124.html",
       "sourceLabel": "CubeSmart Manuel Drive",
-      "lastVerified": "2026-11-18"
+      "lastVerified": "2026-11-19"
     },
     {
       "size": "10x10",
@@ -159,7 +163,7 @@
       "status": "verified",
       "sourceUrl": "https://www.cubesmart.com/texas-self-storage/college-station-self-storage/4124.html",
       "sourceLabel": "CubeSmart Manuel Drive",
-      "lastVerified": "2026-11-18"
+      "lastVerified": "2026-11-19"
     },
     {
       "size": "10x15",
@@ -172,7 +176,7 @@
       "status": "verified",
       "sourceUrl": "https://www.cubesmart.com/texas-self-storage/college-station-self-storage/4124.html",
       "sourceLabel": "CubeSmart Manuel Drive",
-      "lastVerified": "2026-11-18"
+      "lastVerified": "2026-11-19"
     },
     {
       "size": "10x20",
@@ -185,7 +189,7 @@
       "status": "verified",
       "sourceUrl": "https://www.cubesmart.com/texas-self-storage/college-station-self-storage/4124.html",
       "sourceLabel": "CubeSmart Manuel Drive",
-      "lastVerified": "2026-11-18"
+      "lastVerified": "2026-11-19"
     }
   ],
   "facts": [
@@ -195,7 +199,7 @@
       "status": "verified",
       "sourceUrl": "https://www.cubesmart.com/texas-self-storage/college-station-self-storage/4124.html",
       "sourceLabel": "CubeSmart Manuel Drive",
-      "lastVerified": "2026-11-18"
+      "lastVerified": "2026-11-19"
     },
     {
       "label": "Access hours",
@@ -203,7 +207,7 @@
       "status": "verified",
       "sourceUrl": "https://www.cubesmart.com/texas-self-storage/college-station-self-storage/4124.html",
       "sourceLabel": "CubeSmart Manuel Drive",
-      "lastVerified": "2026-11-18"
+      "lastVerified": "2026-11-19"
     },
     {
       "label": "Lease",
@@ -211,7 +215,7 @@
       "status": "verified",
       "sourceUrl": "https://www.cubesmart.com/texas-self-storage/college-station-self-storage/4124.html",
       "sourceLabel": "CubeSmart Manuel Drive",
-      "lastVerified": "2026-11-18"
+      "lastVerified": "2026-11-19"
     },
     {
       "label": "Driving distance from campus",

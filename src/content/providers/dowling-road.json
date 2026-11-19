@@ -1,8 +1,12 @@
 {
   "name": "Dowling Road Storage",
   "kind": "self-storage",
-  "schools": ["texas-am"],
-  "cities": ["college-station"],
+  "schools": [
+    "texas-am"
+  ],
+  "cities": [
+    "college-station"
+  ],
   "summary": "Dowling Road Storage, on the U-Haul page, has heated-and-cooled rooms and drive-up rooms (you can park at the door), with 50% off the first month. If you were told Downing Road, this is the listing. Ask whether the price stays the same after month one.",
   "website": "https://www.uhaul.com/Locations/Self-Storage-near-College-Station-TX-77845/1039365/",
   "phone": "(979) 220-5578",
@@ -18,7 +22,7 @@
       "note": "The listing says 50% off the first month of rent. It does not say later months are discounted or locked.",
       "sourceUrl": "https://www.uhaul.com/Locations/Self-Storage-near-College-Station-TX-77845/1039365/",
       "sourceLabel": "U-Haul listing for Dowling Road Storage",
-      "lastVerified": "2026-11-18"
+      "lastVerified": "2026-11-19"
     },
     {
       "id": "admin-fee",
@@ -42,7 +46,7 @@
       "status": "verified",
       "sourceUrl": "https://www.uhaul.com/Locations/Self-Storage-near-College-Station-TX-77845/1039365/",
       "sourceLabel": "U-Haul listing for Dowling Road Storage",
-      "lastVerified": "2026-11-18"
+      "lastVerified": "2026-11-19"
     },
     {
       "size": "5x10",
@@ -53,7 +57,7 @@
       "status": "verified",
       "sourceUrl": "https://www.uhaul.com/Locations/Self-Storage-near-College-Station-TX-77845/1039365/",
       "sourceLabel": "U-Haul listing for Dowling Road Storage",
-      "lastVerified": "2026-11-18"
+      "lastVerified": "2026-11-19"
     },
     {
       "size": "10x10",
@@ -64,7 +68,7 @@
       "status": "verified",
       "sourceUrl": "https://www.uhaul.com/Locations/Self-Storage-near-College-Station-TX-77845/1039365/",
       "sourceLabel": "U-Haul listing for Dowling Road Storage",
-      "lastVerified": "2026-11-18"
+      "lastVerified": "2026-11-19"
     },
     {
       "size": "10x15",
@@ -75,7 +79,8 @@
       "status": "verified",
       "sourceUrl": "https://www.uhaul.com/Locations/Self-Storage-near-College-Station-TX-77845/1039365/",
       "sourceLabel": "U-Haul listing for Dowling Road Storage",
-      "lastVerified": "2026-11-18"
+      "lastVerified": "2026-11-19",
+      "availability": "1 unit left on the day checked"
     },
     {
       "size": "5x10",
@@ -86,7 +91,7 @@
       "status": "verified",
       "sourceUrl": "https://www.uhaul.com/Locations/Self-Storage-near-College-Station-TX-77845/1039365/",
       "sourceLabel": "U-Haul listing for Dowling Road Storage",
-      "lastVerified": "2026-11-18"
+      "lastVerified": "2026-11-19"
     },
     {
       "size": "10x10",
@@ -97,7 +102,7 @@
       "status": "verified",
       "sourceUrl": "https://www.uhaul.com/Locations/Self-Storage-near-College-Station-TX-77845/1039365/",
       "sourceLabel": "U-Haul listing for Dowling Road Storage",
-      "lastVerified": "2026-11-18"
+      "lastVerified": "2026-11-19"
     },
     {
       "size": "10x15",
@@ -108,7 +113,7 @@
       "status": "verified",
       "sourceUrl": "https://www.uhaul.com/Locations/Self-Storage-near-College-Station-TX-77845/1039365/",
       "sourceLabel": "U-Haul listing for Dowling Road Storage",
-      "lastVerified": "2026-11-18"
+      "lastVerified": "2026-11-19"
     },
     {
       "size": "10x20",
@@ -119,7 +124,7 @@
       "status": "verified",
       "sourceUrl": "https://www.uhaul.com/Locations/Self-Storage-near-College-Station-TX-77845/1039365/",
       "sourceLabel": "U-Haul listing for Dowling Road Storage",
-      "lastVerified": "2026-11-18"
+      "lastVerified": "2026-11-19"
     },
     {
       "size": "12x30",
@@ -130,7 +135,7 @@
       "note": "Listed as RV, boat, vehicle, or parking. Not a room for boxes.",
       "sourceUrl": "https://www.uhaul.com/Locations/Self-Storage-near-College-Station-TX-77845/1039365/",
       "sourceLabel": "U-Haul listing for Dowling Road Storage",
-      "lastVerified": "2026-11-18"
+      "lastVerified": "2026-11-19"
     }
   ],
   "facts": [
@@ -140,7 +145,7 @@
       "status": "verified",
       "sourceUrl": "https://www.uhaul.com/Locations/Self-Storage-near-College-Station-TX-77845/1039365/",
       "sourceLabel": "U-Haul listing for Dowling Road Storage",
-      "lastVerified": "2026-11-18"
+      "lastVerified": "2026-11-19"
     },
     {
       "label": "Access hours",
@@ -148,7 +153,7 @@
       "status": "verified",
       "sourceUrl": "https://www.uhaul.com/Locations/Self-Storage-near-College-Station-TX-77845/1039365/",
       "sourceLabel": "U-Haul listing for Dowling Road Storage",
-      "lastVerified": "2026-11-18"
+      "lastVerified": "2026-11-19"
     },
     {
       "label": "Spelling",
@@ -156,7 +161,7 @@
       "status": "verified",
       "sourceUrl": "https://www.uhaul.com/Locations/Self-Storage-near-College-Station-TX-77845/1039365/",
       "sourceLabel": "U-Haul listing for Dowling Road Storage",
-      "lastVerified": "2026-11-18"
+      "lastVerified": "2026-11-19"
     },
     {
       "label": "Features on the listing",
@@ -164,7 +169,7 @@
       "status": "verified",
       "sourceUrl": "https://www.uhaul.com/Locations/Self-Storage-near-College-Station-TX-77845/1039365/",
       "sourceLabel": "U-Haul listing for Dowling Road Storage",
-      "lastVerified": "2026-11-18"
+      "lastVerified": "2026-11-19"
     }
   ],
   "gaps": [

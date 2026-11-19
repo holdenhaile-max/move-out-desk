@@ -1,8 +1,12 @@
 {
   "name": "Triangle Storage",
   "kind": "self-storage",
-  "schools": ["texas-am"],
-  "cities": ["college-station"],
+  "schools": [
+    "texas-am"
+  ],
+  "cities": [
+    "college-station"
+  ],
   "summary": "Triangle Storage at 3810 Old College Road in Bryan offers temperature-controlled indoor units and month-to-month storage for Texas A&M students. Ask which listed price is the heated room. The prices do not say.",
   "website": "https://www.anytimestorage.com/storage-units/tx/bryan/3810-old-college-rd",
   "phone": "(979) 846-3000",
@@ -32,7 +36,7 @@
       "note": "Climate label for this size is not in plain language. The facility advertises temperature-controlled indoor units separately.",
       "sourceUrl": "https://www.anytimestorage.com/storage-units/tx/bryan/3810-old-college-rd",
       "sourceLabel": "Triangle Storage",
-      "lastVerified": "2026-11-18"
+      "lastVerified": "2026-11-19"
     },
     {
       "size": "5x10",
@@ -43,7 +47,7 @@
       "status": "verified",
       "sourceUrl": "https://www.anytimestorage.com/storage-units/tx/bryan/3810-old-college-rd",
       "sourceLabel": "Triangle Storage",
-      "lastVerified": "2026-11-18"
+      "lastVerified": "2026-11-19"
     },
     {
       "size": "5x12",
@@ -54,7 +58,7 @@
       "status": "verified",
       "sourceUrl": "https://www.anytimestorage.com/storage-units/tx/bryan/3810-old-college-rd",
       "sourceLabel": "Triangle Storage",
-      "lastVerified": "2026-11-18"
+      "lastVerified": "2026-11-19"
     },
     {
       "size": "8x10",
@@ -65,7 +69,7 @@
       "status": "verified",
       "sourceUrl": "https://www.anytimestorage.com/storage-units/tx/bryan/3810-old-college-rd",
       "sourceLabel": "Triangle Storage",
-      "lastVerified": "2026-11-18"
+      "lastVerified": "2026-11-19"
     },
     {
       "size": "10x10",
@@ -76,7 +80,7 @@
       "status": "verified",
       "sourceUrl": "https://www.anytimestorage.com/storage-units/tx/bryan/3810-old-college-rd",
       "sourceLabel": "Triangle Storage",
-      "lastVerified": "2026-11-18"
+      "lastVerified": "2026-11-19"
     },
     {
       "size": "10x15",
@@ -87,7 +91,7 @@
       "status": "verified",
       "sourceUrl": "https://www.anytimestorage.com/storage-units/tx/bryan/3810-old-college-rd",
       "sourceLabel": "Triangle Storage",
-      "lastVerified": "2026-11-18"
+      "lastVerified": "2026-11-19"
     },
     {
       "size": "10x25",
@@ -98,7 +102,7 @@
       "status": "verified",
       "sourceUrl": "https://www.anytimestorage.com/storage-units/tx/bryan/3810-old-college-rd",
       "sourceLabel": "Triangle Storage",
-      "lastVerified": "2026-11-18"
+      "lastVerified": "2026-11-19"
     },
     {
       "size": "5x5",
@@ -109,7 +113,7 @@
       "status": "verified",
       "sourceUrl": "https://www.anytimestorage.com/storage-units/tx/bryan/3810-old-college-rd",
       "sourceLabel": "Triangle Storage",
-      "lastVerified": "2026-11-18"
+      "lastVerified": "2026-11-19"
     }
   ],
   "facts": [
@@ -119,7 +123,7 @@
       "status": "verified",
       "sourceUrl": "https://www.anytimestorage.com/storage-units/tx/bryan/3810-old-college-rd",
       "sourceLabel": "Triangle Storage",
-      "lastVerified": "2026-11-18"
+      "lastVerified": "2026-11-19"
     },
     {
       "label": "Students",
@@ -127,7 +131,7 @@
       "status": "verified",
       "sourceUrl": "https://www.anytimestorage.com/storage-units/tx/bryan/3810-old-college-rd",
       "sourceLabel": "Triangle Storage",
-      "lastVerified": "2026-11-18"
+      "lastVerified": "2026-11-19"
     },
     {
       "label": "Access hours",
@@ -135,7 +139,7 @@
       "status": "verified",
       "sourceUrl": "https://www.anytimestorage.com/storage-units/tx/bryan/3810-old-college-rd",
       "sourceLabel": "Triangle Storage",
-      "lastVerified": "2026-11-18"
+      "lastVerified": "2026-11-19"
     },
     {
       "label": "Call center hours",

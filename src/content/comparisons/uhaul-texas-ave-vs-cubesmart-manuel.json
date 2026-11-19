@@ -1,7 +1,7 @@
 {
   "title": "U-Haul Texas Ave vs CubeSmart Manuel Drive",
   "description": "Two heated-and-cooled buildings near College Station with public prices, compared on the price you can actually hold them to.",
-  "updated": "2026-11-18",
+  "updated": "2026-11-19",
   "left": "uhaul-texas-ave",
   "right": "cubesmart-manuel",
   "intro": [
@@ -49,7 +49,7 @@
         "status": "verified",
         "sourceUrl": "https://www.uhaul.com/Locations/Self-Storage-near-College-Station-TX-77845/755037/",
         "sourceLabel": "U-Haul Texas Ave",
-        "lastVerified": "2026-11-18"
+        "lastVerified": "2026-11-19"
       },
       "right": {
         "type": "text",
@@ -57,7 +57,7 @@
         "status": "unverified",
         "sourceUrl": "https://www.cubesmart.com/texas-self-storage/college-station-self-storage/4124.html",
         "sourceLabel": "CubeSmart Manuel Drive",
-        "lastVerified": "2026-11-18"
+        "lastVerified": "2026-11-19"
       }
     },
     {
@@ -68,7 +68,7 @@
         "status": "verified",
         "sourceUrl": "https://www.uhaul.com/Locations/Self-Storage-near-College-Station-TX-77845/755037/",
         "sourceLabel": "U-Haul Texas Ave",
-        "lastVerified": "2026-11-18"
+        "lastVerified": "2026-11-19"
       },
       "right": {
         "type": "text",
@@ -76,7 +76,7 @@
         "status": "unverified",
         "sourceUrl": "https://www.cubesmart.com/texas-self-storage/college-station-self-storage/4124.html",
         "sourceLabel": "CubeSmart Manuel Drive",
-        "lastVerified": "2026-11-18"
+        "lastVerified": "2026-11-19"
       }
     }
   ],

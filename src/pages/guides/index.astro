@@ -1,7 +1,6 @@
 ---
 import { getCollection } from "astro:content";
 import BaseLayout from "../../components/BaseLayout.astro";
-import { formatDate } from "../../lib/format";
 import { href } from "../../lib/paths";
 
 const guides = (await getCollection("guides")).sort((a, b) => a.data.order - b.data.order);
@@ -14,8 +13,8 @@ const guides = (await getCollection("guides")).sort((a, b) => a.data.order - b.d
   <p class="eyebrow">Guides</p>
   <h1>Guides</h1>
   <p class="lede">
-    Start with the choice you are making. The shorter guides are what to ask before you reserve,
-    and how to split a unit with roommates.
+    Start with the choice you are making. The shorter guides cover the cheapest small units, what
+    to ask before you reserve, and how to split a unit with roommates.
   </p>
   <div class="card-grid two">
     {
@@ -26,7 +25,6 @@ const guides = (await getCollection("guides")).sort((a, b) => a.data.order - b.d
             <a href={href(`/guides/${guide.id}`)}>{guide.data.title}</a>
           </h2>
           <p>{guide.data.description}</p>
-          <p class="small muted">Updated {formatDate(guide.data.updated)}</p>
         </article>
       ))
     }

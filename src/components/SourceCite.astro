@@ -15,7 +15,7 @@ const { href, label, lastVerified } = Astro.props;
     lastVerified && (
       <>
         {" "}
-        · checked <time datetime={lastVerified}>{formatDate(lastVerified)}</time>
+        Checked <time datetime={lastVerified}>{formatDate(lastVerified)}</time>
       </>
     )
   }
