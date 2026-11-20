@@ -28,6 +28,13 @@ const homeFaqs = [
     linkLabel: "Heated and cooled units",
   },
   {
+    question: "When do the dorms actually close?",
+    answer:
+      "Residence Life has not posted the Fall 2026 closing day. Finals end December 10, 2026. The move-out page says halls generally close at 6 p.m. the Saturday after finals, and that the specific date will be announced. Checked Nov 20, 2026.",
+    href: href("/guides/texas-am-dorm-move-out"),
+    linkLabel: "Move-out dates",
+  },
+  {
     question: "I only need a few weeks between leases.",
     answer:
       "A TV, a mini fridge, and a dresser between leases in College Station or Bryan fit a month-to-month unit. A 4-month pickup is the wrong product. Ask about the move-in fee. Several places do not list it.",
@@ -37,7 +44,7 @@ const homeFaqs = [
   {
     question: "Where did these questions come from?",
     answer:
-      "Students asked about both of these. The threads are questions, not prices. Summer storage thread: https://www.reddit.com/r/aggies/comments/uil2rx/best_storage_units_in_cstat/ Short-term storage thread: https://www.reddit.com/r/aggies/comments/6meysf/wheres_can_i_find_the_cheapest_shortterm_storage/",
+      "Students asked about summer storage and a short stay between leases. The threads are questions, not prices. Summer storage thread: https://www.reddit.com/r/aggies/comments/uil2rx/best_storage_units_in_cstat/ Short-term storage thread: https://www.reddit.com/r/aggies/comments/6meysf/wheres_can_i_find_the_cheapest_shortterm_storage/",
   },
 ];
 
@@ -87,7 +94,9 @@ const jsonLd = [
     <aside class="notice">
       <p>
         <strong>Call Collegeboxes before you book a pickup.</strong> They list December 11, 2026 and
-        May 10, 2027. The same page says room pickup is currently unavailable. Checked Nov 18, 2026.
+        May 10, 2027. The same page says room pickup is currently unavailable. Checked Nov 20, 2026.
+        Hall closing is separate. Residence Life has not posted the Fall 2026 day.
+        <a href={href("/guides/texas-am-dorm-move-out")}>See the move-out dates</a>.
       </p>
       <p class="small">
         This is not Texas A&M. Collegeboxes says it has no active partnership with the university.
