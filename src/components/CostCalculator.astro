@@ -1,6 +1,6 @@
 ---
 import { getCollection } from "astro:content";
-import { money } from "../lib/format";
+import { checkedPhrase, money } from "../lib/format";
 
 const providers = await getCollection("providers");
 const byId = Object.fromEntries(providers.map((provider) => [provider.id, provider.data]));
@@ -26,28 +26,30 @@ const unitChoices = providers
         }> = [];
         const climate =
           unit.climate === true ? "climate controlled" : unit.climate === false ? "not climate controlled" : "climate not listed";
+        const checked = checkedPhrase(unit.lastVerified);
+        const place = `${provider.data.name}, ${unit.size} ${climate}, ${unit.access}`;
         if (unit.monthly != null) {
           options.push({
-            id: `${provider.id}-${unit.size}-${String(unit.climate)}-monthly`,
-            label: `${provider.data.name}, ${unit.size} ${climate}, ${money(unit.monthly)} per month`,
+            id: `${provider.id}-${unit.size}-${String(unit.climate)}-${unit.access}-monthly`,
+            label: `${place}, ${money(unit.monthly)} per month. ${checked}`,
             monthly: unit.monthly,
-            note: unit.promo || "Published monthly rate",
+            note: `${unit.promo || "Published monthly rate"}. ${checked}`,
           });
         }
         if (unit.inStoreMonthly != null) {
           options.push({
-            id: `${provider.id}-${unit.size}-${String(unit.climate)}-instore`,
-            label: `${provider.data.name}, ${unit.size} ${climate}, ${money(unit.inStoreMonthly)} in store`,
+            id: `${provider.id}-${unit.size}-${String(unit.climate)}-${unit.access}-instore`,
+            label: `${place}, ${money(unit.inStoreMonthly)} in store. ${checked}`,
             monthly: unit.inStoreMonthly,
-            note: "In-store price. Use this when the page does not say how long the discount lasts.",
+            note: `In-store price. Use this when the page does not say how long the discount lasts. ${checked}`,
           });
         }
         if (unit.onlineMonthly != null) {
           options.push({
-            id: `${provider.id}-${unit.size}-${String(unit.climate)}-online`,
-            label: `${provider.data.name}, ${unit.size} ${climate}, ${money(unit.onlineMonthly)} online`,
+            id: `${provider.id}-${unit.size}-${String(unit.climate)}-${unit.access}-online`,
+            label: `${place}, ${money(unit.onlineMonthly)} online. ${checked}`,
             monthly: unit.onlineMonthly,
-            note: unit.promo || "Online price. The page may not promise this rate for later months.",
+            note: `${unit.promo || "Online price. The page may not promise this rate for later months."} ${checked}`,
           });
         }
         return options;
@@ -68,7 +70,8 @@ const payload = {
   <h2 id="calc-heading">Cost calculator</h2>
   <p class="muted">
     Add the listed prices for your boxes, months, and roommates. Tax is not included. Leave the
-    handling fee off unless Collegeboxes tells you the $37 is added on top of the $56 box rate. A
+    handling fee off unless Collegeboxes tells you the {money(payload.handling)} fee is added on top of the {money(payload.collegeBox)} box rate.
+    {box ? checkedPhrase(box.lastVerified) : ""} {handling ? checkedPhrase(handling.lastVerified) : ""} A
     handling fee is the charge for receiving a box.
   </p>
   <form id="cost-form">
@@ -90,19 +93,19 @@ const payload = {
       <legend>Pickup price to use</legend>
       <label class="choice">
         <input type="radio" name="pickup" value="college" checked />
-        <span>Collegeboxes national box rate only ({money(payload.collegeBox)} each for the 4-month term, not multiplied by months)</span>
+        <span>Collegeboxes national box rate only ({money(payload.collegeBox)} each for the 4-month term, not multiplied by months). {box ? checkedPhrase(box.lastVerified) : ""}</span>
       </label>
       <label class="choice">
         <input type="radio" name="pickup" value="college-handling" />
-        <span>That box rate plus the Texas A&M {money(payload.handling)} handling fee on every box</span>
+        <span>That box rate plus the Texas A&M {money(payload.handling)} handling fee on every box. {handling ? checkedPhrase(handling.lastVerified) : ""}</span>
       </label>
       <label class="choice">
         <input type="radio" name="pickup" value="drm-list" />
-        <span>Dorm Room Movers list price ({money(payload.drmList)} per box) plus {money(payload.registration)} registration</span>
+        <span>Dorm Room Movers list price ({money(payload.drmList)} per box) plus {money(payload.registration)} registration. {drmBox ? checkedPhrase(drmBox.lastVerified) : ""}</span>
       </label>
       <label class="choice">
         <input type="radio" name="pickup" value="drm-prepaid" />
-        <span>Dorm Room Movers prepaid price ({money(payload.drmPrepaid)} per box) plus registration</span>
+        <span>Dorm Room Movers prepaid price ({money(payload.drmPrepaid)} per box) plus registration. {registration ? checkedPhrase(registration.lastVerified) : ""}</span>
       </label>
     </fieldset>
     <label>

@@ -22,7 +22,7 @@
       "note": "The pricing page says registration includes a supply kit and that you then pay only for what is stored or shipped. The kit is described as five boxes, 18 x 18 x 22 inches, plus tape. One box is listed at 4.125 cubic feet.",
       "sourceUrl": "https://www.dormroommovers.com/storage-shipping-services-at-Texas-A-and-M-University-College-Station-TX/pricing",
       "sourceLabel": "Dorm Room Movers Texas A&M pricing",
-      "lastVerified": "2026-11-20"
+      "lastVerified": "2026-11-21"
     },
     {
       "id": "tier-micro",
@@ -35,7 +35,7 @@
       "note": "Examples on the price list: umbrella, crutches, poster tube, art portfolio, pillow, broom, mini vacuum. Monthly billing is $8.25 with no extra discount shown.",
       "sourceUrl": "https://www.dormroommovers.com/storage-shipping-services-at-Texas-A-and-M-University-College-Station-TX/pricing",
       "sourceLabel": "Dorm Room Movers Texas A&M pricing",
-      "lastVerified": "2026-11-20"
+      "lastVerified": "2026-11-21"
     },
     {
       "id": "tier-small",
@@ -48,7 +48,7 @@
       "note": "Examples: folding chair, desk lamp, desk fan, skateboard, shoe rack, ironing board. Monthly billing is $14.50.",
       "sourceUrl": "https://www.dormroommovers.com/storage-shipping-services-at-Texas-A-and-M-University-College-Station-TX/pricing",
       "sourceLabel": "Dorm Room Movers Texas A&M pricing",
-      "lastVerified": "2026-11-20"
+      "lastVerified": "2026-11-21"
     },
     {
       "id": "tier-box",
@@ -61,7 +61,7 @@
       "note": "This is the Medium tier. Their own example prices five DRM boxes at this tier: $455 list, or $409.50 prepaid. Monthly billing is $22.75 per box. Boxes are 18 x 18 x 22 inches. The how-it-works text says a box holds up to 45 pounds. The pricing page says boxes over 65 pounds may cost an extra $30.",
       "sourceUrl": "https://www.dormroommovers.com/storage-shipping-services-at-Texas-A-and-M-University-College-Station-TX/pricing",
       "sourceLabel": "Dorm Room Movers Texas A&M pricing",
-      "lastVerified": "2026-11-20"
+      "lastVerified": "2026-11-21"
     },
     {
       "id": "tier-large",
@@ -74,7 +74,7 @@
       "note": "Also includes a customer box of 4 to 6 cubic feet, a suitcase, and a desk chair. Their sample order prices the mini fridge at this tier. Monthly billing is $28.25.",
       "sourceUrl": "https://www.dormroommovers.com/storage-shipping-services-at-Texas-A-and-M-University-College-Station-TX/pricing",
       "sourceLabel": "Dorm Room Movers Texas A&M pricing",
-      "lastVerified": "2026-11-20"
+      "lastVerified": "2026-11-21"
     },
     {
       "id": "tier-xl",
@@ -87,7 +87,7 @@
       "note": "Also includes a customer box over 6 cubic feet, a futon, a desk, and a dresser. Their sample order prices the television at this tier. Monthly billing is $32.50.",
       "sourceUrl": "https://www.dormroommovers.com/storage-shipping-services-at-Texas-A-and-M-University-College-Station-TX/pricing",
       "sourceLabel": "Dorm Room Movers Texas A&M pricing",
-      "lastVerified": "2026-11-20"
+      "lastVerified": "2026-11-21"
     },
     {
       "id": "off-date",
@@ -107,11 +107,11 @@
       "label": "Shipping handling, UPS freight extra",
       "amount": 19.99,
       "per": "box, plus freight",
-      "status": "unverified",
-      "note": "On Nov 20, 2026 the public pricing page prints $20 with no cents. An earlier read of the pricing feed showed $19.99. The exact charge is not confirmed. UPS freight is still not listed.",
+      "status": "conflict",
+      "note": "The pricing feed the Texas A&M page loads lists $19.99. The public page formats that amount with no cents, so it shows as $20. UPS freight is still not listed.",
       "sourceUrl": "https://www.dormroommovers.com/storage-shipping-services-at-Texas-A-and-M-University-College-Station-TX/pricing",
       "sourceLabel": "Dorm Room Movers Texas A&M pricing",
-      "lastVerified": "2026-11-18"
+      "lastVerified": "2026-11-21"
     },
     {
       "id": "overweight",
@@ -230,12 +230,12 @@
     },
     {
       "label": "Campus last-day field",
-      "value": "The public pricing feed includes a last day of May 6, 2026. That date is already past, and the feed does not list the next free pickup dates.",
-      "status": "unverified",
+      "value": "The pricing feed still includes a last day of May 6, 2026. That date is already past. The public pricing page does not print it, and the feed does not list the next free pickup dates.",
+      "status": "verified",
       "sourceUrl": "https://www.dormroommovers.com/storage-shipping-services-at-Texas-A-and-M-University-College-Station-TX/pricing",
       "sourceLabel": "Dorm Room Movers Texas A&M pricing",
-      "lastVerified": "2026-11-18",
-      "note": "The public pricing page on Nov 20, 2026 did not show this field. The earlier feed value is kept and not reconfirmed."
+      "lastVerified": "2026-11-21",
+      "note": "Checked Nov 21, 2026 in the pricing feed the page loads."
     },
     {
       "label": "Who moves the items",
@@ -249,7 +249,7 @@
   "gaps": [
     "Featured pickup and delivery dates for the 2026 winter break and the 2027 summer are not on the public page.",
     "The warehouse street address is not published.",
-    "UPS freight for a ship-home box is not published. The handling line prints $20 with no cents, so the exact charge is unverified.",
+    "UPS freight for a ship-home box is not published. The pricing feed lists a $19.99 handling fee, and the public page shows that amount as $20.",
     "Whether professional packing is offered at Texas A&M is not stated.",
     "Sales tax is not itemized on the public price list. Several internal price records are marked taxable. The tax amount is not yet verified."
   ]
