@@ -1,0 +1,92 @@
+---
+title: "Storage near Northgate"
+description: "The closest published storage rooms to Northgate, with driving miles and the small-unit price at each address."
+eyebrow: "Northgate"
+updated: "2026-11-22"
+order: 9
+featured: false
+schoolId: texas-am
+cityId: college-station
+sources:
+  - label: OpenStreetMap place named U Center Apartments at Northgate
+    url: https://nominatim.openstreetmap.org/search?format=jsonv2&q=U%20Center%20Apartments%20at%20Northgate
+  - label: OSRM driving route from that place
+    url: https://router.project-osrm.org/table/v1/driving/-96.3453931,30.6256273;-96.3545312,30.6319057;-96.3341625,30.6279630;-96.3335141,30.5957482;-96.3117538,30.6125881;-96.3030690,30.6305258;-96.2985430,30.5982260;-96.2885598,30.5968821?sources=0&annotations=distance
+  - label: Triangle Storage
+    url: https://www.anytimestorage.com/storage-units/tx/bryan/3810-old-college-rd
+  - label: U-Haul at 501 Texas Ave S
+    url: https://www.uhaul.com/Locations/Supplies-near-College-Station-TX-77840/755068/
+  - label: CubeSmart Holleman Drive
+    url: https://www.cubesmart.com/texas-self-storage/college-station-self-storage/64.html
+  - label: CubeSmart Manuel Drive
+    url: https://www.cubesmart.com/texas-self-storage/college-station-self-storage/4124.html
+  - label: Lock N Roll Storage
+    url: https://www.premiumspaces.com/storage-locations/tx/college-station/1501-earl-rudder-fwy
+  - label: U-Haul Texas Ave storage
+    url: https://www.uhaul.com/Locations/Self-Storage-near-College-Station-TX-77845/755037/
+  - label: SpareBox Earl Rudder
+    url: https://www.spareboxstorage.com/storage-units/tx/college-station/3201-earl-rudder-freeway-s
+  - label: Dowling Road Storage
+    url: https://www.uhaul.com/Locations/Self-Storage-near-College-Station-TX-77845/1039365/
+---
+
+import UnitTable from "../../components/UnitTable.astro";
+import FaqList from "../../components/FaqList.astro";
+import { href } from "../../lib/paths";
+
+Northgate is the blocks along University Drive on the north side of campus. None of the storage buildings below sit on that street. If you live there, the useful question is how far you have to drive, and what a small room costs when you get there.
+
+Miles below are a driving route from U Center Apartments at Northgate, the OpenStreetMap place with that name, to the building pin. Checked Nov 22, 2026. Your own drive can differ by a turn or two. Dowling Road is not in the mile list. A building pin for 10257 N. Dowling Road was not confirmed, so this page does not invent one.
+
+**Triangle Storage, 3810 Old College Road, Bryan. 0.85 miles.** This is the closest room with a published price. A 5x5 is $42 and the page marked it sold out. A 5x10 is $46 and the page marked it in stock. Those lines do not say whether the room is heated and cooled. The facility page does say it has temperature-controlled indoor units and month-to-month leases for students between semesters. Ask which price is the heated room before you book it for clothes or books. Prices checked Nov 22, 2026.
+
+**U-Haul at 501 Texas Ave S. 1.06 miles.** This counter is close, and it does not solve the storage problem. The page lists moving trucks, propane, and trucks for sale. It does not list a storage room or a monthly storage price. Checked Nov 22, 2026. The U-Haul rooms are at 2813 Texas Ave S, 4.02 miles on the same kind of route. A climate 5x10 there is $99.95 a month, locked for 12 months, with a $0 admin fee. That room price was checked Nov 21, 2026. The mile figure was checked Nov 22, 2026.
+
+**CubeSmart, 104 Holleman Drive. 2.56 miles.** Drive-up 5x5 is $15.60 online and $26 in the store. Drive-up 5x10 is $31.80 online and $53 in the store. No heated room was on the list. The page still says the store is less than three miles from campus. That is a campus claim, not a Northgate claim. Prices checked Nov 22, 2026.
+
+**CubeSmart, 219 Manuel Drive. 2.75 miles.** Climate 5x5 is $24.60 online and $41 in the store. Climate 5x10 is $57.60 online and $96 in the store. The banner says first month free and 40% off. The page does not say the online price lasts the summer. Use $96 for a climate 5x10 unless they lock the online price in writing. Prices checked Nov 22, 2026.
+
+**Lock N Roll, 1501 Earl Rudder Freeway. 3.48 miles.** Climate 5x5 is $37. Climate 5x10 is $64. The unit card shows that monthly rate and does not print a separate move-in fee. The company page still says there is a small lock fee and does not print the amount. Prices checked Nov 22, 2026.
+
+**SpareBox, 3201 Earl Rudder Freeway S. 5.07 miles.** Climate 5x5 is $17. Climate 5x10 is $32. Both have an asterisk. The footnote says the rate is for new rentals and that rent can change with 30 days' notice. Prices checked Nov 22, 2026.
+
+**Dowling Road Storage, 10257 N. Dowling Road.** No mile on this page. Climate 5x5 and climate 5x10 are both $74, with 50% off the first month and no price lock. Checked Nov 22, 2026.
+
+Sort the table by price. It is every published 5x5 and 5x10, not a ranking by miles. Climate controlled means the room is heated and cooled. Drive-up means you can park at the door.
+
+<UnitTable
+  sizes="5x5,5x10"
+  caption="5x5 and 5x10 prices, including rooms farther from Northgate"
+  cityId="college-station"
+/>
+
+The lowest number is not always the summer bill. SpareBox and CubeSmart promos are explained on the [cheapest storage page](/guides/cheapest-storage-near-texas-am). Heated rooms are on the [climate page](/guides/college-station-climate-controlled). If nobody has a car, a pickup is the other choice, on the [summer storage page](/guides/texas-am-summer-storage).
+
+<FaqList
+  items={[
+    {
+      question: "Is there a storage building on University Drive?",
+      answer:
+        "Not in this check. The U-Haul at 501 Texas Ave S is 1.06 miles from U Center Apartments at Northgate, and that page does not list a storage room price. The closest published room is Triangle Storage in Bryan, 0.85 miles on the driving route. Both miles were checked Nov 22, 2026.",
+    },
+    {
+      question: "Can I walk a box over from Northgate?",
+      answer:
+        "This page measured a driving route, not a sidewalk. Triangle Storage is 0.85 miles by that route. A 5x10 there is $46 and the price line does not say it is heated. Checked Nov 22, 2026. If the walk is the point, call and ask them to describe the door before you count on it.",
+    },
+    {
+      question: "I need a heated room for clothes and books.",
+      answer:
+        "Triangle's price lines do not say which room is heated, even though the facility page offers temperature-controlled units. CubeSmart on Manuel Drive does label a climate 5x10, at $57.60 online and $96 in the store, 2.75 miles on the driving route. Use $96 unless they lock the online price. Checked Nov 22, 2026.",
+      href: href("/guides/college-station-climate-controlled"),
+      linkLabel: "Heated and cooled rooms",
+    },
+    {
+      question: "What if I do not have a car?",
+      answer:
+        "A room near Northgate still has to be loaded by someone. Collegeboxes and Dorm Room Movers pick up from the room and bring the boxes back. Those prices are on the summer storage page. Hall closing is a separate date.",
+      href: href("/guides/texas-am-summer-storage"),
+      linkLabel: "Pickup, a unit, or shipping home",
+    },
+  ]}
+/>

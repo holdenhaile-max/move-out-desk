@@ -22,7 +22,7 @@
       "note": "The page does not print an admin fee. Ask. Do not use a price from another website.",
       "sourceUrl": "https://www.anytimestorage.com/storage-units/tx/bryan/3810-old-college-rd",
       "sourceLabel": "Triangle Storage",
-      "lastVerified": "2026-11-18"
+      "lastVerified": "2026-11-22"
     }
   ],
   "units": [
@@ -36,7 +36,7 @@
       "note": "Climate label for this size is not in plain language. The facility advertises temperature-controlled indoor units separately.",
       "sourceUrl": "https://www.anytimestorage.com/storage-units/tx/bryan/3810-old-college-rd",
       "sourceLabel": "Triangle Storage",
-      "lastVerified": "2026-11-20"
+      "lastVerified": "2026-11-22"
     },
     {
       "size": "5x10",
@@ -47,7 +47,7 @@
       "status": "verified",
       "sourceUrl": "https://www.anytimestorage.com/storage-units/tx/bryan/3810-old-college-rd",
       "sourceLabel": "Triangle Storage",
-      "lastVerified": "2026-11-20"
+      "lastVerified": "2026-11-22"
     },
     {
       "size": "5x12",
@@ -58,7 +58,7 @@
       "status": "verified",
       "sourceUrl": "https://www.anytimestorage.com/storage-units/tx/bryan/3810-old-college-rd",
       "sourceLabel": "Triangle Storage",
-      "lastVerified": "2026-11-20"
+      "lastVerified": "2026-11-22"
     },
     {
       "size": "8x10",
@@ -69,7 +69,7 @@
       "status": "verified",
       "sourceUrl": "https://www.anytimestorage.com/storage-units/tx/bryan/3810-old-college-rd",
       "sourceLabel": "Triangle Storage",
-      "lastVerified": "2026-11-20"
+      "lastVerified": "2026-11-22"
     },
     {
       "size": "10x10",
@@ -80,7 +80,7 @@
       "status": "verified",
       "sourceUrl": "https://www.anytimestorage.com/storage-units/tx/bryan/3810-old-college-rd",
       "sourceLabel": "Triangle Storage",
-      "lastVerified": "2026-11-20"
+      "lastVerified": "2026-11-22"
     },
     {
       "size": "10x15",
@@ -91,7 +91,7 @@
       "status": "verified",
       "sourceUrl": "https://www.anytimestorage.com/storage-units/tx/bryan/3810-old-college-rd",
       "sourceLabel": "Triangle Storage",
-      "lastVerified": "2026-11-20"
+      "lastVerified": "2026-11-22"
     },
     {
       "size": "10x25",
@@ -102,7 +102,7 @@
       "status": "verified",
       "sourceUrl": "https://www.anytimestorage.com/storage-units/tx/bryan/3810-old-college-rd",
       "sourceLabel": "Triangle Storage",
-      "lastVerified": "2026-11-20"
+      "lastVerified": "2026-11-22"
     },
     {
       "size": "5x5",
@@ -113,7 +113,7 @@
       "status": "verified",
       "sourceUrl": "https://www.anytimestorage.com/storage-units/tx/bryan/3810-old-college-rd",
       "sourceLabel": "Triangle Storage",
-      "lastVerified": "2026-11-20"
+      "lastVerified": "2026-11-22"
     },
     {
       "size": "10x12",
@@ -125,7 +125,7 @@
       "note": "Climate label for this size is not in plain language.",
       "sourceUrl": "https://www.anytimestorage.com/storage-units/tx/bryan/3810-old-college-rd",
       "sourceLabel": "Triangle Storage",
-      "lastVerified": "2026-11-20"
+      "lastVerified": "2026-11-22"
     },
     {
       "size": "10x23",
@@ -137,7 +137,55 @@
       "note": "Climate label for this size is not in plain language.",
       "sourceUrl": "https://www.anytimestorage.com/storage-units/tx/bryan/3810-old-college-rd",
       "sourceLabel": "Triangle Storage",
-      "lastVerified": "2026-11-20"
+      "lastVerified": "2026-11-22"
+    },
+    {
+      "size": "8x25",
+      "climate": null,
+      "access": "size listed on the facility page",
+      "monthly": 198,
+      "availability": "Sold out on the page data",
+      "status": "verified",
+      "note": "Climate label for this size is not in plain language. The facility advertises temperature-controlled indoor units separately.",
+      "sourceUrl": "https://www.anytimestorage.com/storage-units/tx/bryan/3810-old-college-rd",
+      "sourceLabel": "Triangle Storage",
+      "lastVerified": "2026-11-22"
+    },
+    {
+      "size": "10x20",
+      "climate": null,
+      "access": "size listed on the facility page",
+      "monthly": 190,
+      "availability": "Sold out on the page data",
+      "status": "verified",
+      "note": "Climate label for this size is not in plain language. The facility advertises temperature-controlled indoor units separately.",
+      "sourceUrl": "https://www.anytimestorage.com/storage-units/tx/bryan/3810-old-college-rd",
+      "sourceLabel": "Triangle Storage",
+      "lastVerified": "2026-11-22"
+    },
+    {
+      "size": "13x25",
+      "climate": null,
+      "access": "size listed on the facility page",
+      "monthly": 244,
+      "availability": "Sold out on the page data",
+      "status": "verified",
+      "note": "Climate label for this size is not in plain language. The facility advertises temperature-controlled indoor units separately.",
+      "sourceUrl": "https://www.anytimestorage.com/storage-units/tx/bryan/3810-old-college-rd",
+      "sourceLabel": "Triangle Storage",
+      "lastVerified": "2026-11-22"
+    },
+    {
+      "size": "15x22",
+      "climate": null,
+      "access": "size listed on the facility page",
+      "monthly": 251,
+      "availability": "Sold out on the page data",
+      "status": "verified",
+      "note": "Climate label for this size is not in plain language. The facility advertises temperature-controlled indoor units separately.",
+      "sourceUrl": "https://www.anytimestorage.com/storage-units/tx/bryan/3810-old-college-rd",
+      "sourceLabel": "Triangle Storage",
+      "lastVerified": "2026-11-22"
     }
   ],
   "facts": [
