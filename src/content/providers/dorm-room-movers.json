@@ -100,7 +100,7 @@
       "note": "Featured dates are described as free and based on the academic calendar. The page says to sign in to see the dates and their prices. Those dates were not on the public pricing feed.",
       "sourceUrl": "https://www.dormroommovers.com/storage-shipping-services-at-Texas-A-and-M-University-College-Station-TX/pricing",
       "sourceLabel": "Dorm Room Movers Texas A&M pricing",
-      "lastVerified": "2026-11-20"
+      "lastVerified": "2026-11-23"
     },
     {
       "id": "shipping-handling",
@@ -119,9 +119,10 @@
       "amount": 30,
       "per": "box, if charged",
       "status": "verified",
+      "note": "The pricing page says boxes over 65 pounds may be subject to a charge of $30.",
       "sourceUrl": "https://www.dormroommovers.com/storage-shipping-services-at-Texas-A-and-M-University-College-Station-TX/pricing",
       "sourceLabel": "Dorm Room Movers Texas A&M pricing",
-      "lastVerified": "2026-11-20"
+      "lastVerified": "2026-11-23"
     },
     {
       "id": "distant",

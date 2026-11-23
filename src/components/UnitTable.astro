@@ -12,14 +12,22 @@ interface Props {
   sizes?: string;
   caption?: string;
   cityId?: string;
+  providerIds?: string;
 }
-const { climate = "any", sizes = "", caption, cityId = "college-station" } = Astro.props;
+const { climate = "any", sizes = "", caption, cityId = "college-station", providerIds = "" } = Astro.props;
 const wanted = sizes
   .split(",")
   .map((size) => size.trim())
   .filter(Boolean);
+const wantedIds = providerIds
+  .split(",")
+  .map((id) => id.trim())
+  .filter(Boolean);
 const providers = (await getCollection("providers")).filter(
-  (provider) => provider.data.kind === "self-storage" && provider.data.cities.includes(cityId),
+  (provider) =>
+    provider.data.kind === "self-storage" &&
+    provider.data.cities.includes(cityId) &&
+    (wantedIds.length === 0 || wantedIds.includes(provider.id)),
 );
 
 const rows = providers.flatMap((provider) =>
