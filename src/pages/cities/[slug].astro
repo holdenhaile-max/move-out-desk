@@ -30,12 +30,12 @@ const faqs: FaqItem[] = [
   {
     question: "What is climate controlled, and what is drive-up?",
     answer:
-      `Climate controlled means the room is heated and cooled. Drive-up means you can park at the door. If a price says Not labeled, the listing does not say which kind of room it is. Ask before you book it. Lock N Roll is in the table. Checked Nov 22, 2026, the unit cards show the monthly rate and do not print a separate move-in fee. The company page still says there is a small lock fee and does not print the amount. Their hours are still not listed, so call ${lockPhone} before you plan to get in.`,
+      `Climate controlled means the room is heated and cooled. Drive-up means you can park at the door. If a price says Not labeled, the listing does not say which kind of room it is. Ask before you book it. Lock N Roll is in the table. Checked Nov 24, 2026, the unit list shows the monthly rate and does not print a separate move-in fee. The company page still says there is a small lock fee and does not print the amount. Their hours are still not listed, so call ${lockPhone} before you plan to get in.`,
   },
   {
     question: "Can I trust a promo price for the whole summer?",
     answer:
-      "Use the in-store or single monthly price unless the place locks the cheaper price in writing. Checked Nov 22, 2026, CubeSmart on Manuel Drive shows a lower online price and a higher in-store price under first month free and 40% off, and does not say how many months that lasts. Checked Nov 22, 2026, SpareBox prices are promotional, for new rentals, may not apply to every size, and rent can change with 30 days' notice. U-Haul at Texas Ave locks the monthly price for 12 months. Checked Nov 23, 2026. Dowling Road offers 50% off the first month and does not print a price lock. Checked Nov 22, 2026. SmartStop on Texas Avenue also lists an online price and a higher in-store price, and some rooms are marked first month free. Checked Nov 23, 2026.",
+      "Use the in-store or single monthly price unless the place locks the cheaper price in writing. Checked Nov 24, 2026, on Storage.com, CubeSmart on Manuel Drive shows a lower online price and a higher in-store price under first month free and 40% off, and does not say how many months that lasts. CubeSmart's own page did not open. Storage.com lists a $29 admin fee. Checked Nov 24, 2026, SpareBox prices are promotional, for new rentals, may not apply to every size, and rent can change with 30 days' notice. U-Haul at Texas Ave locks the monthly price for 12 months. Checked Nov 23, 2026. Dowling Road offers 50% off the first month and does not print a price lock. Checked Nov 24, 2026. SmartStop on Texas Avenue also lists an online price and a higher in-store price, and some rooms are marked first month free. Checked Nov 23, 2026.",
   },
   {
     question: "What does Unverified mean?",
@@ -45,7 +45,7 @@ const faqs: FaqItem[] = [
   {
     question: "What dates matter for a Texas A&M summer?",
     answer:
-      "Collegeboxes lists pickups on December 11, 2026 and May 10, 2027. The same page says room pickup is currently unavailable. Checked Nov 22, 2026. Residence Life has not posted the Fall 2026 hall closing day. Call before you count on a date. A few weeks between leases, such as a TV and a dresser from July 31 to August 15, fits a month-to-month unit, not a 4-month pickup.",
+      "Collegeboxes lists pickups on December 11, 2026 and May 10, 2027. The same page says room pickup is currently unavailable. Checked Nov 24, 2026. Residence Life has not posted the Fall 2026 hall closing day. Call before you count on a date. A few weeks between leases, such as a TV and a dresser from July 31 to August 15, fits a month-to-month unit, not a 4-month pickup.",
     href: href("/guides/texas-am-dorm-move-out"),
     linkLabel: "Move-out dates",
   },
@@ -90,7 +90,9 @@ const jsonLd = [
       name: item.question,
       acceptedAnswer: {
         "@type": "Answer",
-        text: item.href ? `${item.answer} ${absoluteUrl("/guides/sharing-a-unit")}` : item.answer,
+        text: item.href
+          ? `${item.answer} ${String(Astro.site || "https://storagepricecheck.com").replace(/\/$/, "")}${item.href}`
+          : item.answer,
       },
     })),
   },
@@ -110,6 +112,8 @@ const jsonLd = [
   <UnitTable cityId={city.id} caption={`${city.data.name} unit prices`} />
   <FaqList items={faqs} />
   <p class="prose">
+    <a href={href("/guides/short-term-storage-near-texas-am")}>Storage for a few weeks</a>
+    {" · "}
     <a href={href("/guides/cheapest-storage-near-texas-am")}>Cheapest 5x5 and 5x10 prices</a>
     {" · "}
     <a href={href("/guides/college-station-climate-controlled")}>Heated and cooled rooms, compared</a>

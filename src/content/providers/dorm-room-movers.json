@@ -7,7 +7,7 @@
   "cities": [
     "college-station"
   ],
-  "summary": "Dorm Room Movers prices Texas A&M storage per item for 4 months. You pay a $49.99 registration fee, and you get 10% off if you pay the term up front. The page does not list the warehouse address or the next free pickup dates. Ask for both before you book. The shipping handling fee is still $19.99 in the pricing feed and $20 on the public page. Checked Nov 22, 2026.",
+  "summary": "Dorm Room Movers prices Texas A&M storage per item for 4 months. You pay a $49.99 registration fee, and you get 10% off if you pay the term up front. The page does not list the warehouse address or the next free pickup dates. Ask for both before you book. The shipping handling fee is still $19.99 in the pricing feed and $20 on the public page. Checked Nov 24, 2026.",
   "website": "https://www.dormroommovers.com/storage-shipping-services-at-Texas-A-and-M-University-College-Station-TX/pricing",
   "phone": "888-769-3676",
   "affiliateUrl": null,
@@ -22,7 +22,7 @@
       "note": "The pricing page says registration includes a supply kit and that you then pay only for what is stored or shipped. The kit is described as five boxes, 18 x 18 x 22 inches, plus tape. One box is listed at 4.125 cubic feet.",
       "sourceUrl": "https://www.dormroommovers.com/storage-shipping-services-at-Texas-A-and-M-University-College-Station-TX/pricing",
       "sourceLabel": "Dorm Room Movers Texas A&M pricing",
-      "lastVerified": "2026-11-22"
+      "lastVerified": "2026-11-24"
     },
     {
       "id": "tier-micro",
@@ -35,7 +35,7 @@
       "note": "Examples on the price list: umbrella, crutches, poster tube, art portfolio, pillow, broom, mini vacuum. Monthly billing is $8.25 with no extra discount shown.",
       "sourceUrl": "https://www.dormroommovers.com/storage-shipping-services-at-Texas-A-and-M-University-College-Station-TX/pricing",
       "sourceLabel": "Dorm Room Movers Texas A&M pricing",
-      "lastVerified": "2026-11-22"
+      "lastVerified": "2026-11-24"
     },
     {
       "id": "tier-small",
@@ -48,7 +48,7 @@
       "note": "Examples: folding chair, desk lamp, desk fan, skateboard, shoe rack, ironing board. Monthly billing is $14.50.",
       "sourceUrl": "https://www.dormroommovers.com/storage-shipping-services-at-Texas-A-and-M-University-College-Station-TX/pricing",
       "sourceLabel": "Dorm Room Movers Texas A&M pricing",
-      "lastVerified": "2026-11-22"
+      "lastVerified": "2026-11-24"
     },
     {
       "id": "tier-box",
@@ -61,7 +61,7 @@
       "note": "This is the Medium tier. Their own example prices five DRM boxes at this tier: $455 list, or $409.50 prepaid. Monthly billing is $22.75 per box. Boxes are 18 x 18 x 22 inches. The how-it-works text says a box holds up to 45 pounds. The pricing page says boxes over 65 pounds may cost an extra $30.",
       "sourceUrl": "https://www.dormroommovers.com/storage-shipping-services-at-Texas-A-and-M-University-College-Station-TX/pricing",
       "sourceLabel": "Dorm Room Movers Texas A&M pricing",
-      "lastVerified": "2026-11-22"
+      "lastVerified": "2026-11-24"
     },
     {
       "id": "tier-large",
@@ -74,7 +74,7 @@
       "note": "Also includes a customer box of 4 to 6 cubic feet, a suitcase, and a desk chair. Their sample order prices the mini fridge at this tier. Monthly billing is $28.25.",
       "sourceUrl": "https://www.dormroommovers.com/storage-shipping-services-at-Texas-A-and-M-University-College-Station-TX/pricing",
       "sourceLabel": "Dorm Room Movers Texas A&M pricing",
-      "lastVerified": "2026-11-22"
+      "lastVerified": "2026-11-24"
     },
     {
       "id": "tier-xl",
@@ -87,7 +87,7 @@
       "note": "Also includes a customer box over 6 cubic feet, a futon, a desk, and a dresser. Their sample order prices the television at this tier. Monthly billing is $32.50.",
       "sourceUrl": "https://www.dormroommovers.com/storage-shipping-services-at-Texas-A-and-M-University-College-Station-TX/pricing",
       "sourceLabel": "Dorm Room Movers Texas A&M pricing",
-      "lastVerified": "2026-11-22"
+      "lastVerified": "2026-11-24"
     },
     {
       "id": "off-date",
@@ -100,7 +100,7 @@
       "note": "Featured dates are described as free and based on the academic calendar. The page says to sign in to see the dates and their prices. Those dates were not on the public pricing feed.",
       "sourceUrl": "https://www.dormroommovers.com/storage-shipping-services-at-Texas-A-and-M-University-College-Station-TX/pricing",
       "sourceLabel": "Dorm Room Movers Texas A&M pricing",
-      "lastVerified": "2026-11-23"
+      "lastVerified": "2026-11-24"
     },
     {
       "id": "shipping-handling",
@@ -108,10 +108,10 @@
       "amount": 19.99,
       "per": "box, plus freight",
       "status": "conflict",
-      "note": "The pricing feed the Texas A&M page loads lists $19.99. The public page formats that amount with no cents, so it shows as $20. Both were still true on Nov 22, 2026. UPS freight is still not listed.",
+      "note": "The pricing feed the Texas A&M page loads lists $19.99. The public HTML is a template and did not show a rendered dollar amount without the page script, so the $20 display from Nov 22, 2026 was not seen again. UPS freight is still not listed.",
       "sourceUrl": "https://www.dormroommovers.com/storage-shipping-services-at-Texas-A-and-M-University-College-Station-TX/pricing",
       "sourceLabel": "Dorm Room Movers Texas A&M pricing",
-      "lastVerified": "2026-11-22"
+      "lastVerified": "2026-11-24"
     },
     {
       "id": "overweight",
@@ -122,7 +122,7 @@
       "note": "The pricing page says boxes over 65 pounds may be subject to a charge of $30.",
       "sourceUrl": "https://www.dormroommovers.com/storage-shipping-services-at-Texas-A-and-M-University-College-Station-TX/pricing",
       "sourceLabel": "Dorm Room Movers Texas A&M pricing",
-      "lastVerified": "2026-11-23"
+      "lastVerified": "2026-11-24"
     },
     {
       "id": "distant",
@@ -132,7 +132,7 @@
       "status": "verified",
       "sourceUrl": "https://www.dormroommovers.com/storage-shipping-services-at-Texas-A-and-M-University-College-Station-TX/pricing",
       "sourceLabel": "Dorm Room Movers Texas A&M pricing",
-      "lastVerified": "2026-11-22"
+      "lastVerified": "2026-11-24"
     },
     {
       "id": "warehouse",
@@ -143,7 +143,7 @@
       "note": "Applies to shipping out of storage, a warehouse pickup, or a return to storage if a pickup or delivery is cancelled and not rescheduled within 3 business days.",
       "sourceUrl": "https://www.dormroommovers.com/storage-shipping-services-at-Texas-A-and-M-University-College-Station-TX/pricing",
       "sourceLabel": "Dorm Room Movers Texas A&M pricing",
-      "lastVerified": "2026-11-22"
+      "lastVerified": "2026-11-24"
     },
     {
       "id": "packing",
@@ -154,7 +154,7 @@
       "note": "The page says this is available on a limited basis and on select campuses. It does not say Texas A&M is one of them.",
       "sourceUrl": "https://www.dormroommovers.com/storage-shipping-services-at-Texas-A-and-M-University-College-Station-TX/pricing",
       "sourceLabel": "Dorm Room Movers Texas A&M pricing",
-      "lastVerified": "2026-11-22"
+      "lastVerified": "2026-11-24"
     },
     {
       "id": "fridge-defrost",
@@ -164,7 +164,7 @@
       "status": "verified",
       "sourceUrl": "https://www.dormroommovers.com/storage-shipping-services-at-Texas-A-and-M-University-College-Station-TX/pricing",
       "sourceLabel": "Dorm Room Movers Texas A&M pricing",
-      "lastVerified": "2026-11-22"
+      "lastVerified": "2026-11-24"
     },
     {
       "id": "discard",
@@ -174,7 +174,7 @@
       "status": "verified",
       "sourceUrl": "https://www.dormroommovers.com/storage-shipping-services-at-Texas-A-and-M-University-College-Station-TX/pricing",
       "sourceLabel": "Dorm Room Movers Texas A&M pricing",
-      "lastVerified": "2026-11-22"
+      "lastVerified": "2026-11-24"
     },
     {
       "id": "last-minute",
@@ -184,7 +184,7 @@
       "status": "verified",
       "sourceUrl": "https://www.dormroommovers.com/storage-shipping-services-at-Texas-A-and-M-University-College-Station-TX/pricing",
       "sourceLabel": "Dorm Room Movers Texas A&M pricing",
-      "lastVerified": "2026-11-22"
+      "lastVerified": "2026-11-24"
     }
   ],
   "units": [],
@@ -193,9 +193,9 @@
       "label": "Term length",
       "value": "Initial storage period is 4 months from pickup. The pricing feed for Texas A&M sets the term at 4 months.",
       "status": "verified",
-      "sourceUrl": "https://dormroommovers.zendesk.com/hc/en-us/articles/360018691212-How-does-pricing-work-for-storage",
-      "sourceLabel": "Dorm Room Movers pricing help article",
-      "lastVerified": "2026-11-22"
+      "sourceUrl": "https://www.dormroommovers.com/storage-shipping-services-at-Texas-A-and-M-University-College-Station-TX/pricing",
+      "sourceLabel": "Dorm Room Movers Texas A&M pricing",
+      "lastVerified": "2026-11-24"
     },
     {
       "label": "Prepay discount",
@@ -203,7 +203,7 @@
       "status": "verified",
       "sourceUrl": "https://www.dormroommovers.com/storage-shipping-services-at-Texas-A-and-M-University-College-Station-TX/pricing",
       "sourceLabel": "Dorm Room Movers Texas A&M pricing",
-      "lastVerified": "2026-11-22"
+      "lastVerified": "2026-11-24"
     },
     {
       "label": "Where items go",
@@ -211,7 +211,7 @@
       "status": "verified",
       "sourceUrl": "https://www.dormroommovers.com/storage-Texas-A-and-M-University-College-Station-TX",
       "sourceLabel": "Dorm Room Movers Texas A&M page",
-      "lastVerified": "2026-11-20"
+      "lastVerified": "2026-11-24"
     },
     {
       "label": "Coverage",
@@ -219,7 +219,7 @@
       "status": "conflict",
       "sourceUrl": "https://www.dormroommovers.com/storage-Texas-A-and-M-University-College-Station-TX",
       "sourceLabel": "Dorm Room Movers Texas A&M page",
-      "lastVerified": "2026-11-20"
+      "lastVerified": "2026-11-24"
     },
     {
       "label": "Off campus",
@@ -227,7 +227,7 @@
       "status": "verified",
       "sourceUrl": "https://www.dormroommovers.com/storage-Texas-A-and-M-University-College-Station-TX",
       "sourceLabel": "Dorm Room Movers Texas A&M page",
-      "lastVerified": "2026-11-20"
+      "lastVerified": "2026-11-24"
     },
     {
       "label": "Campus last-day field",
@@ -235,8 +235,8 @@
       "status": "verified",
       "sourceUrl": "https://www.dormroommovers.com/storage-shipping-services-at-Texas-A-and-M-University-College-Station-TX/pricing",
       "sourceLabel": "Dorm Room Movers Texas A&M pricing",
-      "lastVerified": "2026-11-22",
-      "note": "Checked Nov 21, 2026 in the pricing feed the page loads."
+      "lastVerified": "2026-11-24",
+      "note": "The feed field is last_day_at, 2026-05-06. The public pricing page still does not print it, and it still does not list the next free pickup dates."
     },
     {
       "label": "Who moves the items",
@@ -244,7 +244,7 @@
       "status": "verified",
       "sourceUrl": "https://www.dormroommovers.com/storage-Texas-A-and-M-University-College-Station-TX",
       "sourceLabel": "Dorm Room Movers Texas A&M page",
-      "lastVerified": "2026-11-20"
+      "lastVerified": "2026-11-24"
     }
   ],
   "gaps": [

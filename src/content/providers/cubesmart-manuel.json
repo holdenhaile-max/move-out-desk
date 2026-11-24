@@ -7,7 +7,7 @@
   "cities": [
     "college-station"
   ],
-  "summary": "CubeSmart at 219 Manuel Drive lists heated-and-cooled and drive-up rooms. Drive-up means you can park at the door. You will see a lower online price and a higher in-store price, plus first month free and 40% off. Ask how many months that discount lasts before you budget it. Checked Nov 22, 2026.",
+  "summary": "CubeSmart at 219 Manuel Drive lists heated-and-cooled and drive-up rooms. Drive-up means you can park at the door. Checked Nov 24, 2026, on Storage.com, a climate 5x10 is $57.60 online and $96 in the store, under first month free and 40% off. Storage.com lists a $29 admin fee. CubeSmart's own page did not open. Ask how many months the discount lasts before you budget it.",
   "website": "https://www.cubesmart.com/texas-self-storage/college-station-self-storage/4124.html",
   "phone": "(979) 693-0551",
   "affiliateUrl": null,
@@ -16,13 +16,13 @@
     {
       "id": "admin-fee",
       "label": "One-time administrative fee",
-      "amount": null,
+      "amount": 29,
       "per": "at move-in",
-      "status": "unverified",
-      "note": "CubeSmart says the first month plus a one-time administrative fee is due at rental. This facility page does not print the fee amount.",
-      "sourceUrl": "https://www.cubesmart.com/texas-self-storage/college-station-self-storage/4124.html",
-      "sourceLabel": "CubeSmart Manuel Drive",
-      "lastVerified": "2026-11-22"
+      "status": "verified",
+      "note": "Storage.com calls this a fee from the facility, due when you move in. CubeSmart's own page did not open.",
+      "sourceUrl": "https://www.storage.com/self-storage/texas/college-station/cubesmart-self-storage-college-station-219-manuel-drive-213806/",
+      "sourceLabel": "Storage.com listing for CubeSmart on Manuel Drive",
+      "lastVerified": "2026-11-24"
     },
     {
       "id": "insurance",
@@ -30,10 +30,10 @@
       "amount": null,
       "per": "month, if you buy theirs",
       "status": "unverified",
-      "note": "Insurance is required. You can bring a declaration page from a policy you already have. The dollar cost of their plan is not on this page.",
-      "sourceUrl": "https://www.cubesmart.com/texas-self-storage/college-station-self-storage/4124.html",
-      "sourceLabel": "CubeSmart Manuel Drive",
-      "lastVerified": "2026-11-22"
+      "note": "Storage.com says insurance is required and does not print a price. CubeSmart's own page did not open.",
+      "sourceUrl": "https://www.storage.com/self-storage/texas/college-station/cubesmart-self-storage-college-station-219-manuel-drive-213806/",
+      "sourceLabel": "Storage.com listing for CubeSmart on Manuel Drive",
+      "lastVerified": "2026-11-24"
     },
     {
       "id": "military",
@@ -56,10 +56,10 @@
       "inStoreMonthly": 41,
       "promo": "First month free and 40% off",
       "status": "verified",
-      "note": "The page shows both prices under that promo. It does not say the online price is locked for a summer.",
-      "sourceUrl": "https://www.cubesmart.com/texas-self-storage/college-station-self-storage/4124.html",
-      "sourceLabel": "CubeSmart Manuel Drive",
-      "lastVerified": "2026-11-22"
+      "note": "Lowest web price on the Storage.com listing for this size and type, and the crossed-out in-store price on that card. Other rooms of this size and type were listed up to $28.80 online. CubeSmart's own page did not open.",
+      "sourceUrl": "https://www.storage.com/self-storage/texas/college-station/cubesmart-self-storage-college-station-219-manuel-drive-213806/",
+      "sourceLabel": "Storage.com listing for CubeSmart on Manuel Drive",
+      "lastVerified": "2026-11-24"
     },
     {
       "size": "5x10",
@@ -70,9 +70,10 @@
       "inStoreMonthly": 96,
       "promo": "First month free and 40% off",
       "status": "verified",
-      "sourceUrl": "https://www.cubesmart.com/texas-self-storage/college-station-self-storage/4124.html",
-      "sourceLabel": "CubeSmart Manuel Drive",
-      "lastVerified": "2026-11-22"
+      "sourceUrl": "https://www.storage.com/self-storage/texas/college-station/cubesmart-self-storage-college-station-219-manuel-drive-213806/",
+      "sourceLabel": "Storage.com listing for CubeSmart on Manuel Drive",
+      "lastVerified": "2026-11-24",
+      "note": "Lowest web price on the Storage.com listing for this size and type, and the crossed-out in-store price on that card. Other rooms of this size and type were listed up to $67.20 online. CubeSmart's own page did not open."
     },
     {
       "size": "10x10",
@@ -83,9 +84,10 @@
       "inStoreMonthly": 152,
       "promo": "First month free and 40% off",
       "status": "verified",
-      "sourceUrl": "https://www.cubesmart.com/texas-self-storage/college-station-self-storage/4124.html",
-      "sourceLabel": "CubeSmart Manuel Drive",
-      "lastVerified": "2026-11-22"
+      "sourceUrl": "https://www.storage.com/self-storage/texas/college-station/cubesmart-self-storage-college-station-219-manuel-drive-213806/",
+      "sourceLabel": "Storage.com listing for CubeSmart on Manuel Drive",
+      "lastVerified": "2026-11-24",
+      "note": "Lowest web price on the Storage.com listing for this size and type, and the crossed-out in-store price on that card. Other rooms of this size and type were listed up to $105.60 online. CubeSmart's own page did not open."
     },
     {
       "size": "10x15",
@@ -96,9 +98,10 @@
       "inStoreMonthly": 214,
       "promo": "First month free and 40% off",
       "status": "verified",
-      "sourceUrl": "https://www.cubesmart.com/texas-self-storage/college-station-self-storage/4124.html",
-      "sourceLabel": "CubeSmart Manuel Drive",
-      "lastVerified": "2026-11-22"
+      "sourceUrl": "https://www.storage.com/self-storage/texas/college-station/cubesmart-self-storage-college-station-219-manuel-drive-213806/",
+      "sourceLabel": "Storage.com listing for CubeSmart on Manuel Drive",
+      "lastVerified": "2026-11-24",
+      "note": "Lowest web price on the Storage.com listing for this size and type, and the crossed-out in-store price on that card. Other rooms of this size and type were listed up to $138.60 online. CubeSmart's own page did not open."
     },
     {
       "size": "10x20",
@@ -109,9 +112,10 @@
       "inStoreMonthly": 283,
       "promo": "First month free and 40% off. Listed as 20 by 10.",
       "status": "verified",
-      "sourceUrl": "https://www.cubesmart.com/texas-self-storage/college-station-self-storage/4124.html",
-      "sourceLabel": "CubeSmart Manuel Drive",
-      "lastVerified": "2026-11-22"
+      "sourceUrl": "https://www.storage.com/self-storage/texas/college-station/cubesmart-self-storage-college-station-219-manuel-drive-213806/",
+      "sourceLabel": "Storage.com listing for CubeSmart on Manuel Drive",
+      "lastVerified": "2026-11-24",
+      "note": "The only web price on the Storage.com listing for this size and type, and the crossed-out in-store price on that card. CubeSmart's own page did not open."
     },
     {
       "size": "15x15",
@@ -122,9 +126,10 @@
       "inStoreMonthly": 348,
       "promo": "First month free and 40% off",
       "status": "verified",
-      "sourceUrl": "https://www.cubesmart.com/texas-self-storage/college-station-self-storage/4124.html",
-      "sourceLabel": "CubeSmart Manuel Drive",
-      "lastVerified": "2026-11-22"
+      "sourceUrl": "https://www.storage.com/self-storage/texas/college-station/cubesmart-self-storage-college-station-219-manuel-drive-213806/",
+      "sourceLabel": "Storage.com listing for CubeSmart on Manuel Drive",
+      "lastVerified": "2026-11-24",
+      "note": "The only web price on the Storage.com listing for this size and type, and the crossed-out in-store price on that card. CubeSmart's own page did not open."
     },
     {
       "size": "5x5",
@@ -135,9 +140,10 @@
       "inStoreMonthly": 36,
       "promo": "First month free and 40% off",
       "status": "verified",
-      "sourceUrl": "https://www.cubesmart.com/texas-self-storage/college-station-self-storage/4124.html",
-      "sourceLabel": "CubeSmart Manuel Drive",
-      "lastVerified": "2026-11-22"
+      "sourceUrl": "https://www.storage.com/self-storage/texas/college-station/cubesmart-self-storage-college-station-219-manuel-drive-213806/",
+      "sourceLabel": "Storage.com listing for CubeSmart on Manuel Drive",
+      "lastVerified": "2026-11-24",
+      "note": "Lowest web price on the Storage.com listing for this size and type, and the crossed-out in-store price on that card. Other rooms of this size and type were listed up to $25.20 online. CubeSmart's own page did not open."
     },
     {
       "size": "5x10",
@@ -148,9 +154,10 @@
       "inStoreMonthly": 62,
       "promo": "First month free and 40% off",
       "status": "verified",
-      "sourceUrl": "https://www.cubesmart.com/texas-self-storage/college-station-self-storage/4124.html",
-      "sourceLabel": "CubeSmart Manuel Drive",
-      "lastVerified": "2026-11-22"
+      "sourceUrl": "https://www.storage.com/self-storage/texas/college-station/cubesmart-self-storage-college-station-219-manuel-drive-213806/",
+      "sourceLabel": "Storage.com listing for CubeSmart on Manuel Drive",
+      "lastVerified": "2026-11-24",
+      "note": "Lowest web price on the Storage.com listing for this size and type, and the crossed-out in-store price on that card. Other rooms of this size and type were listed up to $40.20 online. CubeSmart's own page did not open."
     },
     {
       "size": "10x10",
@@ -161,9 +168,10 @@
       "inStoreMonthly": 102,
       "promo": "First month free and 40% off",
       "status": "verified",
-      "sourceUrl": "https://www.cubesmart.com/texas-self-storage/college-station-self-storage/4124.html",
-      "sourceLabel": "CubeSmart Manuel Drive",
-      "lastVerified": "2026-11-22"
+      "sourceUrl": "https://www.storage.com/self-storage/texas/college-station/cubesmart-self-storage-college-station-219-manuel-drive-213806/",
+      "sourceLabel": "Storage.com listing for CubeSmart on Manuel Drive",
+      "lastVerified": "2026-11-24",
+      "note": "Lowest web price on the Storage.com listing for this size and type, and the crossed-out in-store price on that card. Other rooms of this size and type were listed up to $70.80 online. CubeSmart's own page did not open."
     },
     {
       "size": "10x15",
@@ -174,9 +182,10 @@
       "inStoreMonthly": 125,
       "promo": "First month free and 40% off",
       "status": "verified",
-      "sourceUrl": "https://www.cubesmart.com/texas-self-storage/college-station-self-storage/4124.html",
-      "sourceLabel": "CubeSmart Manuel Drive",
-      "lastVerified": "2026-11-22"
+      "sourceUrl": "https://www.storage.com/self-storage/texas/college-station/cubesmart-self-storage-college-station-219-manuel-drive-213806/",
+      "sourceLabel": "Storage.com listing for CubeSmart on Manuel Drive",
+      "lastVerified": "2026-11-24",
+      "note": "Lowest web price on the Storage.com listing for this size and type, and the crossed-out in-store price on that card. Other rooms of this size and type were listed up to $87 online. CubeSmart's own page did not open."
     },
     {
       "size": "10x20",
@@ -187,9 +196,10 @@
       "inStoreMonthly": 132,
       "promo": "First month free and 40% off",
       "status": "verified",
-      "sourceUrl": "https://www.cubesmart.com/texas-self-storage/college-station-self-storage/4124.html",
-      "sourceLabel": "CubeSmart Manuel Drive",
-      "lastVerified": "2026-11-22"
+      "sourceUrl": "https://www.storage.com/self-storage/texas/college-station/cubesmart-self-storage-college-station-219-manuel-drive-213806/",
+      "sourceLabel": "Storage.com listing for CubeSmart on Manuel Drive",
+      "lastVerified": "2026-11-24",
+      "note": "Lowest web price on the Storage.com listing for this size and type, and the crossed-out in-store price on that card. Other rooms of this size and type were listed up to $91.80 online. CubeSmart's own page did not open."
     },
     {
       "size": "5x16",
@@ -200,9 +210,10 @@
       "inStoreMonthly": 68,
       "promo": "First month free and 40% off",
       "status": "verified",
-      "sourceUrl": "https://www.cubesmart.com/texas-self-storage/college-station-self-storage/4124.html",
-      "sourceLabel": "CubeSmart Manuel Drive",
-      "lastVerified": "2026-11-22"
+      "sourceUrl": "https://www.storage.com/self-storage/texas/college-station/cubesmart-self-storage-college-station-219-manuel-drive-213806/",
+      "sourceLabel": "Storage.com listing for CubeSmart on Manuel Drive",
+      "lastVerified": "2026-11-24",
+      "note": "Lowest web price on the Storage.com listing for this size and type, and the crossed-out in-store price on that card. Other rooms of this size and type were listed up to $47.40 online. CubeSmart's own page did not open."
     },
     {
       "size": "5x20",
@@ -213,9 +224,10 @@
       "inStoreMonthly": 102,
       "promo": "First month free and 40% off",
       "status": "verified",
-      "sourceUrl": "https://www.cubesmart.com/texas-self-storage/college-station-self-storage/4124.html",
-      "sourceLabel": "CubeSmart Manuel Drive",
-      "lastVerified": "2026-11-22"
+      "sourceUrl": "https://www.storage.com/self-storage/texas/college-station/cubesmart-self-storage-college-station-219-manuel-drive-213806/",
+      "sourceLabel": "Storage.com listing for CubeSmart on Manuel Drive",
+      "lastVerified": "2026-11-24",
+      "note": "Lowest web price on the Storage.com listing for this size and type, and the crossed-out in-store price on that card. Other rooms of this size and type were listed up to $70.80 online. CubeSmart's own page did not open."
     },
     {
       "size": "10x25",
@@ -226,9 +238,10 @@
       "inStoreMonthly": 149,
       "promo": "First month free and 40% off",
       "status": "verified",
-      "sourceUrl": "https://www.cubesmart.com/texas-self-storage/college-station-self-storage/4124.html",
-      "sourceLabel": "CubeSmart Manuel Drive",
-      "lastVerified": "2026-11-22"
+      "sourceUrl": "https://www.storage.com/self-storage/texas/college-station/cubesmart-self-storage-college-station-219-manuel-drive-213806/",
+      "sourceLabel": "Storage.com listing for CubeSmart on Manuel Drive",
+      "lastVerified": "2026-11-24",
+      "note": "Lowest web price on the Storage.com listing for this size and type, and the crossed-out in-store price on that card. Other rooms of this size and type were listed up to $103.80 online. CubeSmart's own page did not open."
     },
     {
       "size": "20x15",
@@ -239,10 +252,10 @@
       "inStoreMonthly": 161,
       "promo": "First month free and 40% off",
       "status": "verified",
-      "sourceUrl": "https://www.cubesmart.com/texas-self-storage/college-station-self-storage/4124.html",
-      "sourceLabel": "CubeSmart Manuel Drive",
-      "lastVerified": "2026-11-22",
-      "note": "Listed as 20 by 15."
+      "sourceUrl": "https://www.storage.com/self-storage/texas/college-station/cubesmart-self-storage-college-station-219-manuel-drive-213806/",
+      "sourceLabel": "Storage.com listing for CubeSmart on Manuel Drive",
+      "lastVerified": "2026-11-24",
+      "note": "The only web price on the Storage.com listing for this size and type, and the crossed-out in-store price on that card. CubeSmart's own page did not open."
     },
     {
       "size": "20x20",
@@ -253,9 +266,10 @@
       "inStoreMonthly": 283,
       "promo": "First month free and 40% off",
       "status": "verified",
-      "sourceUrl": "https://www.cubesmart.com/texas-self-storage/college-station-self-storage/4124.html",
-      "sourceLabel": "CubeSmart Manuel Drive",
-      "lastVerified": "2026-11-22"
+      "sourceUrl": "https://www.storage.com/self-storage/texas/college-station/cubesmart-self-storage-college-station-219-manuel-drive-213806/",
+      "sourceLabel": "Storage.com listing for CubeSmart on Manuel Drive",
+      "lastVerified": "2026-11-24",
+      "note": "The only web price on the Storage.com listing for this size and type, and the crossed-out in-store price on that card. CubeSmart's own page did not open."
     }
   ],
   "facts": [
@@ -263,17 +277,17 @@
       "label": "Office hours",
       "value": "Monday to Friday 9:30 a.m. to 6:00 p.m., Saturday 8:30 a.m. to 5:00 p.m., Sunday closed.",
       "status": "verified",
-      "sourceUrl": "https://www.cubesmart.com/texas-self-storage/college-station-self-storage/4124.html",
-      "sourceLabel": "CubeSmart Manuel Drive",
-      "lastVerified": "2026-11-22"
+      "sourceUrl": "https://www.storage.com/self-storage/texas/college-station/cubesmart-self-storage-college-station-219-manuel-drive-213806/",
+      "sourceLabel": "Storage.com listing for CubeSmart on Manuel Drive",
+      "lastVerified": "2026-11-24"
     },
     {
       "label": "Access hours",
       "value": "Daily, 6:00 a.m. to 10:00 p.m.",
       "status": "verified",
-      "sourceUrl": "https://www.cubesmart.com/texas-self-storage/college-station-self-storage/4124.html",
-      "sourceLabel": "CubeSmart Manuel Drive",
-      "lastVerified": "2026-11-22"
+      "sourceUrl": "https://www.storage.com/self-storage/texas/college-station/cubesmart-self-storage-college-station-219-manuel-drive-213806/",
+      "sourceLabel": "Storage.com listing for CubeSmart on Manuel Drive",
+      "lastVerified": "2026-11-24"
     },
     {
       "label": "Lease",
@@ -293,7 +307,7 @@
     }
   ],
   "gaps": [
-    "Administrative fee amount.",
+    "Confirmation of the $29 admin fee on CubeSmart's own page. That page did not open.",
     "Protection-plan price.",
     "How many months the online discount and free first month last.",
     "A published temperature range for the climate-controlled units.",
