@@ -7,7 +7,7 @@
   "cities": [
     "college-station"
   ],
-  "summary": "CubeSmart at 104 Holleman Drive. Checked Nov 24, 2026, on Storage.com, the list was drive-up rooms only. The lowest drive-up 5x5 is $15.60 online and $26 in the store. Storage.com lists a $29 admin fee. CubeSmart's own page did not open. No heated-and-cooled room was on the listing.",
+  "summary": "CubeSmart at 104 Holleman Drive. Checked Nov 25, 2026, the facility page listed drive-up rooms from a 10x10 at $54.60 online and $91 in the store, and did not list a 5x5 or a 5x10. The 5x5 at $15.60 online and $26 in the store is the Storage.com price from Nov 24, 2026. No heated room was on either list. The page says the store is less than three miles from the Texas A&M campus.",
   "website": "https://www.cubesmart.com/texas-self-storage/college-station-self-storage/64.html",
   "phone": "(979) 696-1000",
   "affiliateUrl": null,
@@ -19,7 +19,7 @@
       "amount": 29,
       "per": "at move-in",
       "status": "verified",
-      "note": "Storage.com calls this a fee from the facility, due when you move in. CubeSmart's own page did not open.",
+      "note": "Storage.com calls this a fee from the facility, due when you move in. CubeSmart's own page, checked Nov 25, 2026, does not print this dollar amount.",
       "sourceUrl": "https://www.storage.com/self-storage/texas/college-station/cubesmart-self-storage-college-station-104-holleman-drive-63265/",
       "sourceLabel": "Storage.com listing for CubeSmart on Holleman Drive",
       "lastVerified": "2026-11-24"
@@ -33,7 +33,7 @@
       "sourceUrl": "https://www.storage.com/self-storage/texas/college-station/cubesmart-self-storage-college-station-104-holleman-drive-63265/",
       "sourceLabel": "Storage.com listing for CubeSmart on Holleman Drive",
       "lastVerified": "2026-11-24",
-      "note": "Storage.com says insurance is required and does not print a price. CubeSmart's own page did not open."
+      "note": "Storage.com says insurance is required and does not print a price. CubeSmart's own page, checked Nov 25, 2026, does not print this dollar amount."
     }
   ],
   "units": [
@@ -49,7 +49,7 @@
       "sourceUrl": "https://www.storage.com/self-storage/texas/college-station/cubesmart-self-storage-college-station-104-holleman-drive-63265/",
       "sourceLabel": "Storage.com listing for CubeSmart on Holleman Drive",
       "lastVerified": "2026-11-24",
-      "note": "Lowest web price on the Storage.com listing for this size and type, and the crossed-out in-store price on that card. Other rooms of this size and type were listed up to $18 online. CubeSmart's own page did not open."
+      "note": "Lowest web price on the Storage.com listing for this size and type, and the crossed-out in-store price on that card. Other rooms of this size and type were listed up to $18 online. CubeSmart's own page did not list this size on Nov 25, 2026. This price is the Storage.com listing from Nov 24, 2026."
     },
     {
       "size": "5x10",
@@ -63,7 +63,7 @@
       "sourceUrl": "https://www.storage.com/self-storage/texas/college-station/cubesmart-self-storage-college-station-104-holleman-drive-63265/",
       "sourceLabel": "Storage.com listing for CubeSmart on Holleman Drive",
       "lastVerified": "2026-11-24",
-      "note": "Lowest web price on the Storage.com listing for this size and type, and the crossed-out in-store price on that card. Other rooms of this size and type were listed up to $36.60 online. CubeSmart's own page did not open."
+      "note": "Lowest web price on the Storage.com listing for this size and type, and the crossed-out in-store price on that card. Other rooms of this size and type were listed up to $36.60 online. CubeSmart's own page did not list this size on Nov 25, 2026. This price is the Storage.com listing from Nov 24, 2026."
     },
     {
       "size": "5x15",
@@ -77,7 +77,7 @@
       "sourceUrl": "https://www.storage.com/self-storage/texas/college-station/cubesmart-self-storage-college-station-104-holleman-drive-63265/",
       "sourceLabel": "Storage.com listing for CubeSmart on Holleman Drive",
       "lastVerified": "2026-11-24",
-      "note": "Lowest web price on the Storage.com listing for this size and type, and the crossed-out in-store price on that card. Other rooms of this size and type were listed up to $46.20 online. CubeSmart's own page did not open."
+      "note": "Lowest web price on the Storage.com listing for this size and type, and the crossed-out in-store price on that card. Other rooms of this size and type were listed up to $46.20 online. CubeSmart's own page did not list this size on Nov 25, 2026. This price is the Storage.com listing from Nov 24, 2026."
     },
     {
       "size": "5x20",
@@ -88,10 +88,10 @@
       "inStoreMonthly": 94,
       "promo": "First month free and 40% off",
       "status": "verified",
-      "sourceUrl": "https://www.storage.com/self-storage/texas/college-station/cubesmart-self-storage-college-station-104-holleman-drive-63265/",
-      "sourceLabel": "Storage.com listing for CubeSmart on Holleman Drive",
-      "lastVerified": "2026-11-24",
-      "note": "The only web price on the Storage.com listing for this size and type, and the crossed-out in-store price on that card. CubeSmart's own page did not open."
+      "sourceUrl": "https://www.cubesmart.com/texas-self-storage/college-station-self-storage/64.html",
+      "sourceLabel": "CubeSmart Holleman Drive",
+      "lastVerified": "2026-11-25",
+      "note": "CubeSmart's own page listed this drive-up room at this online price and in-store price, under first month free and 40% off. It does not say how many months the online price lasts."
     },
     {
       "size": "10x10",
@@ -102,10 +102,10 @@
       "inStoreMonthly": 91,
       "promo": "First month free and 40% off",
       "status": "verified",
-      "sourceUrl": "https://www.storage.com/self-storage/texas/college-station/cubesmart-self-storage-college-station-104-holleman-drive-63265/",
-      "sourceLabel": "Storage.com listing for CubeSmart on Holleman Drive",
-      "lastVerified": "2026-11-24",
-      "note": "Lowest web price on the Storage.com listing for this size and type, and the crossed-out in-store price on that card. Other rooms of this size and type were listed up to $66 online. CubeSmart's own page did not open."
+      "sourceUrl": "https://www.cubesmart.com/texas-self-storage/college-station-self-storage/64.html",
+      "sourceLabel": "CubeSmart Holleman Drive",
+      "lastVerified": "2026-11-25",
+      "note": "CubeSmart's own page listed this drive-up room at this online price and in-store price, under first month free and 40% off. It does not say how many months the online price lasts."
     },
     {
       "size": "10x15",
@@ -116,10 +116,10 @@
       "inStoreMonthly": 112,
       "promo": "First month free and 40% off",
       "status": "verified",
-      "sourceUrl": "https://www.storage.com/self-storage/texas/college-station/cubesmart-self-storage-college-station-104-holleman-drive-63265/",
-      "sourceLabel": "Storage.com listing for CubeSmart on Holleman Drive",
-      "lastVerified": "2026-11-24",
-      "note": "Lowest web price on the Storage.com listing for this size and type, and the crossed-out in-store price on that card. Other rooms of this size and type were listed up to $78 online. CubeSmart's own page did not open."
+      "sourceUrl": "https://www.cubesmart.com/texas-self-storage/college-station-self-storage/64.html",
+      "sourceLabel": "CubeSmart Holleman Drive",
+      "lastVerified": "2026-11-25",
+      "note": "CubeSmart's own page listed this drive-up room at this online price and in-store price, under first month free and 40% off. It does not say how many months the online price lasts."
     },
     {
       "size": "10x20",
@@ -130,10 +130,10 @@
       "inStoreMonthly": 121,
       "promo": "First month free and 40% off",
       "status": "verified",
-      "sourceUrl": "https://www.storage.com/self-storage/texas/college-station/cubesmart-self-storage-college-station-104-holleman-drive-63265/",
-      "sourceLabel": "Storage.com listing for CubeSmart on Holleman Drive",
-      "lastVerified": "2026-11-24",
-      "note": "Lowest web price on the Storage.com listing for this size and type, and the crossed-out in-store price on that card. Other rooms of this size and type were listed up to $78.60 online. CubeSmart's own page did not open."
+      "sourceUrl": "https://www.cubesmart.com/texas-self-storage/college-station-self-storage/64.html",
+      "sourceLabel": "CubeSmart Holleman Drive",
+      "lastVerified": "2026-11-25",
+      "note": "CubeSmart's own page listed this drive-up room at this online price and in-store price, under first month free and 40% off. It does not say how many months the online price lasts."
     },
     {
       "size": "20x20",
@@ -144,28 +144,28 @@
       "inStoreMonthly": 292,
       "promo": "First month free and 40% off",
       "status": "verified",
-      "sourceUrl": "https://www.storage.com/self-storage/texas/college-station/cubesmart-self-storage-college-station-104-holleman-drive-63265/",
-      "sourceLabel": "Storage.com listing for CubeSmart on Holleman Drive",
-      "lastVerified": "2026-11-24",
-      "note": "The only web price on the Storage.com listing for this size and type, and the crossed-out in-store price on that card. CubeSmart's own page did not open."
+      "sourceUrl": "https://www.cubesmart.com/texas-self-storage/college-station-self-storage/64.html",
+      "sourceLabel": "CubeSmart Holleman Drive",
+      "lastVerified": "2026-11-25",
+      "note": "CubeSmart's own page listed this drive-up room at this online price and in-store price, under first month free and 40% off. It does not say how many months the online price lasts."
     }
   ],
   "facts": [
     {
       "label": "Office hours",
-      "value": "Monday to Friday 9:30 a.m. to 6:00 p.m., Saturday 8:30 a.m. to 5:00 p.m., Sunday closed.",
+      "value": "Monday to Friday 9:30 a.m. to 6:00 p.m., Saturday 8:30 a.m. to 5:00 p.m., Sunday closed. The page also says the office is closed on Thanksgiving and access stays open that day.",
       "status": "verified",
-      "sourceUrl": "https://www.storage.com/self-storage/texas/college-station/cubesmart-self-storage-college-station-104-holleman-drive-63265/",
-      "sourceLabel": "Storage.com listing for CubeSmart on Holleman Drive",
-      "lastVerified": "2026-11-24"
+      "sourceUrl": "https://www.cubesmart.com/texas-self-storage/college-station-self-storage/64.html",
+      "sourceLabel": "CubeSmart Holleman Drive",
+      "lastVerified": "2026-11-25"
     },
     {
       "label": "Access hours",
-      "value": "Daily, 6:00 a.m. to 10:00 p.m.",
+      "value": "Daily, 6:00 a.m. to 10:00 p.m. The page says access stays open on Thanksgiving.",
       "status": "verified",
-      "sourceUrl": "https://www.storage.com/self-storage/texas/college-station/cubesmart-self-storage-college-station-104-holleman-drive-63265/",
-      "sourceLabel": "Storage.com listing for CubeSmart on Holleman Drive",
-      "lastVerified": "2026-11-24"
+      "sourceUrl": "https://www.cubesmart.com/texas-self-storage/college-station-self-storage/64.html",
+      "sourceLabel": "CubeSmart Holleman Drive",
+      "lastVerified": "2026-11-25"
     },
     {
       "label": "Distance claim",
@@ -173,15 +173,15 @@
       "status": "verified",
       "sourceUrl": "https://www.cubesmart.com/texas-self-storage/college-station-self-storage/64.html",
       "sourceLabel": "CubeSmart Holleman Drive",
-      "lastVerified": "2026-11-22"
+      "lastVerified": "2026-11-25"
     },
     {
       "label": "Climate-controlled units",
-      "value": "None were listed on Storage.com. The list was drive-up rooms, including a 5x5 and a 5x10. CubeSmart's own page did not open.",
+      "value": "Checked Nov 25, 2026, CubeSmart's own page listed drive-up rooms and did not list a heated room, a 5x5, or a 5x10. Storage.com on Nov 24, 2026 listed drive-up rooms including a 5x5 and a 5x10, and no heated room.",
       "status": "verified",
-      "sourceUrl": "https://www.storage.com/self-storage/texas/college-station/cubesmart-self-storage-college-station-104-holleman-drive-63265/",
-      "sourceLabel": "Storage.com listing for CubeSmart on Holleman Drive",
-      "lastVerified": "2026-11-24"
+      "sourceUrl": "https://www.cubesmart.com/texas-self-storage/college-station-self-storage/64.html",
+      "sourceLabel": "CubeSmart Holleman Drive",
+      "lastVerified": "2026-11-25"
     },
     {
       "label": "Deliveries",
@@ -189,12 +189,12 @@
       "status": "verified",
       "sourceUrl": "https://www.cubesmart.com/texas-self-storage/college-station-self-storage/64.html",
       "sourceLabel": "CubeSmart Holleman Drive",
-      "lastVerified": "2026-11-22"
+      "lastVerified": "2026-11-25"
     }
   ],
   "gaps": [
-    "Confirmation of the $29 admin fee on CubeSmart's own page. That page did not open.",
+    "The $29 admin fee is on the Storage.com listing from Nov 24, 2026. CubeSmart's own page names an administrative fee and does not print the amount.",
     "Protection-plan price.",
-    "Whether a heated-and-cooled room exists but was not on the Storage.com list."
+    "A 5x5 and a 5x10 were on Storage.com on Nov 24, 2026 and were not on CubeSmart's own page on Nov 25, 2026."
   ]
 }

@@ -27,7 +27,7 @@
         "status": "verified",
         "sourceUrl": "https://www.uhaul.com/Locations/Self-Storage-near-College-Station-TX-77845/755037/",
         "sourceLabel": "U-Haul Texas Ave",
-        "lastVerified": "2026-11-23"
+        "lastVerified": "2026-11-25"
       },
       "right": { "type": "unit", "size": "5x10", "climate": true, "field": "onlineMonthly" }
     },
@@ -49,7 +49,7 @@
         "status": "verified",
         "sourceUrl": "https://www.uhaul.com/Locations/Self-Storage-near-College-Station-TX-77845/755037/",
         "sourceLabel": "U-Haul Texas Ave",
-        "lastVerified": "2026-11-23"
+        "lastVerified": "2026-11-25"
       },
       "right": {
         "type": "text",
@@ -68,7 +68,7 @@
         "status": "verified",
         "sourceUrl": "https://www.uhaul.com/Locations/Self-Storage-near-College-Station-TX-77845/755037/",
         "sourceLabel": "U-Haul Texas Ave",
-        "lastVerified": "2026-11-23"
+        "lastVerified": "2026-11-25"
       },
       "right": {
         "type": "text",
@@ -81,8 +81,8 @@
     }
   ],
   "takeaway": [
-    "CubeSmart's in-store 5x10 climate price, $96, is close to U-Haul's locked $99.95. CubeSmart's $57.60 online price is lower only for as long as that promo actually bills. Those CubeSmart prices were read on Storage.com. Checked Nov 24, 2026. CubeSmart's own page did not open. U-Haul checked Nov 23, 2026.",
-    "U-Haul is the one that prints a 12-month price lock, a $0 admin fee, and a temperature band. Checked Nov 23, 2026. CubeSmart is the one with the lower advertised starting price. Storage.com lists a $29 admin fee. Checked Nov 24, 2026.",
+    "CubeSmart's in-store 5x10 climate price, $96, is close to U-Haul's locked $99.95. CubeSmart's $57.60 online price is lower only for as long as that promo actually bills. Those CubeSmart prices were read on Storage.com. Checked Nov 24, 2026. CubeSmart's own page did not open. U-Haul checked Nov 25, 2026.",
+    "U-Haul is the one that prints a 12-month price lock, a $0 admin fee, and a temperature band. Checked Nov 25, 2026. CubeSmart is the one with the lower advertised starting price. Storage.com lists a $29 admin fee. Checked Nov 24, 2026.",
     "If you are storing books or a laptop over a College Station summer, the missing degree range at CubeSmart is a real gap. Ask them what the unit is set to before you move wood furniture or electronics in."
   ]
 }
