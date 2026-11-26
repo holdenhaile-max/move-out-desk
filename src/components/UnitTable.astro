@@ -13,8 +13,16 @@ interface Props {
   caption?: string;
   cityId?: string;
   providerIds?: string;
+  access?: string;
 }
-const { climate = "any", sizes = "", caption, cityId = "college-station", providerIds = "" } = Astro.props;
+const {
+  climate = "any",
+  sizes = "",
+  caption,
+  cityId = "college-station",
+  providerIds = "",
+  access = "",
+} = Astro.props;
 const wanted = sizes
   .split(",")
   .map((size) => size.trim())
@@ -23,6 +31,7 @@ const wantedIds = providerIds
   .split(",")
   .map((id) => id.trim())
   .filter(Boolean);
+const accessNeedle = access.trim().toLowerCase();
 const providers = (await getCollection("providers")).filter(
   (provider) =>
     provider.data.kind === "self-storage" &&
@@ -34,6 +43,7 @@ const rows = providers.flatMap((provider) =>
   provider.data.units
     .filter((unit) => {
       if (wanted.length && !wanted.includes(unit.size)) return false;
+      if (accessNeedle && !unit.access.toLowerCase().includes(accessNeedle)) return false;
       if (climate === "yes") return unit.climate === true;
       if (climate === "no") return unit.climate === false;
       if (climate === "unknown") return unit.climate === null;
