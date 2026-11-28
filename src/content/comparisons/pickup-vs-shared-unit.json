@@ -1,7 +1,7 @@
 {
   "title": "Pickup service vs a shared storage unit",
   "description": "What changes when Texas A&M roommates split a climate-controlled room instead of paying a pickup company per box.",
-  "updated": "2026-11-27",
+  "updated": "2026-11-28",
   "left": "collegeboxes",
   "right": "cubesmart-manuel",
   "intro": [
@@ -62,11 +62,11 @@
       },
       "right": {
         "type": "text",
-        "text": "You do. Dollies are not listed on the Manuel Drive amenity list.",
+        "text": "You do. Storage.com does not mark handcarts as available. CubeSmart's own page did not open.",
         "status": "unverified",
-        "sourceUrl": "https://www.cubesmart.com/texas-self-storage/college-station-self-storage/4124.html",
-        "sourceLabel": "CubeSmart Manuel Drive",
-        "lastVerified": "2026-11-20"
+        "sourceUrl": "https://www.storage.com/self-storage/texas/college-station/cubesmart-self-storage-college-station-219-manuel-drive-213806/",
+        "sourceLabel": "Storage.com listing for CubeSmart on Manuel Drive",
+        "lastVerified": "2026-11-28"
       }
     },
     {
@@ -85,13 +85,13 @@
         "status": "verified",
         "sourceUrl": "https://www.storage.com/self-storage/texas/college-station/cubesmart-self-storage-college-station-219-manuel-drive-213806/",
         "sourceLabel": "Storage.com listing for CubeSmart on Manuel Drive",
-        "lastVerified": "2026-11-24"
+        "lastVerified": "2026-11-28"
       }
     }
   ],
   "takeaway": [
-    "Five boxes at the $56 national rate are $280 for four months. A heated-and-cooled 5x10 at the $96 in-store price is $384 for four months before tax, plus the $29 admin fee on the Storage.com listing. Split by two roommates, the room is $192 each before that fee, and it can hold more than five boxes. Checked Nov 26, 2026.",
+    "Five boxes at the $56 national rate are $280 for four months. A heated-and-cooled 5x10 at the $96 in-store price is $384 for four months before tax, plus the $29 admin fee on the Storage.com listing. Split by two roommates, the room is $192 each before that fee, and it can hold more than five boxes. Checked Nov 28, 2026.",
     "The room wins on published dollars when more than one person shares it and someone has a car. The pickup wins when nobody can haul, or when the boxes have to come back to the room on a scheduled day.",
-    "Do not treat CubeSmart's $57.60 online price as a four-month quote. The page never says the discount lasts past the promotion. Checked Nov 26, 2026, CubeSmart's own page listed that online price and the $96 in-store price."
+    "Do not treat CubeSmart's $57.60 online price as a four-month quote. The page never says the discount lasts past the promotion. Checked Nov 28, 2026, on Storage.com. CubeSmart's own page did not open. Storage.com listed that online price and the $96 in-store price."
   ]
 }

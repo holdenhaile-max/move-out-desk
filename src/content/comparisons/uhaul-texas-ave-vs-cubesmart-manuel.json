@@ -1,7 +1,7 @@
 {
   "title": "U-Haul Texas Ave vs CubeSmart Manuel Drive",
   "description": "Two heated-and-cooled buildings near College Station with public prices, compared on the price you can actually hold them to.",
-  "updated": "2026-11-27",
+  "updated": "2026-11-28",
   "left": "uhaul-texas-ave",
   "right": "cubesmart-manuel",
   "intro": [
@@ -27,7 +27,7 @@
         "status": "verified",
         "sourceUrl": "https://www.uhaul.com/Locations/Self-Storage-near-College-Station-TX-77845/755037/",
         "sourceLabel": "U-Haul Texas Ave",
-        "lastVerified": "2026-11-27"
+        "lastVerified": "2026-11-28"
       },
       "right": { "type": "unit", "size": "5x10", "climate": true, "field": "onlineMonthly" }
     },
@@ -49,15 +49,15 @@
         "status": "verified",
         "sourceUrl": "https://www.uhaul.com/Locations/Self-Storage-near-College-Station-TX-77845/755037/",
         "sourceLabel": "U-Haul Texas Ave",
-        "lastVerified": "2026-11-27"
+        "lastVerified": "2026-11-28"
       },
       "right": {
         "type": "text",
-        "text": "Not stated. Month-to-month lease. Promo length not published.",
+        "text": "Not stated on the Storage.com listing. The special is 40% off and first month free. The listing does not say how many months the 40% lasts. CubeSmart's own page did not open.",
         "status": "unverified",
-        "sourceUrl": "https://www.cubesmart.com/texas-self-storage/college-station-self-storage/4124.html",
-        "sourceLabel": "CubeSmart Manuel Drive",
-        "lastVerified": "2026-11-19"
+        "sourceUrl": "https://www.storage.com/self-storage/texas/college-station/cubesmart-self-storage-college-station-219-manuel-drive-213806/",
+        "sourceLabel": "Storage.com listing for CubeSmart on Manuel Drive",
+        "lastVerified": "2026-11-28"
       }
     },
     {
@@ -68,21 +68,21 @@
         "status": "verified",
         "sourceUrl": "https://www.uhaul.com/Locations/Self-Storage-near-College-Station-TX-77845/755037/",
         "sourceLabel": "U-Haul Texas Ave",
-        "lastVerified": "2026-11-27"
+        "lastVerified": "2026-11-28"
       },
       "right": {
         "type": "text",
-        "text": "Called climate controlled. No degree range on the page.",
+        "text": "Storage.com calls the rooms climate controlled and does not print a degree range. Humidity controlled is marked no. CubeSmart's own page did not open.",
         "status": "unverified",
-        "sourceUrl": "https://www.cubesmart.com/texas-self-storage/college-station-self-storage/4124.html",
-        "sourceLabel": "CubeSmart Manuel Drive",
-        "lastVerified": "2026-11-20"
+        "sourceUrl": "https://www.storage.com/self-storage/texas/college-station/cubesmart-self-storage-college-station-219-manuel-drive-213806/",
+        "sourceLabel": "Storage.com listing for CubeSmart on Manuel Drive",
+        "lastVerified": "2026-11-28"
       }
     }
   ],
   "takeaway": [
-    "CubeSmart's in-store 5x10 climate price, $96, is close to U-Haul's locked $99.95. CubeSmart's $57.60 online price is lower only for as long as that promo actually bills. Checked Nov 26, 2026, CubeSmart's own page listed those prices. U-Haul checked Nov 27, 2026.",
-    "U-Haul is the one that prints a 12-month price lock, a $0 admin fee, and a temperature band. Checked Nov 27, 2026. CubeSmart is the one with the lower advertised starting price. Storage.com lists a $29 admin fee. Checked Nov 26, 2026.",
+    "CubeSmart's in-store 5x10 climate price, $96, is close to U-Haul's locked $99.95. CubeSmart's $57.60 online price is lower only for as long as that promo actually bills. Checked Nov 28, 2026, on Storage.com. CubeSmart's own page did not open. Storage.com listed those prices. U-Haul checked Nov 28, 2026.",
+    "U-Haul is the one that prints a 12-month price lock, a $0 admin fee, and a temperature band. Checked Nov 28, 2026. CubeSmart is the one with the lower advertised starting price. Storage.com lists a $29 admin fee. Checked Nov 28, 2026.",
     "If you are storing books or a laptop over a College Station summer, the missing degree range at CubeSmart is a real gap. Ask them what the unit is set to before you move wood furniture or electronics in."
   ]
 }

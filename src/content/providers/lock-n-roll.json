@@ -7,7 +7,7 @@
   "cities": [
     "college-station"
   ],
-  "summary": "Lock N Roll on Earl Rudder Freeway lists climate rooms, interior rooms, and vehicle parking. Checked Nov 26, 2026, a climate 5x5 is $38 and a climate 10x10 is $123. The unit list charges a $24 administrative fee at move-in. The company pricing page says there is no admin fee beyond the first month and a small lock fee, and it does not print the lock amount.",
+  "summary": "Lock N Roll on Earl Rudder Freeway lists climate rooms, interior rooms, and vehicle parking. Checked Nov 28, 2026, a climate 5x5 is $38 and a climate 10x10 is $123. The unit list charges a $24 administrative fee at move-in. The company pricing page says there is no admin fee beyond the first month and a small lock fee, and it does not print the lock amount.",
   "website": "https://www.premiumspaces.com/storage-locations/tx/college-station/1501-earl-rudder-fwy",
   "phone": "(979) 693-7655",
   "affiliateUrl": null,
@@ -19,10 +19,10 @@
       "amount": 24,
       "per": "at move-in",
       "status": "conflict",
-      "note": "The unit list the facility page loads charges $24 at move-in on every size. The company pricing page says there are no setup or admin fees beyond the first month and a small lock fee. Checked Nov 26, 2026.",
+      "note": "The unit list the facility page loads charges $24 at move-in on every size. The company pricing page says there are no setup or admin fees beyond the first month and a small lock fee. Checked Nov 28, 2026.",
       "sourceUrl": "https://www.premiumspaces.com/storage-locations/tx/college-station/1501-earl-rudder-fwy",
       "sourceLabel": "Lock N Roll unit list",
-      "lastVerified": "2026-11-26"
+      "lastVerified": "2026-11-28"
     },
     {
       "id": "lock-fee",
@@ -30,10 +30,10 @@
       "amount": null,
       "per": "one time, company statement",
       "status": "unverified",
-      "note": "Premium Spaces says month-to-month rentals have no setup or admin fees beyond the first month and a small lock fee. The lock amount is still not published. Checked Nov 26, 2026.",
+      "note": "Premium Spaces says month-to-month rentals have no setup or admin fees beyond the first month and a small lock fee. The lock amount is still not published. Checked Nov 28, 2026.",
       "sourceUrl": "https://www.premiumspaces.com/pricing",
       "sourceLabel": "Premium Spaces pricing",
-      "lastVerified": "2026-11-26"
+      "lastVerified": "2026-11-28"
     }
   ],
   "units": [
@@ -46,7 +46,7 @@
       "note": "Monthly rate on the unit list. That list also charges a $24 administrative fee at move-in. The company pricing page says there is no admin fee beyond the first month and a small lock fee.",
       "sourceUrl": "https://www.premiumspaces.com/storage-locations/tx/college-station/1501-earl-rudder-fwy",
       "sourceLabel": "Lock N Roll Storage",
-      "lastVerified": "2026-11-26"
+      "lastVerified": "2026-11-28"
     },
     {
       "size": "5x7",
@@ -57,7 +57,7 @@
       "note": "Monthly rate on the unit list. That list also charges a $24 administrative fee at move-in. The company pricing page says there is no admin fee beyond the first month and a small lock fee.",
       "sourceUrl": "https://www.premiumspaces.com/storage-locations/tx/college-station/1501-earl-rudder-fwy",
       "sourceLabel": "Lock N Roll Storage",
-      "lastVerified": "2026-11-26"
+      "lastVerified": "2026-11-28"
     },
     {
       "size": "5x10",
@@ -68,7 +68,7 @@
       "note": "Monthly rate on the unit list. That list also charges a $24 administrative fee at move-in. The company pricing page says there is no admin fee beyond the first month and a small lock fee.",
       "sourceUrl": "https://www.premiumspaces.com/storage-locations/tx/college-station/1501-earl-rudder-fwy",
       "sourceLabel": "Lock N Roll Storage",
-      "lastVerified": "2026-11-26"
+      "lastVerified": "2026-11-28"
     },
     {
       "size": "10x10",
@@ -79,7 +79,7 @@
       "note": "Monthly rate on the unit list. That list also charges a $24 administrative fee at move-in. The company pricing page says there is no admin fee beyond the first month and a small lock fee.",
       "sourceUrl": "https://www.premiumspaces.com/storage-locations/tx/college-station/1501-earl-rudder-fwy",
       "sourceLabel": "Lock N Roll Storage",
-      "lastVerified": "2026-11-26"
+      "lastVerified": "2026-11-28"
     },
     {
       "size": "10x15",
@@ -90,7 +90,7 @@
       "note": "Monthly rate on the unit list. That list also charges a $24 administrative fee at move-in. The company pricing page says there is no admin fee beyond the first month and a small lock fee.",
       "sourceUrl": "https://www.premiumspaces.com/storage-locations/tx/college-station/1501-earl-rudder-fwy",
       "sourceLabel": "Lock N Roll Storage",
-      "lastVerified": "2026-11-26"
+      "lastVerified": "2026-11-28"
     },
     {
       "size": "10x20",
@@ -102,19 +102,19 @@
       "note": "Monthly rate on the unit list. That list also charges a $24 administrative fee at move-in. The company pricing page says there is no admin fee beyond the first month and a small lock fee.",
       "sourceUrl": "https://www.premiumspaces.com/storage-locations/tx/college-station/1501-earl-rudder-fwy",
       "sourceLabel": "Lock N Roll Storage",
-      "lastVerified": "2026-11-26"
+      "lastVerified": "2026-11-28"
     },
     {
       "size": "10x25",
       "climate": true,
       "access": "interior, 1st floor",
-      "monthly": 255,
+      "monthly": 254,
       "status": "verified",
       "availability": "1 unit left on the day checked",
       "note": "Monthly rate on the unit list. That list also charges a $24 administrative fee at move-in. The company pricing page says there is no admin fee beyond the first month and a small lock fee.",
       "sourceUrl": "https://www.premiumspaces.com/storage-locations/tx/college-station/1501-earl-rudder-fwy",
       "sourceLabel": "Lock N Roll Storage",
-      "lastVerified": "2026-11-26"
+      "lastVerified": "2026-11-28"
     },
     {
       "size": "5x5",
@@ -125,7 +125,7 @@
       "note": "Not climate controlled. Monthly rate on the unit list. That list also charges a $24 administrative fee at move-in. The company pricing page says there is no admin fee beyond the first month and a small lock fee.",
       "sourceUrl": "https://www.premiumspaces.com/storage-locations/tx/college-station/1501-earl-rudder-fwy",
       "sourceLabel": "Lock N Roll Storage",
-      "lastVerified": "2026-11-26"
+      "lastVerified": "2026-11-28"
     },
     {
       "size": "5x10",
@@ -136,30 +136,30 @@
       "note": "Not climate controlled. Monthly rate on the unit list. That list also charges a $24 administrative fee at move-in. The company pricing page says there is no admin fee beyond the first month and a small lock fee.",
       "sourceUrl": "https://www.premiumspaces.com/storage-locations/tx/college-station/1501-earl-rudder-fwy",
       "sourceLabel": "Lock N Roll Storage",
-      "lastVerified": "2026-11-26"
+      "lastVerified": "2026-11-28"
     },
     {
       "size": "5x15",
       "climate": false,
       "access": "interior, 1st floor",
-      "monthly": 74,
+      "monthly": 72,
       "status": "verified",
       "availability": "3 units left on the day checked",
       "note": "Not climate controlled. Monthly rate on the unit list. That list also charges a $24 administrative fee at move-in. The company pricing page says there is no admin fee beyond the first month and a small lock fee.",
       "sourceUrl": "https://www.premiumspaces.com/storage-locations/tx/college-station/1501-earl-rudder-fwy",
       "sourceLabel": "Lock N Roll Storage",
-      "lastVerified": "2026-11-26"
+      "lastVerified": "2026-11-28"
     },
     {
       "size": "10x10",
       "climate": false,
       "access": "interior, 1st floor",
-      "monthly": 85,
+      "monthly": 84,
       "status": "verified",
       "note": "Not climate controlled. Monthly rate on the unit list. That list also charges a $24 administrative fee at move-in. The company pricing page says there is no admin fee beyond the first month and a small lock fee.",
       "sourceUrl": "https://www.premiumspaces.com/storage-locations/tx/college-station/1501-earl-rudder-fwy",
       "sourceLabel": "Lock N Roll Storage",
-      "lastVerified": "2026-11-26"
+      "lastVerified": "2026-11-28"
     },
     {
       "size": "10x10",
@@ -171,7 +171,7 @@
       "note": "Drive-up and not climate controlled. On Nov 24, 2026 this 10x10 was $107 and the list did not label it drive-up. Monthly rate on the unit list. That list also charges a $24 administrative fee at move-in. The company pricing page says there is no admin fee beyond the first month and a small lock fee.",
       "sourceUrl": "https://www.premiumspaces.com/storage-locations/tx/college-station/1501-earl-rudder-fwy",
       "sourceLabel": "Lock N Roll Storage",
-      "lastVerified": "2026-11-26"
+      "lastVerified": "2026-11-28"
     },
     {
       "size": "10x15",
@@ -182,19 +182,19 @@
       "note": "Not climate controlled. Monthly rate on the unit list. That list also charges a $24 administrative fee at move-in. The company pricing page says there is no admin fee beyond the first month and a small lock fee.",
       "sourceUrl": "https://www.premiumspaces.com/storage-locations/tx/college-station/1501-earl-rudder-fwy",
       "sourceLabel": "Lock N Roll Storage",
-      "lastVerified": "2026-11-26"
+      "lastVerified": "2026-11-28"
     },
     {
       "size": "10x20",
       "climate": false,
       "access": "interior, 1st floor",
-      "monthly": 119,
+      "monthly": 120,
       "status": "verified",
       "availability": "1 unit left on the day checked",
       "note": "Not climate controlled. Monthly rate on the unit list. That list also charges a $24 administrative fee at move-in. The company pricing page says there is no admin fee beyond the first month and a small lock fee.",
       "sourceUrl": "https://www.premiumspaces.com/storage-locations/tx/college-station/1501-earl-rudder-fwy",
       "sourceLabel": "Lock N Roll Storage",
-      "lastVerified": "2026-11-26"
+      "lastVerified": "2026-11-28"
     },
     {
       "size": "7.5x15",
@@ -205,7 +205,7 @@
       "note": "Monthly rate on the unit list. That list also charges a $24 administrative fee at move-in. The company pricing page says there is no admin fee beyond the first month and a small lock fee.",
       "sourceUrl": "https://www.premiumspaces.com/storage-locations/tx/college-station/1501-earl-rudder-fwy",
       "sourceLabel": "Lock N Roll Storage",
-      "lastVerified": "2026-11-26",
+      "lastVerified": "2026-11-28",
       "availability": "1 unit left on the day checked"
     },
     {
@@ -217,7 +217,7 @@
       "note": "Monthly rate on the unit list. That list also charges a $24 administrative fee at move-in. The company pricing page says there is no admin fee beyond the first month and a small lock fee.",
       "sourceUrl": "https://www.premiumspaces.com/storage-locations/tx/college-station/1501-earl-rudder-fwy",
       "sourceLabel": "Lock N Roll Storage",
-      "lastVerified": "2026-11-26"
+      "lastVerified": "2026-11-28"
     },
     {
       "size": "10x5",
@@ -228,7 +228,7 @@
       "note": "Not climate controlled. Listed separately from the 5x10 inside room, at the same monthly rate. Monthly rate on the unit list. That list also charges a $24 administrative fee at move-in. The company pricing page says there is no admin fee beyond the first month and a small lock fee.",
       "sourceUrl": "https://www.premiumspaces.com/storage-locations/tx/college-station/1501-earl-rudder-fwy",
       "sourceLabel": "Lock N Roll Storage",
-      "lastVerified": "2026-11-26",
+      "lastVerified": "2026-11-28",
       "availability": "1 unit left on the day checked"
     },
     {
@@ -240,19 +240,19 @@
       "note": "Not climate controlled. The list also names a 30x10 inside unit at $169, with 2 left. Monthly rate on the unit list. That list also charges a $24 administrative fee at move-in. The company pricing page says there is no admin fee beyond the first month and a small lock fee.",
       "sourceUrl": "https://www.premiumspaces.com/storage-locations/tx/college-station/1501-earl-rudder-fwy",
       "sourceLabel": "Lock N Roll Storage",
-      "lastVerified": "2026-11-26",
+      "lastVerified": "2026-11-28",
       "availability": "1 unit left on the day checked"
     },
     {
       "size": "10x20",
       "climate": false,
       "access": "outside parking",
-      "monthly": 83,
+      "monthly": 84,
       "status": "verified",
       "note": "Parking for a vehicle. Not a room for boxes. Monthly rate on the unit list. That list also charges a $24 administrative fee at move-in. The company pricing page says there is no admin fee beyond the first month and a small lock fee.",
       "sourceUrl": "https://www.premiumspaces.com/storage-locations/tx/college-station/1501-earl-rudder-fwy",
       "sourceLabel": "Lock N Roll Storage",
-      "lastVerified": "2026-11-26",
+      "lastVerified": "2026-11-28",
       "availability": "1 unit left on the day checked"
     },
     {
@@ -264,47 +264,59 @@
       "note": "Parking for a vehicle. Not a room for boxes. Monthly rate on the unit list. That list also charges a $24 administrative fee at move-in. The company pricing page says there is no admin fee beyond the first month and a small lock fee.",
       "sourceUrl": "https://www.premiumspaces.com/storage-locations/tx/college-station/1501-earl-rudder-fwy",
       "sourceLabel": "Lock N Roll Storage",
-      "lastVerified": "2026-11-26",
+      "lastVerified": "2026-11-28",
       "availability": "3 units left on the day checked"
     },
     {
       "size": "12x30",
       "climate": false,
       "access": "outside parking",
-      "monthly": 112,
+      "monthly": 113,
       "status": "verified",
       "note": "Parking for a vehicle. Not a room for boxes. Monthly rate on the unit list. That list also charges a $24 administrative fee at move-in. The company pricing page says there is no admin fee beyond the first month and a small lock fee.",
       "sourceUrl": "https://www.premiumspaces.com/storage-locations/tx/college-station/1501-earl-rudder-fwy",
       "sourceLabel": "Lock N Roll Storage",
-      "lastVerified": "2026-11-26",
+      "lastVerified": "2026-11-28",
       "availability": "4 units left on the day checked"
     },
     {
       "size": "12x35",
       "climate": false,
       "access": "outside parking",
-      "monthly": 139,
+      "monthly": 140,
       "status": "verified",
       "note": "Parking for a vehicle. Not a room for boxes. Monthly rate on the unit list. That list also charges a $24 administrative fee at move-in. The company pricing page says there is no admin fee beyond the first month and a small lock fee.",
       "sourceUrl": "https://www.premiumspaces.com/storage-locations/tx/college-station/1501-earl-rudder-fwy",
       "sourceLabel": "Lock N Roll Storage",
-      "lastVerified": "2026-11-26",
+      "lastVerified": "2026-11-28",
       "availability": "Not available to reserve tonight"
     },
     {
       "size": "12x40",
       "climate": false,
       "access": "outside parking",
-      "monthly": 145,
+      "monthly": 146,
       "status": "verified",
       "note": "Parking for a vehicle. Not a room for boxes. Monthly rate on the unit list. That list also charges a $24 administrative fee at move-in. The company pricing page says there is no admin fee beyond the first month and a small lock fee.",
       "sourceUrl": "https://www.premiumspaces.com/storage-locations/tx/college-station/1501-earl-rudder-fwy",
       "sourceLabel": "Lock N Roll Storage",
-      "lastVerified": "2026-11-26",
+      "lastVerified": "2026-11-28",
       "availability": "3 units left on the day checked"
     },
     {
       "size": "10x25",
+      "climate": false,
+      "access": "covered parking",
+      "monthly": 131,
+      "status": "verified",
+      "note": "Parking for a vehicle. Not a room for boxes. Monthly rate on the unit list. That list also charges a $24 administrative fee at move-in. The company pricing page says there is no admin fee beyond the first month and a small lock fee.",
+      "sourceUrl": "https://www.premiumspaces.com/storage-locations/tx/college-station/1501-earl-rudder-fwy",
+      "sourceLabel": "Lock N Roll Storage",
+      "lastVerified": "2026-11-28",
+      "availability": "6 units left on the day checked"
+    },
+    {
+      "size": "12x20",
       "climate": false,
       "access": "covered parking",
       "monthly": 130,
@@ -312,43 +324,31 @@
       "note": "Parking for a vehicle. Not a room for boxes. Monthly rate on the unit list. That list also charges a $24 administrative fee at move-in. The company pricing page says there is no admin fee beyond the first month and a small lock fee.",
       "sourceUrl": "https://www.premiumspaces.com/storage-locations/tx/college-station/1501-earl-rudder-fwy",
       "sourceLabel": "Lock N Roll Storage",
-      "lastVerified": "2026-11-26",
-      "availability": "6 units left on the day checked"
-    },
-    {
-      "size": "12x20",
-      "climate": false,
-      "access": "covered parking",
-      "monthly": 129,
-      "status": "verified",
-      "note": "Parking for a vehicle. Not a room for boxes. Monthly rate on the unit list. That list also charges a $24 administrative fee at move-in. The company pricing page says there is no admin fee beyond the first month and a small lock fee.",
-      "sourceUrl": "https://www.premiumspaces.com/storage-locations/tx/college-station/1501-earl-rudder-fwy",
-      "sourceLabel": "Lock N Roll Storage",
-      "lastVerified": "2026-11-26",
+      "lastVerified": "2026-11-28",
       "availability": "4 units left on the day checked"
     },
     {
       "size": "12x25",
       "climate": false,
       "access": "covered parking",
-      "monthly": 162,
+      "monthly": 163,
       "status": "verified",
       "note": "Parking for a vehicle. Not a room for boxes. Monthly rate on the unit list. That list also charges a $24 administrative fee at move-in. The company pricing page says there is no admin fee beyond the first month and a small lock fee.",
       "sourceUrl": "https://www.premiumspaces.com/storage-locations/tx/college-station/1501-earl-rudder-fwy",
       "sourceLabel": "Lock N Roll Storage",
-      "lastVerified": "2026-11-26",
+      "lastVerified": "2026-11-28",
       "availability": "2 units left on the day checked"
     },
     {
       "size": "12x40",
       "climate": false,
       "access": "covered parking",
-      "monthly": 220,
+      "monthly": 222,
       "status": "verified",
       "note": "Parking for a vehicle. Not a room for boxes. Monthly rate on the unit list. That list also charges a $24 administrative fee at move-in. The company pricing page says there is no admin fee beyond the first month and a small lock fee.",
       "sourceUrl": "https://www.premiumspaces.com/storage-locations/tx/college-station/1501-earl-rudder-fwy",
       "sourceLabel": "Lock N Roll Storage",
-      "lastVerified": "2026-11-26",
+      "lastVerified": "2026-11-28",
       "availability": "Not available to reserve tonight"
     }
   ],
@@ -359,7 +359,7 @@
       "status": "verified",
       "sourceUrl": "https://www.premiumspaces.com/storage-locations/tx/college-station/1501-earl-rudder-fwy",
       "sourceLabel": "Lock N Roll Storage",
-      "lastVerified": "2026-11-26"
+      "lastVerified": "2026-11-28"
     },
     {
       "label": "Sizes",
@@ -367,7 +367,7 @@
       "status": "verified",
       "sourceUrl": "https://www.premiumspaces.com/storage-locations/tx/college-station/1501-earl-rudder-fwy",
       "sourceLabel": "Lock N Roll Storage",
-      "lastVerified": "2026-11-26"
+      "lastVerified": "2026-11-28"
     },
     {
       "label": "Students",
@@ -375,7 +375,7 @@
       "status": "verified",
       "sourceUrl": "https://www.premiumspaces.com/storage-locations/tx/college-station/1501-earl-rudder-fwy",
       "sourceLabel": "Lock N Roll Storage",
-      "lastVerified": "2026-11-26"
+      "lastVerified": "2026-11-28"
     },
     {
       "label": "Lease and reservation",
@@ -383,7 +383,7 @@
       "status": "verified",
       "sourceUrl": "https://www.premiumspaces.com/storage-locations/tx/college-station/1501-earl-rudder-fwy",
       "sourceLabel": "Lock N Roll Storage",
-      "lastVerified": "2026-11-26"
+      "lastVerified": "2026-11-28"
     },
     {
       "label": "Other features",
@@ -391,7 +391,7 @@
       "status": "verified",
       "sourceUrl": "https://www.premiumspaces.com/storage-locations/tx/college-station/1501-earl-rudder-fwy",
       "sourceLabel": "Lock N Roll Storage",
-      "lastVerified": "2026-11-26"
+      "lastVerified": "2026-11-28"
     },
     {
       "label": "Office and access hours",
@@ -399,7 +399,7 @@
       "status": "unverified",
       "sourceUrl": "https://www.premiumspaces.com/storage-locations/tx/college-station/1501-earl-rudder-fwy",
       "sourceLabel": "Lock N Roll Storage",
-      "lastVerified": "2026-11-26"
+      "lastVerified": "2026-11-28"
     },
     {
       "label": "Outside parking prices",
@@ -407,7 +407,7 @@
       "status": "verified",
       "sourceUrl": "https://www.premiumspaces.com/storage-locations/tx/college-station/1501-earl-rudder-fwy",
       "sourceLabel": "Lock N Roll Storage",
-      "lastVerified": "2026-11-26"
+      "lastVerified": "2026-11-28"
     }
   ],
   "gaps": [
